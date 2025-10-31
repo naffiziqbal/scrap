@@ -15,27 +15,66 @@ from bs4 import BeautifulSoup, SoupStrainer, Tag
 import json
 import re
 import time
-from urllib.parse import urljoin, urlparse, parse_qs
+from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
 
-SEARCH_URL = (
-    "https://www.booking.com/searchresults.html?aid=304142&label=gen173nr-10CAQoggJCDnNlYXJjaF9nZW9yZ2lhSDNYBGgUiAEBmAEzuAEHyAEM2AED6AEB-"
-    "AEBiAIBqAIBuAKzg4nIBsACAdICJGNjYmE2MGNiLTBkMjAtNDI3ZS05ODkzLWFhZWZlMzQ2ZWNhZtgCAeACAQ&sid=35788a66b0bc8369c8d88feab7d284bc&checkin=2025-11-01&checkout=2025-11-02&dest_id=900049585&dest_type=city&srpvid=6aa4479224d8095b&"
-)
 OUTPUT_PATH = Path("georgia_hotels.json")
+MAX_HOTELS = 100
+SEARCH_RESULTS_PAGE_SIZE = 25
+
+BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
+DEFAULT_SEARCH_QUERY = {
+    "aid": "304142",
+    "label": "gen173nr-10CAQoggJCDnNlYXJjaF9nZW9yZ2lhSDNYBGgUiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKzg4nIBsACAdICJGNjYmE2MGNiLTBkMjAtNDI3ZS05ODkzLWFhZWZlMzQ2ZWNhZtgCAeACAQ",
+    "sid": "35788a66b0bc8369c8d88feab7d284bc",
+    "lang": "en-us",
+    "sb": "1",
+    "src": "searchresults",
+    "src_elem": "sb",
+    "ss": "Batumi",
+    "ssne": "Batumi",
+    "ssne_untouched": "Batumi",
+    "checkin": "2025-11-01",
+    "checkout": "2025-11-02",
+    "group_adults": "2",
+    "group_children": "0",
+    "no_rooms": "1",
+    "rows": str(SEARCH_RESULTS_PAGE_SIZE),
+    "sb_travel_purpose": "leisure",
+}
+
+TITLE_LINK_SELECTOR = "a[data-testid='titleLink'],a[data-testid='title-link']"
 
 
 def build_driver(headless: bool = True) -> webdriver.Chrome:
     """Create a Chrome WebDriver instance."""
+
+    user_agent = (
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+        "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+    )
 
     chrome_options = Options()
     if headless:
         chrome_options.add_argument("--headless=new")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-dev-shm-usage")
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_argument(f"--user-agent={user_agent}")
 
     service = Service(ChromeDriverManager().install())
-    return webdriver.Chrome(service=service, options=chrome_options)
+    driver = webdriver.Chrome(service=service, options=chrome_options)
+    driver.execute_cdp_cmd(
+        "Network.setUserAgentOverride",
+        {"userAgent": user_agent},
+    )
+    driver.execute_cdp_cmd(
+        "Page.addScriptToEvaluateOnNewDocument",
+        {
+            "source": "Object.defineProperty(navigator, 'webdriver', {get: () => undefined});"
+        },
+    )
+    return driver
 
 
 def safe_select_text(
@@ -78,32 +117,79 @@ def parse_structured_data(page_source: str) -> Dict[str, object]:
     return {}
 
 
-def collect_hotel_links(driver: webdriver.Chrome, search_url: str) -> List[str]:
-    """Navigate to the search page and collect unique hotel detail URLs."""
+def build_search_url(offset: int = 0) -> str:
+    params = DEFAULT_SEARCH_QUERY.copy()
+    if offset:
+        params["offset"] = str(offset)
+    return f"{BASE_SEARCH_URL}?{urlencode(params)}"
 
-    driver.get(search_url)
+
+def collect_hotel_links(
+    driver: webdriver.Chrome,
+    max_results: int = MAX_HOTELS,
+) -> List[str]:
+    """Scroll through the search results and collect up to max_results hotel URLs."""
+
+    driver.get(build_search_url(0))
     try:
         WebDriverWait(driver, 20).until(
-            EC.presence_of_element_located((By.CSS_SELECTOR, "a[data-testid='titleLink']"))
+            EC.presence_of_element_located((By.CSS_SELECTOR, TITLE_LINK_SELECTOR))
         )
     except TimeoutException:
         time.sleep(5)
 
-    soup = BeautifulSoup(driver.page_source, "html.parser")
     links: List[str] = []
     seen: set[str] = set()
+    idle_rounds = 0
 
-    for anchor in soup.select("a[data-testid='titleLink']"):
-        href = anchor.get("href")
-        if not href:
-            continue
-        clean = href.split("?")[0]
-        absolute = urljoin("https://www.booking.com", clean)
-        if absolute not in seen:
-            seen.add(absolute)
-            links.append(absolute)
+    def collect_from_elements(elements) -> int:
+        added = 0
+        for anchor in elements:
+            href = anchor.get_attribute("href")
+            if not href:
+                continue
+            clean = href.split("?")[0]
+            absolute = urljoin("https://www.booking.com", clean)
+            if absolute not in seen:
+                seen.add(absolute)
+                links.append(absolute)
+                added += 1
+                if len(links) >= max_results:
+                    break
+        return added
 
-    return links
+    while len(links) < max_results and idle_rounds < 3:
+        elements = driver.find_elements(By.CSS_SELECTOR, TITLE_LINK_SELECTOR)
+        previous_total = len(elements)
+        collect_from_elements(elements)
+        if len(links) >= max_results:
+            break
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+
+        try:
+            load_more = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable(
+                    (
+                        By.XPATH,
+                        "//button[.//span[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'load more results')]]",
+                    )
+                )
+            )
+            driver.execute_script("arguments[0].click();", load_more)
+        except TimeoutException:
+            pass
+
+        try:
+            WebDriverWait(driver, 10).until(
+                lambda d: len(d.find_elements(By.CSS_SELECTOR, TITLE_LINK_SELECTOR)) > previous_total
+            )
+            idle_rounds = 0
+        except TimeoutException:
+            idle_rounds += 1
+
+    return links[:max_results]
 
 
 def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str, object]:
@@ -208,10 +294,10 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     }
 
 
-def main() -> None:
+def main(max_hotels: int = MAX_HOTELS) -> None:
     driver = build_driver(headless=True)
     try:
-        hotel_links = collect_hotel_links(driver, SEARCH_URL)
+        hotel_links = collect_hotel_links(driver, max_results=max_hotels)
         if not hotel_links:
             print("No hotels found on the search results page.")
             return

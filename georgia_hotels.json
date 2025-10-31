@@ -1,39 +1,957 @@
 [
     {
-        "url": "https://www.booking.com/hotel/ge/graphic-batumi.html",
-        "title": "Graphic Hotel Batumi",
-        "description": "Ideally set in the Old Boulevard district of Batumi, Graphic Hotel Batumi is located a 4-minute walk from Batumi Beach, 1.",
+        "url": "https://www.booking.com/hotel/ge/orbi-city-premium-sea-view-apartments.html",
+        "title": "Orbi City Premium Sea View Apartments",
+        "description": "Orbi City Premium Sea View Apartments provides beachfront accommodations in Batumi.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/367412969.jpg?k=0a4982fed46c105751989e85239b647130c25c34c2604c16e68c6639c2c3739d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/367425280.jpg?k=deb0cdfcffe5441d33570fce92292ea157021d65355942d7a435e31dc0e1b779&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/367413004.jpg?k=919e0e0caf7f1727de06f8ebb0b00332687016234be5568db8ca826e26695664&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/545175279.jpg?k=99aeeb877827dadd9302f6ea884faa9e818ff5ba958c857bf3bf1b9781b4668a&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/367412977.jpg?k=593fbc0684c6377b9ac9c67c4697430f29ccacf40d09e668c80fc08d8a3352f9&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/367425286.jpg?k=f8276b84849ce94a9bb0331ef158cd3370cde4e907a8edf9a9739173d62a5966&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/367421622.jpg?k=462720d72a712f68c8499a9374ed95cf9984c1e449aaae2929e4429a390c83f1&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/367418869.jpg?k=fb6bdd619e0948758b8dc6720c911da48608cbe0d3f61a305c9441b621c17bba&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/770102488.jpg?k=0b374f75df87ceff8527abebc9a26656302d0093c20f475b57f2492de6e6af3c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/770103209.jpg?k=f333e03c846c6f8b284cc6d1d4103d0c494918d023a373100cccf812e31894cf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/763402350.jpg?k=9a88c69e29ce55d1bb6f14ae9f04da35148266cb53f9c17c485ada821eb0e8bc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753048469.jpg?k=7db80796f9b877b3e8f8d38cf0f4afa14273a2a53d82ef5f11b2df6800951f61&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753048539.jpg?k=8eb0ea03a24bb70227cca831e5252b97bd0782fe61ef859882e0dd21f57daf2b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753576127.jpg?k=5bfec03f2d3afcb3f8eadbcbdd4bc9ff9702d52c648eaa49ef1c964cb5a6c5f8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753048542.jpg?k=924646d3a822c9ac511008ccf9ff24f68d146850ef360b423172c45f4ebbc9e2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/763401809.jpg?k=c6a43bb4a1206ce6b7073b449115858598784bb926ade46b778039d973b8bb97&o="
         ],
         "facilities": [],
-        "latitude": "41.6449360",
-        "longitude": "41.6223320"
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/monarch-batumi.html",
-        "title": "Hotel Monarch",
-        "description": "Located in Batumi, a 10-minute walk from Batumi Beach, Hotel Monarch provides accommodations with a terrace, free private parking, a restaurant and a bar.",
+        "url": "https://www.booking.com/hotel/ge/orbi-sit-i-batumi12.html",
+        "title": "Sunny Sea View Aparthotel in Orbi City Batumi",
+        "description": "Sunny Sea View Aparthotel in Orbi City Batumi provides rooms in Batumi near Batumi Beach and Aquapark Batumi.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/476533820.jpg?k=b805bb87744f9204b6f1356882b8cc2fdacb5645f83fc6ac8f794c662437bd87&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/375879343.jpg?k=d43560db6eff8a41d39a280dfa22386e32b856ad916b13d3dd1350f0d26e634e&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/476883391.jpg?k=3aadc15110211427ad421f1a0a7eda23aa45761d0477e96f713b47796b3d42a2&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/427678987.jpg?k=efe7f65daf77c528b7cdfb2e1d9540692b4f20cf10ecfef2e931af0120ee1d22&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/476882991.jpg?k=173845cab51576f0c6c0a07aaf48ef923ae434460b58572a0bf1d207472143ce&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/606591257.jpg?k=e6e62092e836f7d71e281bf14e7ad7b6ed41022dcd97495c6903a631570a7d32&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/366812376.jpg?k=1c92f68c77005b7560e4340629b6a68ba27f87304491e3473f5a5c751c3f4c4c&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/363270181.jpg?k=7dd6dae28d7e6b26965727542f5188e3ced0573c6bbf9c324b8bb052d85161f3&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/766296701.jpg?k=bac9fe8d47a3d034ccc3e1f901f28e636231a41e01ffef5ba5e9d6584e55d8d4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/766296478.jpg?k=867b0e3a5d0d44bd1e6a5b515867c588986ee03c9a0efe3af0a20c6d8ad79635&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/766305442.jpg?k=16d803f041bd74d1e0d7c64d5f15d9599bc7073f0b7af7c718236ac112d25cb4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/766112341.jpg?k=aecb7390f922bc0401b0fb8725aa1442db0f43c33fe2a1dce878c109468bb025&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/766304970.jpg?k=1ae6d2a68bcaf3ec58c42348fe09556121195cb6d85eb10a93f06f3fb5d0b135&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/766293551.jpg?k=fa4378b64d830e56958d63056d1b6fef9e878191ec7d9e950c1165d13de59dc9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/766111831.jpg?k=8350f6078b0d2eaecbbf36a044b6f45b0365a826741077f1e674461493e7071c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/766305393.jpg?k=af68a8622b3afd79e1a5d2539f25cf599660c03e3753e300a27714897c801d0e&o="
         ],
         "facilities": [],
-        "latitude": "41.6501730",
-        "longitude": "41.6370500"
+        "latitude": "41.6386468",
+        "longitude": "41.6129826"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-apartment-batumi24.html",
+        "title": "Deluxe Aparthotel In Orbi City official",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Deluxe Aparthotel In Orbi City official is a 4-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/752440844.jpg?k=0f7fe5bfe3cf3e2f228d3a374dcb5a5d4b1cf85a6c4a2937d58f199fc209a2be&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/399504315.jpg?k=1734b852ee0fea311fa0ffbf5cf4e98448ea247932c46a75acb0478c2c2f2470&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/752440513.jpg?k=31ccbc3df52ee8ac49a2d0ed022371df066d0c3d7763e8dc010e9a4f5227c93c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/751033008.jpg?k=8c66589b7a955d0f899fefaf30e70dbe1f075ab4e0ddacab8a74747abc8a754b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428652321.jpg?k=397677b5d282b8a8adf03790151cbaee1bc551792d03863f0096d5cc6f7f9cdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/751033003.jpg?k=9b75f818725545d726a0cf2ddd1198b73117e15f5c1cbeb211160de4e7405a39&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/752440983.jpg?k=4bb8ca5c137b86f341473d4b00b787b46b3f16546cd40914c7ccebb7f1d7a720&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428652320.jpg?k=a39f1e472d357d8b1fcf2f228c2f5e82895e5e0f70d93af2e66207f5f59f99d2&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6398700",
+        "longitude": "41.6129059"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/alliance-palace-georgia-batumi.html",
+        "title": "Sea Breeze in Batumi",
+        "description": "Sea Breeze in Batumi is located in Batumi, just 2 miles from Ali and Nino Monument and 4.2 miles from Batumi Train Station.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/303283815.jpg?k=a261969cbf15e71938e912f1536b88d982211644ba743331aec4110f49e20db5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/300971849.jpg?k=4bf665137d1a47c064803c11d90155d4381a161a6e29ad4d66b5693e0918399f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/354109418.jpg?k=439cdbef0a491a1cb7478eeb7bbd3d2915e5826ff46c56aedce8703b0e2e7ce8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300972004.jpg?k=f9183281bc6c1d7453a21fbf8a4970ba39a232926304efc8c4e3c837dd6c3c57&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/365859146.jpg?k=d1ec9dd1781a32c484bcea0a131b2c7f25f4899d5e51d4602b8697c65e3df985&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/574612119.jpg?k=00dc897d72d87619b0c5595228573609715b81e0a6d09708391e69cdf66bb715&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/303747474.jpg?k=986723a73e1b72689d98312d84cc45a7b98ec38f791567a7f7b074043dd64dd7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/303748213.jpg?k=85f637855f652ea3170451c3849c0aa256b763ca077529dcf84574ea9476f555&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6417627",
+        "longitude": "41.6157214"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/briliant-apartment.html",
+        "title": "Sea View Luxury Apartments in Orbi City",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Sea View Luxury Apartments in Orbi City is a 3-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/690554872.jpg?k=b5f959f55b304ff6554351a0e80a293d5b0784909d0bc571c3911e80a088df88&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/690556383.jpg?k=f061ef743efc287250592ff64f2d763511ab87c5a81b3adf2432a5671f11b944&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/690555730.jpg?k=263a5802bdcaad858bfe1dddb84864e3be51ea07a7f0350308ad36e279fb1c78&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690555059.jpg?k=6982665e83ced00d22bfeb65c667a0874cf6b051909650a83c58fe0d91debdae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/736508866.jpg?k=015c3d7840c5cabce2a256a0adfd35d1a6ea731cfc4bbc650bfe845c8be0ae67&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690555466.jpg?k=ce9eaa9978d78fe0d59ed8f41db65675b2f9c006e896381b46b6f19f1cb1e107&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690554988.jpg?k=6634b677706d86540d17ad32fbddefa65076f4815a725b499d376e03ab692bf8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690556211.jpg?k=e4732933ba906c1c25dd08b18a3213f00e48689e99a2b21352cbae41f101c791&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392518",
+        "longitude": "41.6130941"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-best-apartment-batumi.html",
+        "title": "Sea Line Aparthotel & Batumi Beach Resort",
+        "description": "Sea Line Aparthotel & Batumi Beach Resort provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/395338511.jpg?k=f6d2ac03617671525cbf5434fe20c80c81e6f90ea8e507dbb9a500e03fce27cd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/385135688.jpg?k=94baf629b83896a20f3b6cdb1b00fc4b7d84d9b00387c8e0c136f2fce87367c9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/385135676.jpg?k=4385123d20d6948768d3f1ea45ea32d121814839784ab0b16b2ca92b064e59e4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428653476.jpg?k=37761fee784cf878e98ab7d049e8ed64b2cce781a713999e10ea1b443dac547f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/395337553.jpg?k=da00c1871e9123c94adf2123ccab94a5d29a3ecb0270fb721e8a4adcfd4a24d9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/395338519.jpg?k=a2b3308444da16ef319f877eceb9db1c21384959b82e3265e11f804ee2445246&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/385135670.jpg?k=0e31668f6eccf888aee4109e8b9e3c5173d3b97a3dd3909253348cd57107eee3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/395337736.jpg?k=f593f33daeffaab6631ca91dd2c2284823fb6344c6ecb5e161ce9c82d9be8f95&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6399264",
+        "longitude": "41.6129599"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-1732.html",
+        "title": "Orbi City Prestige Apartments Batumi",
+        "description": "A good location for a relaxing getaway in Batumi, Orbi City Prestige Apartments Batumi is a condo hotel surrounded by views of the lake.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/744047345.jpg?k=159471bdce515c5d4513b19b11747a00c4f845d7122687e74300e6f5c63801a6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744047292.jpg?k=a07cbd115d30506c588716f77aec9fbc5f4af6f4925a2584e17278f8de045a9b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744047428.jpg?k=0d8d285755f016edc6376026b01ab493f9e578ac70b8f0cdd3f78e7f23fdb1bc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047361.jpg?k=44184521d21202e39dbf166d9f9e2c37bc72bd50735fe0afa12b73f9ca5aea16&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047366.jpg?k=71ec0edc263d0be12c580964d10a1686465a290d36234dd575ad17516ec43916&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047375.jpg?k=e07cd939745ba49513af52eff491d9ffa1753068a3cd960a3a0c7a7a08ec7932&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047388.jpg?k=f0aeed6f727c02834515f2991d9be3861052f19d819a63cfa6b87b5ec47ae333&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047328.jpg?k=043717370a07f44e8ded2c1f39d73e2a453e166863d08046b5d2ebd1eb10dfeb&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/nice-stay-in-batumi.html",
+        "title": "Elite Class Sea View Aparthotel In Orbi City Batumi",
+        "description": "Elite Class Sea View Aparthotel In Orbi City Batumi provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/734299243.jpg?k=9e4da7ddaa4333b8174e4b0528217a345d1bd06bce17ed4d0c55f3e7b6c5b6a2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/734300825.jpg?k=d8e48e1f3fb66f573d427394b24dc3dd44562712c5efe753d4e7546e9bbd6f7e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/628426363.jpg?k=b5e7c38d568c8e0d1b8497d697144843fdb47612c65a6e4a6960181384280a37&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426359.jpg?k=6998a6a0dd10c633055d657454aa6bcc8dfefab654ec61fd8880a26e237dec46&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426298.jpg?k=3c34cd1e2ad06036ca1a422c07c91f27fb94f940187ebb46d5b34aca6322b679&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426308.jpg?k=63e21316437f4164df2991ed283f32371034d23b27f73df8908f14c614d8b966&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/734299248.jpg?k=e01f2bbdc6f41a38e1a19bd8d655603c57fe6d653be7fda46e047802578ee5fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426306.jpg?k=e96ac5934f76ba503fd8f43a8ebc1f35928213d994cf6df19aa70c1ac88b5625&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-2038-batumi.html",
+        "title": "Breathtaking Sea View Aparthotel In Orbi City Batumi",
+        "description": "A good location for a relaxing stay in Batumi, Breathtaking Sea View Aparthotel In Orbi City Batumi is a condo hotel surrounded by views of the lake.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/757140117.jpg?k=63901d8abca945fea001f39e5be68c41822381c3cf9f00a11c8118cecba71558&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/757140194.jpg?k=25777cb782c90af920d889beb3ee678ccf425f8e9bf5977dbcbd928cef3ff4d9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/757140214.jpg?k=c2841e2343705c21fcfbada9cc2648d6d1846896569a8226be8abc7cced5b7ab&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757140172.jpg?k=21222d7800fc6403b60aaf9f352ff9e42bef3f73231a7227315482cde4b72fca&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757140184.jpg?k=7c466bf5223395d74f4ace236de4957e5c652936a370811c0426c6bd87502d6b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757140149.jpg?k=7cee7a29bf30846b2c255e24c4150cb5c5f48213bd37c5249fdbc1a928bf851d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757140145.jpg?k=e1a4ed4eb3569b546053ab8ecf0f5c40ff4b8e2034775e0e42cbe711a13dd042&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757140224.jpg?k=c364534fe41d46b0617bc0b4ae11d7e4e95c707eacc1b81c6b6340825bd6d0cd&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/ashtal-beach.html",
+        "title": "Ashtal Beach Hotel",
+        "description": "Located in Batumi, within a 2-minute walk of Batumi Beach and 3.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/583880291.jpg?k=6ff714f4fd73a99058d79dca225bf659d14c8719f439adf7f2d55864cd1541ec&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/584110125.jpg?k=d383e4c2d8033797619df4263af03ab77cee6e9828b0304f9d49b46d5fcf0399&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/584110066.jpg?k=d468a9844f5e353a5d708db35b339976eb414540a5f1eafabbe3374e0448d7df&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/590497180.jpg?k=4e84cbdf8c675a5484bb5ccff8a051d1188f88db214758e267c85493a87a5fbc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/590497169.jpg?k=e0acd1a5f435648b298da629ea2a7fed934a8546f373178bebd4b005c5b9013f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/590497173.jpg?k=f6d20f526d2592912b6c307a4a8a064f460b6db763a230bbe10a6f530116d34a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/590497172.jpg?k=8d5296fa625fcd1a640b2fb6ab041233d8a16c23ab48e169fc12180572ce0e66&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/584110054.jpg?k=f83b9b06753ff91de5755b17aec5d99dd5a3041d8ea5ac8cc02cde5eb2cf9258&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6308242",
+        "longitude": "41.6021096"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/bestseller-apartment.html",
+        "title": "ORBI CITY Luxe Suites Hotel",
+        "description": "A good location for a hassle-free stay in Batumi, ORBI CITY Luxe Suites Hotel is a condo hotel surrounded by views of the city.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726378021.jpg?k=94b476de32424987942ef11cab4ba66a1c6a4e3a552a6b5e721b249cb4949569&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/757572036.jpg?k=2766d8f82ab976bb839cc69d394e79560a3104dd234ef6e29244710d85b1ca35&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726378034.jpg?k=b4279cf991fa93aadb110a8af1cc326160e0deaa3c8f4275814012ccd6e383fd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755364064.jpg?k=86854aef88cde71f912d7ff6d822fd8258a244c301fdc603865de08e48e9f8a0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757571994.jpg?k=ad824f785d0d933dc5f1180837768d25df438388a8cf00f898182850ba3c0f56&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/653156564.jpg?k=256528fa46241dfa2b9a9539ddd5570d4024c434552576f93512d68793918a2c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/653156545.jpg?k=654490fb96cb49ebba382eb8d897771ecd62d9c1f452f50d533236935731fb26&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726377979.jpg?k=7c88b9c79960799990e1f29758f420a869858bd2a6c0e82e22dff5db994ee570&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/studio-in-batumi-batumi1.html",
+        "title": "Sea View & More Aparthotel in Batumi",
+        "description": "Sea View & More Aparthotel in Batumi provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/608175812.jpg?k=486df9e26345712a561daf27db170dc24da24d68d43e731ce11050539ea7a4f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/608176030.jpg?k=e81f86c5f4c4829f7905ce05b49bb77c237ea7a67af92be5228e1682eb400191&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/608175804.jpg?k=35abd0739873873b3e77145d93120db8bb398a64396d9e5f8beeaabfb64faebb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608176026.jpg?k=35d4b89572143f9c31cbe9800692b283ab83d6eb98fc90b67b06fd047f142dd2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608176025.jpg?k=3fb16c74bbfc0322718d9ab9a1292ef2ffd361770ac42de9ce1b9826b29e7369&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/386292889.jpg?k=d383ee70412bb79aca8ae38ad9f28f673f18b28004cf20e68992d98158e6998e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/399739501.jpg?k=c85ea00cb2a0d01ac27fe4faca3664fc505fa04527b0d6b92ef44708617d03dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608175954.jpg?k=e92442426cbdbf61167453472d5bc764d8499590c0c82fcd9881bea31b72e335&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/property-seaside.html",
+        "title": "ORBI CITY king Deluxe LUXURY",
+        "description": "Featuring sea views, ORBI CITY king Deluxe LUXURY in Batumi offers accommodations, a casino, a garden, and a bar.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/753842244.jpg?k=8c0a836a5c6d816a48bd2889d0994325c934b9050543ba5a5116ab3de807f7ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/753842176.jpg?k=ecf13025652b93d058f632967eed3b1b51d00fb9b339310508ab5d49bfad3b1c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/753842215.jpg?k=ab28f1cce85e0d877fd5d326df8affd737725cf49b9e080e7f12452578acc46a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/749286046.jpg?k=bb4fc05cc2256d302027c1e98bd85be6f903d86960403f21fc441dc470f46e57&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753842183.jpg?k=cdd2935053c63db1985a08a50f167b29657b69d9faedecf51b72868494a8efc3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/749286049.jpg?k=5c6f6abb190a5c2c40f9f22abf2ade642c0a688e1ffb9f929453bc2637b23659&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/747130227.jpg?k=65775359d70cacbb565cd1a0893d854516ad74f6668aa4b0a4795d9c2817d897&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/753842067.jpg?k=f3f02107458e1e683a7f3ae3d56953f06f9368dfb2c008146fe42b7d47e2e0cf&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6386006",
+        "longitude": "41.6115010"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/nice-place-in-batumi.html",
+        "title": "Wonderful Sea View Aparthotel In Batumi City Center",
+        "description": "Wonderful Sea View Aparthotel In Batumi City Center provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/652131625.jpg?k=4dd8988a6a758104aef47d50283e03459446644387d93ff5f1eb7c3e4173f845&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/642442048.jpg?k=8abfaf9c8795fed1cdec9311f385c2bbde886739e242c1a847f7a5b177fbd984&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/642442059.jpg?k=1cd8f1444ce3756942e39f411991941a7d38cbacefc20be50a70a2c579947d2a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/494821256.jpg?k=91c8144f152db5f7286a3bb4ab6666ca3a71b8f73afd1640d29d36def3cb59d1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/642442030.jpg?k=8a31be82e55048a4f7889b9b057a586d7b05d24193d994d67c46c2f988a0428c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652132832.jpg?k=9f52e708f0c6e28618bf70e55eefead6ae5580d030bbba68c2fcaed14e5c8d53&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/642442027.jpg?k=e596ade8e28bf7ed49a6c17e3c860fcc707eb30fabe9a0d6936d24326aa40935&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/494821272.jpg?k=89e483697b5ecca06c028a3084f6486bdbe010dbb6211f2a72398ea2e5f7fa54&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6402968",
+        "longitude": "41.6136886"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/blue-sky-orbi-city.html",
+        "title": "Orbi City Amazing Apartments",
+        "description": "Featuring a private beach area, a casino, and free Wifi, Orbi City Amazing Apartments is a recently renovated apartment a 5-minute walk from Batumi Beach...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/611715340.jpg?k=04841f37c82c74807a508647127546d0855b838c5891060fdf17a87fa6502b95&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/611701671.jpg?k=e61005e407e64fc992392a2220008e5aee22252a932d64cdcf6a439141e5bd1c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/611715361.jpg?k=d83d3390573fb969de15f5c9fd8cfa8ecc5c71a528c3c108da514728234258b8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/611701656.jpg?k=1b73d1c373b2e483eed8428b5124b9e92adcb8b7a065c17d07d10a118adc99b7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/611707977.jpg?k=11eea3543c5c43a4c875c7606ef5abfc4e0c7f7d5063bdada48cdf310c942fe8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/611716110.jpg?k=b3c3cc4fe2ab2366bedfcf848c016e7473126d1a6ed30f648ab59494e96f3ddb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/611716220.jpg?k=20530273d4095f6bd638fe536fd08f58445541f8564ca2e6236a450a23c2bcae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/635443953.jpg?k=4df20f4a8ea850566e35581556a9fe05d3fc9108da6f76fd0cded780519f7ccd&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6402070",
+        "longitude": "41.6136466"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/new-good-apartment.html",
+        "title": "Superior Sea View Aparthotel in Orbi City Batumi",
+        "description": "Superior Sea View Aparthotel in Orbi City Batumi provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/449564322.jpg?k=eb43e2dc7d9eef1e3fd91f66b5e7cf17375f5f30ba3759f3e29fb3bc95825661&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/397110365.jpg?k=1f3d1fd02ab2c28a48b3e82765515742f2df18d2f4181ea95879a5e9995e43ec&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/449564312.jpg?k=e291da517b8d0944201cc63e8cf84e14de540e0a1139600b59a20ba89a0ed1ed&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/425071808.jpg?k=b160c9fca266c137d232de9bb73f6947efba5667cefcbe57c4d883202ecb9a60&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/449564345.jpg?k=bc4ae368233b936c70af4a8c4910932028aa05de1a9c67f716325bed95b25409&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/449564391.jpg?k=ffeddc250d0834941e912bd8be3c00f5597d521cadc4dae7bd094f8425d9c6ba&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/425071713.jpg?k=136c9bfb3d8daf227c923c074b980ba23d1ffeb993e3799e9ddd00b23a8019d0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397110395.jpg?k=ca233a749081d78176b7a8cd7f5f30952c187601d58cc0f551e706026c578306&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6395977",
+        "longitude": "41.6127453"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-1734.html",
+        "title": "Picturesque Sea View Aparthotel In Orbi City Batumi",
+        "description": "A good location for a hassle-free stay in Batumi, Picturesque Sea View Aparthotel In Orbi City Batumi is a condo hotel surrounded by views of the lake.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/744047479.jpg?k=a075b20a855f5beee97a949bde80997bd7150ad30b8ec80ce532aff692c50fc8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744047502.jpg?k=06065eb9ec7b9c5610359855807970366deaf4a699ba5cac9fa9ca78f4d1306c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744047614.jpg?k=ed7887fed40c2274ee513b6b852a65b3dff1703412f9639bbb5f963ad922b231&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047482.jpg?k=887e6f09ffd8de574e884dbac3feb3f4405b8a88f0f0980048385bb00d18a8a5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047498.jpg?k=221a362372406b38314d1a34de5394907d805cc2fa3e042218b38bfbfb6922fd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047496.jpg?k=e063e4a5a6c82aa40e6f6ca94cd30473a93f1acd4625c838d49ccf2dcd672c6e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047454.jpg?k=99c801b6b21b9a0513a0b7e08668fcefd1a0789809bd7d402beec27fc39888a3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744047471.jpg?k=4f03b8d67d1d88242271b01058690edbafb109832da3e731b25e7aa9e05810c9&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/magnificent-place-in-batumi.html",
+        "title": "Velora Seaside Residences",
+        "description": "Velora Seaside Residences provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/678650017.jpg?k=79fb82cd23efed48b3e28a8141374d6458b8bf823e7b390e7129ac10e200b388&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/678650016.jpg?k=673ffedc6b86a629eb80c54047df213defc85fe304c2057cd914bc0352b0f6b2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/678650053.jpg?k=284f799ddd33f8408f9dc966ee96d69351adbc92b0cbd1092bcd7741042643b6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678650042.jpg?k=9a04ce61cac28fe4f777f14085a390b2332bb85f40a5714fa405a34e2a0045b7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678650046.jpg?k=d92c97918f36c93d480c73cef079eabc03cc06dbf6d7837d099fdcc3c01faa67&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678650043.jpg?k=6ef963293c10275137c2341920fb2566225c59415bb2a5df093ed76544994f6f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678650027.jpg?k=0638a15fead2ca09005f36093f539f2c9f1fc52adf36ffc7ca7d539e9fcdf831&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678650013.jpg?k=239ede08b0be6de89ae163063c93c4d4a5f873de442c57731dca69d600362c9a&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6403594",
+        "longitude": "41.6136251"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/hostel-in-batumi-batumi.html",
+        "title": "Orbi City Sea View - Special Category",
+        "description": "Orbi City Sea View - Special Category provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/628429461.jpg?k=bbdf513c231b210cd4231ea9481323f037c29b210f233d15d6d563d7b77d2ba8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/628429442.jpg?k=ed993ddf992bf12aba25c38d730eecc514c6b4360c0c16f775244a4fbdf78182&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/628429489.jpg?k=e49532881b7226fa75c4c915935bb186b32eda33ae8b07f97f75990d7a5e7268&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628429487.jpg?k=4deca91a7e8138ea6466c1bf9b49dcd943f48b5ef76c30e362064ca216eb45fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628429430.jpg?k=0572ccf524f7f9b0646425abe6da4e10b2dbc689f83a7480d2efc3a8d5d2031e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628429451.jpg?k=0fc314fde8ba464f9b2df7250e9b24012d4abcb743d681b56107809f831f9d30&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628429421.jpg?k=5ea51fda45fee83e431e53649db2e54d5dca4e0b7e54f7dc4644f47746d8d7ab&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/577872468.jpg?k=1ba6c664de70c8b7175e901d5e6f36c0c9dada099c7fd3af9c38163e014c4302&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/beautiful-apartments-near-the-sea-orbi-city-n4.html",
+        "title": "Beautiful apartments near the sea - ORBI CITY N4",
+        "description": "Facing the beachfront, Beautiful apartments near the sea - ORBI CITY N4 offers 5-star accommodations in Batumi and has a private beach area, shared lounge...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658342379.jpg?k=724a8d6eda33ff8cd86cb258184022b95557162f66e01c3bd522a15d25d3aa60&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342378.jpg?k=f2f022ff7a485f769bb8774f021c8426251c9328954aa473d5b1a0a2c174124b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342392.jpg?k=469b8d423dba17e94c116cc5d6ac83451a9695dc5475594050c17ee42cf2780b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/651200524.jpg?k=79b608f501f5d555af060176c7250572306018abaf918d66c27b2fdd05b20b81&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341059.jpg?k=2ef5d8d877be237117acc4fe2167707fb6edffc7aa9fe091dd7e4b0b147c2d77&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341048.jpg?k=8fc941438abb16bc2532cb95dbce35bce19cd512921c58905688dd89bc17e9d6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341045.jpg?k=572e988f044874f69459611eac582449e0c8d799eca87c37be77a0c3dfd6e7cb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341047.jpg?k=5350a4af4a3871c2de090326205a06941f494b29e3a6625885fcfb377e5b5acf&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392293",
+        "longitude": "41.6126186"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-aparthotel-batumi42.html",
+        "title": "Orbi City ApartHotel",
+        "description": "Offering a private beach area, ski-to-door access, and free Wifi, Orbi City ApartHotel is a recently renovated apartment a 3-minute walk from Batumi Beach...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/637001455.jpg?k=75ccec026e7323af056990a5b30b5e6df7ec6249434f3caeab4f15c91a0de831&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/635778549.jpg?k=84126789637054db5463f47e744873cd20e9a6a58cebbf85160f2513e87ee3d7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/636137849.jpg?k=8c32d5f40103900bea9b0b39a1809c9349db9d4f5f25ab40d42393222ffd8be3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/639005331.jpg?k=393364b7ccdf9558a9520e3f9ea0cdbc261fd3feb6f8b6c05a8526afc5231cb1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/637001466.jpg?k=90b3efe7d75a9a80bcaafe0f8e9f91815b04651a28168c47e666f284c139c442&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/635778544.jpg?k=bfb480612bcc3199fbd6413b4d0768db3924ac89f93078d2b35b562588bee87e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/637001474.jpg?k=614151be7ffd8a7061a4dff85dacee3df57dc572c1e51c5611b3e5d505cb6667&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/637001341.jpg?k=a80c55ac8b12358516ea79d12ed752071bf67fcffa5f2a9abe528d904d1cb778&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6388450",
+        "longitude": "41.6129656"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-orbi-city-batumi19.html",
+        "title": "Batumi vip aparthotel ORBI CITY TWIN TOWERS",
+        "description": "A good location for a stress-free holiday in Batumi, Batumi vip aparthotel ORBI CITY TWIN TOWERS is an apartment surrounded by views of the lake.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/691624375.jpg?k=da46057260bc759c7f7d020b8e70448087850368b8d27e3a8d6b0f544b888ed5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/577169788.jpg?k=19f0be725c87cc4bd57d236bda96689d074173e50b218a525cdd3ef55d945636&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/653114894.jpg?k=dac593802b4ab56d2df20a927ee06affc4c47f9847c84b0d75ccd5549c6992a8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/577166822.jpg?k=bd321cccce0dbdc872d23a9c08ca8da67f98838485cbb71cb658fee3c9d514b2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/577166827.jpg?k=160dcc80bd4c82f5ccb1a3d0e4e92b2d73a4a5e629ed6313b8712010f6bfe391&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/577166824.jpg?k=7f9bcb001465431ef566954cb6dc4fbb4f3ac8cc2c22974e6eef0a5f17c615d7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/653114206.jpg?k=ee059403388d50f1f75d03ff00c05ee9bbcc5d842db528b50e11489018379665&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/577165879.jpg?k=571564a7b655c1663eef7ca2df4182b18ac9939764291405c41471f2db19c285&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6397179",
+        "longitude": "41.6131530"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/apartment-in-d-block.html",
+        "title": "Batumi Sea Line Aparthotels",
+        "description": "Batumi Sea Line Aparthotels provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/644255048.jpg?k=69eef5df07881a0f29152fbe5f8786a0176b77b15e6e80ff34dc194633c4ec00&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/628426958.jpg?k=c3cc5cf9d6bb6c661415072e62839f82b861fd584c5b935fecebfc14210a1bbb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/628426982.jpg?k=178112a8d3410dd34c1b72f323e6bbc8e06267b2adafc1a784ae347cc0c0692b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426983.jpg?k=c8434bd0ac83dfd97b495f7f22686d97d380db5516d47a0ee7faaaf09466615e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426947.jpg?k=47b1ca0f48b25018baf4a7af0a9189161b8ad10bc09c12ca2f4b47a374e0a756&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426956.jpg?k=3a047f3b7392014860b1ff39afb41bd54d7be93b72ba31e7c75778201de41adf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/644255029.jpg?k=3cfee0aff0498a7b08106833674f885763b9f4f849068707c87dca93d782aa34&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/628426940.jpg?k=585d876e44dc36a8d5e9affb1911b89654dceeacb798db042e3bbbad0199941a&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6402415",
+        "longitude": "41.6141723"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-2048.html",
+        "title": "Panorama Luxury SeaView",
+        "description": "Facing the beachfront, Panorama Luxury SeaView offers 5-star accommodations in Batumi and features a garden, private beach area and terrace.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/759664234.jpg?k=a5ec876f814ea3b789fe08e974b023cd2bc170b7a4c37c14c6b51d6a915ede0a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/759664553.jpg?k=f6d2806cfdffa428d5fe917f431b9bcad6203dbe5e787ffb7a21e2c709fd4867&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/759664253.jpg?k=c8b5283c6bb0cb2f9e9dd1d9e9c9ccacf5bf3219764faeabaef5596fe014405a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759664866.jpg?k=bde487f00e984246c8caad0750e7628ef3939f06f8c4315d929d935af6134bd7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759664850.jpg?k=1deb076198b413d900c7d016e91c09d4fe70f6e65733c49c5ff36b8850a200d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759664899.jpg?k=810d0d68347354230fff4de74cc2c02b9186fed60e397840b82547ac854c2172&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759664874.jpg?k=6e53bed2a0330653891f1e3dcbb71d983d7571cc763e861f9e95f5dc7aa8246c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759664256.jpg?k=72c43944454bee70485029c8f44c9268fbf18ae5fa0411924089737edea0318c&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-guesthouse-batumi123.html",
+        "title": "Batumi Luxury Resort & Sea View Aparthotel",
+        "description": "Batumi Luxury Resort & Sea View Aparthotel provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/366839733.jpg?k=9a9483770e54bca83f4f0ad024b1751c76efc15c855130d60c1a7584c8f07c01&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/389644352.jpg?k=4384da9309d64110b2eae0987489037223902eab05e9191f9497c5d962e602bd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/361360048.jpg?k=54feb46250f898fb2190ac393aad2abf84b82b9fd7e254290c7049c1b888dd3f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/699902241.jpg?k=c3565bb10a2734455dadc060af2039c224d9fd1f732e6f9f73edf59b183ad826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428371714.jpg?k=01a635a12adcb21e79741a2809ada0ed82c23dc220ca7defb4c941a65c2d0ee2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/432419023.jpg?k=20c66b0c90adf68be518cd9cd465d11f15bcad5d9ab7bd3e1b97432b34456d38&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/361360054.jpg?k=f0214906fe59a54543d8e21b787bd4afc086fb5a381591ac7da04289d91ee9c6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/366839732.jpg?k=ca2d3108cce83da7f265246bf4d5460062f38c46f13e9d31fb18c4811cc7b5e6&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/spend-your-time-in-batumi-in-orbi-city-n4.html",
+        "title": "PANORAMA City Center Sea View",
+        "description": "Located in Batumi, a 2-minute walk from Batumi Beach, PANORAMA City Center Sea View features massage services and views of the mountain.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/715232596.jpg?k=813d05070ea32ce8a03cd63ad8948ebcef19f06f6d18095d0e5f2a438c981314&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/715232603.jpg?k=c1bde2ebbd811d3477efc2b0e2cc12513af714f114eef61c2b12e3a069a30702&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/715232605.jpg?k=10559f212909851e5401bcf5c13c1a04a494bf5efdecd5fe863404b34fada90d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/715232582.jpg?k=f20008282c7d693727a21be8764838bc888cc3a81f5204ff83e1e4117fdd0f9b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/715232558.jpg?k=f910a4970ef4b4233dba891524ddae387a5bbf6a766e1e1cdd8d7acab3434058&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/715232568.jpg?k=f3cec4ad77197f805abab9ac08daa9b490c0b1e93e084d96876cad80d509fb96&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/715232584.jpg?k=7db1cde27b9cbd629bc71c037f008d646caca50f32e99fd63d6fa37a14a121b0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/715232591.jpg?k=a8d13ce74f6c3a274c684a51f38a3fcc13cf8e7c4d20ff05155c45e7e4b02ecf&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6391743",
+        "longitude": "41.6125188"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/sea-view-apartment-batumi7.html",
+        "title": "Next Wave Aparthotel",
+        "description": "Next Wave Aparthotel provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/431956187.jpg?k=5a10d8546069f1b3619caafe0dc431b537213964196cb2b73484c7cac3afdc91&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/408523591.jpg?k=5ea6c38ee27d418427a75435c3c57671d7df694488c673c785f69182060dcbc9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/408523934.jpg?k=5ff898da0cbeba0bfa88883aeaccb3dc9336d1c4f27ef67950a302ed80036b11&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/400892692.jpg?k=a5f50ef977cf44b6d3d2ed175c1867bce8f3841117bdbdc169de3c019a5f67f0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/413503898.jpg?k=183f10ade62658ef1203f0164265b70fa6275160403ef7cb082e0c7ec28ab077&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/408523603.jpg?k=875d39ee40bc992d5b3f279c7daf5aaac11c9248f19e5b43fb09066413e5edf0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/400892691.jpg?k=e5b488222c56c051944b82cc2acdc2b3a84b4e6f2b82aef46ccb62cd7d5611dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/408523611.jpg?k=5baacd6692bbfd0f659d2bf9328b38e4d4d769d98efa10208d38a65b69e78674&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6399023",
+        "longitude": "41.6130136"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/love-apartment-batumi.html",
+        "title": "Aparthotel Orbi City sea view",
+        "description": "Aparthotel Orbi City sea view provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/388891158.jpg?k=72380f21a959d16bcb74a299cdd0619a066510a6d1b4f837f3910bac1ebd30c5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/372477828.jpg?k=80c07bcd4c9764b1630ad3299f44f83041a1e001f27ab24c1e7fe5eae6701f39&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/367845229.jpg?k=f1533fc064c6c93717b97bde89fcac78199fff9beaa86c033922ed8b9e47c265&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/367845234.jpg?k=431bc247f98a0cdde8498263dd96c12fc61443f2bc048791e4eccf75c310150c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/367845244.jpg?k=4bc4c10d691c6f06ff40e73c0dcf89c016ea85750dcd670c7defd27e3eb2b20f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/367845251.jpg?k=26534ad1cd69ba76a48e5402a39742ebbcc9ea9b1df8ed2cb2e3b897e5faab0d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/367845227.jpg?k=a44f7b9da16e60e3b192d0e36922bc548419264d64d7df7720660ab55eb7fc8d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/367852547.jpg?k=121f8f57c7f4d8519609055f1e8ff9cdb9242e622d0bab955c6114eed8b1052f&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6388707",
+        "longitude": "41.6126758"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/seagull-beachfront-boutique.html",
+        "title": "Seagull Beachfront Boutique Hotel",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 3-minute walk, Seagull Beachfront Boutique Hotel provides a terrace, non-smoking rooms, free...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/520319641.jpg?k=c954874126b1c5cd117200b276b5aa532c66caab558e82910bba3b6fb37afc4d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/543724490.jpg?k=2aeddbd85c0b2e3d2e81d1a912fae123fc06a04a9090a09a7dd4bde40b36c826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/520319615.jpg?k=cc34d4f5f019983daea5acd20af543768603454d163a61b8255a199824810e67&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/520284135.jpg?k=87fef1d4d12c56ff25290bf0313ce32d641ae3b0adb5dee0baec47bf76f02e42&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/543724468.jpg?k=8b21a17c0afda695191c486cae0f29f8f4504877f00568534e565a6df32ef3d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/520347639.jpg?k=fda64439c184d86e69ac7b72e179467a1a380aa3dae5296a322945c975a0bfba&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/543724457.jpg?k=78b67265d7db1932f5acf86353afb07c5391c133799bd39d68a15876cadddf44&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/543724420.jpg?k=204637be814de7d6ee273749be96319e68262ebef878dfe76d0027ea680ec5b7&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6210050",
+        "longitude": "41.5916779"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/velkom-batumi-orbi-sity.html",
+        "title": "BATUMi ORBI SEA TOWERS SEA WIEV",
+        "description": "Featuring a private beach area, a casino, and free Wifi, BATUMi ORBI SEA TOWERS SEA WIEV is a recently renovated apartment a 4-minute walk from Batumi...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/603521130.jpg?k=c0ac5849fbc13292a89807b6a077c9b68aa28f5b54b2b9e3399c506418c3a454&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/617346324.jpg?k=c627ca3c818c5be03ed5c27818d719e8dee9d9408fe1781dd8978c8be6b8b9fe&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/715858054.jpg?k=988bb119061e7c45452809651093e0091a49d56250d1d5b4da7278440df5e3d1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/603523302.jpg?k=d98f7811d03ea8ec128073b6a51f296ae236eff5c23d5c1e077556cf060dcedf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/603506341.jpg?k=3939a0211514566607b94af09ea89e93e302ef3ac1a1ffd2083232ea4e68072d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/603507907.jpg?k=367d149ee482acd232bc57a416686ef830b624183a7ba3dd0764a0458c573a11&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/467062381.jpg?k=15ab8d7efe39f28432d5dab6a5d18dc2d5b7a7139b24de101f7f891d5c71b47a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/603507044.jpg?k=354a02ef4053d9e1c5c41638033f4cfe57dc3737b69ae46450cc2e0e12c11ad5&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6400272",
+        "longitude": "41.6133029"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/vip-class-orbi-city-batumi.html",
+        "title": "VIP CLASS ꙳ ORBI CITY",
+        "description": "VIP CLASS ꙳ ORBI CITY is a 4-star property located in Batumi, facing the beach. The property is around a 5-minute walk from Batumi Beach, 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/674822015.jpg?k=62fe02c2d016b8f2b804428f39b91aa31b4e1efe533eb78548caae14c282db42&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/529465369.jpg?k=46dccbabef7a1b75a445e83674f15e6a7479c8c4c59dcf23d913a6e62e20514a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/529205606.jpg?k=d77b0298a9db80378813a227837e61898d22966e02e58c3079c4582f9d3819fa&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/529201500.jpg?k=d0aa34a53617a75c76d42e313d0e3af9c74550ee6b718b0c88e2b7305fe0b6b6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674822017.jpg?k=804bcbb126ad4b479d5003a161db86a42b78b5c5bd3f8f99e2b14d16424f64b0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674821905.jpg?k=950e8d20e6fd9df3b85406f699d569badd27a0bc3c40e4b5a021b282351e22ce&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674821946.jpg?k=2c9a3ffa72ee2b91ef881f9ee589ac76c61bbaac2edf4a24a18c7a7399444287&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674821881.jpg?k=108eb4be4751682d519f998df1ade2c40438a4a35bca56bbb9c41dd830ad9cd7&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6398197",
+        "longitude": "41.6134555"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/luxury-apartments-in-city-center.html",
+        "title": "Luxury apartments in city center",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 5-minute walk, Luxury apartments in city center has concierge services, allergy-free rooms, a...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/640155835.jpg?k=e6e5e45d46d195fd3dfc0137068909e40e4b894007ec07c624ad7c96a39b5658&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/640155576.jpg?k=4e7fdc5f71654c1c645d335c5bc7e3a4a7da835661958b837e3499b622cc4db9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/640155551.jpg?k=3290a23b0a205450e5873be8bec5fa699287564b9f8e0aaf2f049c3662ec228c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/640155708.jpg?k=b8f763267bc0349a0a5e3f824b8df4247d8894a1fb3aa9237f7b2b7e5b27fa6d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/640155419.jpg?k=1393371c8bc2f35c516610ec65d2d0812a26054d9d32635c9799f836e7f1b425&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/640155723.jpg?k=0db2bfc3110a45e87933f5fadaead6249b8ce4508cb613cd2f05a0fac9e4c354&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/640155885.jpg?k=651ad356c7161e618f80f3218162d18af305033c2c12d8940a97bc41d8bf4184&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/640155775.jpg?k=b243bb784a496f62f4aba72eda8e41af4b2de67f506cf2dc499e663d7c363483&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6397645",
+        "longitude": "41.6137356"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/beachfront-place-batumi.html",
+        "title": "Preference Sea View Aparthotel In Orbi City Batumi",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Preference Sea View Aparthotel In Orbi City Batumi is a 2-minute walk from Batumi...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755783882.jpg?k=17054ea4a7b07efca8e959d04a8b640a6b9ee7c6e0a211d04b9ac8d490f0ba54&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755784912.jpg?k=0abbffcd1eaf162553534f1208ec5d5487765a5025805d7305dbaddad6ceec7c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755784385.jpg?k=728c3a372cde9f725d3b29c99345200a6005620a1cf9382011009ae4b7e6d8de&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755783944.jpg?k=5cfd1be7428b2f5e61d17bcc6848366365e703237add83c118fd84c49137c4c6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755783905.jpg?k=2cd7558d1cbcaa5fd070426ea9c148d5cd83c508faa4df117986164f030114d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755783864.jpg?k=1c2354d35715896d73b47e8ea30e417598a357db6f227e86f2130f019b28a572&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755783886.jpg?k=10bf18900f8c7919bd5e04c772457ebff32359888d244357f8eed920e0c380a4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755783863.jpg?k=e5c7836c6b7f873fef15bc81d9e1527c215531e6a40dba341b4c14ace58de01e&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/d1-apartment-studio-room.html",
+        "title": "SeaView Suite With Panoramic View",
+        "description": "SeaView Suite With Panoramic View provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/754213376.jpg?k=ff6103036b97c2d9b807684ccbbd3d9500b158b761ced7cb23c3a5b45ee13f08&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/754213452.jpg?k=36414655d70719265cdd54e40434671192ae0721cd741420aad14d98f32dabb8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/754213240.jpg?k=0fcecad6570affb54ece482c51853e0ac837b740f2e1e7402bf6801c477d4903&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754213799.jpg?k=5ce02e3c6dd615d99c277b234102bd571fb6014f9c9671d2839b056d43127e44&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754213977.jpg?k=3123c96aab8b901de98960b9a41da4c240d85fd88b812060e969ab15b430afa6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754213446.jpg?k=b4cd2ba01233160c1d8372b465caac17038ea6b0c873029d1e5c81b618523bd6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754215288.jpg?k=be8a443678f206bd270bf454d40edd194b788db153eeb9f7fb07df7d25aca9e1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754213906.jpg?k=19eaf1c3a2c06f93c4aa2600515de6c479f5220dda5b45e7f0107dccae99dcf8&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6397559",
+        "longitude": "41.6148195"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/excellent-place-in-batumi.html",
+        "title": "Golden Coastline Aparthotel",
+        "description": "Offering mountain views, Golden Coastline Aparthotel in Batumi provides accommodations, a private beach area, a casino, a garden, and a bar.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/678667978.jpg?k=8f23de8a22c308b92c8412f405fa69652a4913dbe5a427e4c81e3d1e9eb7c778&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/678667968.jpg?k=03cf266e743b1967d68cc834be7b0e6fb9af4e55c5b4809b4114f49041b9d5c0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/678667996.jpg?k=480f7ec0d316ce20977c040cabe4cd9207b86dcbce1861910a536ec556064720&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678667985.jpg?k=42451cf4c6adc585f34150f1cfe60a79746a7d60e37f35a960c59ddf280b01c8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678667990.jpg?k=4e2e77de819fdf5878daf6b1fd5f975aa528ca3d8a99466d3ca83a64002b478e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678667987.jpg?k=920a5215052f2b2d295db1f7eda50817bc9d770520e975c367a2251d6b62c2b3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678667980.jpg?k=93d044f75e4d2163f12d6c9ce0056c998fb96aab691ef08bccf96df2a1ed7c33&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/678667966.jpg?k=63dcfb96d15ebd6fd1c98c53ea6b100cd524726139688ddc5e4fe32910601f9c&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-premium-class-rooms-n1-batumi3.html",
+        "title": "Orbi city - Premium Class Rooms N1",
+        "description": "Orbi city - Premium Class Rooms N1 is located on the beachfront in Batumi, a 2-minute walk from Batumi Beach and 2.2 miles from Ali and Nino Monument.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/652593917.jpg?k=d8e1b82b26d336c408f61e6ae1676f4ebae64822947e6c08dd7e6cbfd9b18ab7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/652591947.jpg?k=63c658205e11ff1a7a3e7b2b4222482267eecbf54ebb2f20ce82e4fabc855957&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/652591919.jpg?k=565c9423813bf05c8a0c53b5b555612c29af5d9f80acb26aa1dba5a1ea58b1f3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652591496.jpg?k=0a2411280f929c18fe8cd0a2c4cb38f4ca40849cb2408b86dca922c73761df00&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652591997.jpg?k=0da727baa3b20449b4828804cb2ee360e4c275a182d1fede880bdc642b696f80&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652591936.jpg?k=ec7694333a21b856812b2789bce11b60d787a1baebbf6f40914243cf3dc16bf6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652592068.jpg?k=bc0947e5e702326a39c35e6cb931deeab2fec85df57b9c615a4a0ab417508292&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652590826.jpg?k=2cb757262d06c0bb5daf3e5900f70df99f6d3d9121ef0aa3a60e8f8b898788c1&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392131",
+        "longitude": "41.6125832"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/nice-apartment-in-batumi.html",
+        "title": "Superior Apartments Orbi City Sea View",
+        "description": "Superior Apartments Orbi City Sea View provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/397088787.jpg?k=36023db09b083e4eea6ef90f1fec46930b90ce5ce8effbdf1e1318fa299e1ada&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/676867790.jpg?k=86613f06fbbee231e4e7155c1cc9e9d295e0e163ddc613a122ecd44ec833d0b9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/397088781.jpg?k=c6d1dd2fcff2c6a19bdbe8cbd4df09efdce2b47ea29afa2dfe89ee9aff2c4618&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/676867587.jpg?k=9e3d8f4e667763ff89dd2be5001effdae3e751c9c8b8b0fbf8cb134223442093&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/427689382.jpg?k=978670e4bff7ff0821d2da9a32f66ae767cbea36afc693fa21cc3e754001d122&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088756.jpg?k=5d0c5f6fb438ce4a289444e4e908ce7fbfe6e8a4bdab4eadbc3e777c4592dc6e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088767.jpg?k=67cb9cd7ae15eb59ec13d6d1702db30d2a3c1bbbe0e2ff0cc8f00fa2603fa35b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088760.jpg?k=a3fd9dec186414fbf2c02a895485cabb1d564ef1de2deabb24183cd8bc649d73&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6396778",
+        "longitude": "41.6127990"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-batumi436.html",
+        "title": "Orbi City Batumi Official Black sea",
+        "description": "A good location for a stress-free holiday in Batumi, Orbi City Batumi Official Black sea is an apartment surrounded by views of the quiet street.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/699514798.jpg?k=62b24db039b58624d05d49d6b28f164ddb64430c3d09ba537160be12c972943c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/694607489.jpg?k=4c83c77dfe779cb423f7f2808ee4e401dcbe7e0c894c4137f6e359a3aa6e9305&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/699515035.jpg?k=7361cfc121b6da9ec57cd15aa07d077312dff0b1e6310f8cece78e7c59ac16d1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723861723.jpg?k=7da6cd81b2b6c354a643d2ad7ea1c1d35480fdf40bdf48c7a6a02d2059119ff8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/688315527.jpg?k=a58c10a6ce1e99bbb458160105e8e3c86148fbe6491f464052ffddac156abdf1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/693318771.jpg?k=2a5399c09dbbefe6b0f842d7e113c05aefee754d4f5d8d2eb265f10675a3fc2a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/684181708.jpg?k=eb1ad473b9c747d0cfee6d6c8a04593b399717db8141067010c02525d091d35e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/694607651.jpg?k=70b1a31c9a0e7d97d28f1956c279d12914361351836a6a1cd7ceef78935fe051&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6386716",
+        "longitude": "41.6133012"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/beautiful-apartments-near-the-sea-orbi-city-n5.html",
+        "title": "Beautiful apartments near the sea - ORBI CITY N5",
+        "description": "Facing the beachfront, Beautiful apartments near the sea - ORBI CITY N5 offers 5-star accommodations in Batumi and features a private beach area, shared...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658342047.jpg?k=98228521be74354d7d511cec49cde0a7e9753f508afa52d7ad5ce81ac73c0e1a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342045.jpg?k=0f79084dd643e379424fc8f5aa4162196d2c93f6a4b71c5d55c080ee5e3134c9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342409.jpg?k=34f8cb41fe0e4f58dd0036a3a863e550c5b881cf9dfec364b0064b793ad3e787&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/651200510.jpg?k=3c530a1d40485f8c8a9c13ef6296f0f6db3465359af9de0983b7db48ae81a428&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341160.jpg?k=668a0b1a039afce0d286c627a07425ed012106924e6144c313a46a4f2444d5bf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341143.jpg?k=c5122b196b0442b86b10f85583943c71d09707eeb24cb13a2e7c3c14f9f84fee&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341138.jpg?k=77e8960b0962ec00727f79e3f965d91673d9ccf9259aa8c142fd1d1fd7348032&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341146.jpg?k=96423914a4ffb244c2484f6dd7691c61f19f76c47e9fa785e016b808d639f344&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392441",
+        "longitude": "41.6124716"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/beachfront-batumi-view-apartments-by-globalstay.html",
+        "title": "Beachfront Batumi View Apartments by GLOBALSTAY",
+        "description": "Featuring sea views, a private beach area, and free Wifi, Beachfront Batumi View Apartments by GLOBALSTAY is located in Batumi, a few steps from Batumi...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/475493951.jpg?k=468af9c43bcdd701a29c25fbf60b74c55001fed43bee13f4ec912dcc12a5d46c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482765647.jpg?k=be5d12dcad5ffa12773fa6816cb5887ce4c0cccb8ba822d3042bc516fff18232&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482766356.jpg?k=1ea7b1c19df4096e8bf12f93bf34ed8b3d12f3c314867d91178d76fa2d3cbe1a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/482766363.jpg?k=8c35e3fba1af5f15d3cfa864dfd8211acaf875a5ac8b542c7692f89575d6bd9e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/482763208.jpg?k=d4a0b2bd4dade5084169f874b22dd2f4ec93a12a98db8c18ba25de01b3b5a18e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/482763195.jpg?k=e4135787de7c8bb795273f7fd115027a48834f1512ca4df6ca2fbb30894fbcfc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/482765657.jpg?k=c5af2f271440ff57f52f26db494b77f08b0f65d223b8abcd381c4dfb65ebc5fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/482763221.jpg?k=3c5e9099b1d60aa1882d3c2f089f211fd92d21fe01e99be9097e1563823ee368&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6233300",
+        "longitude": "41.5934676"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/apartments-in-batumi-batumi3.html",
+        "title": "View & More Aparthotel in Batumi",
+        "description": "View & More Aparthotel in Batumi provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/386299232.jpg?k=9d058b51e1a646f45956950ad193f68948d86e9bca667f043c0618591331e3bd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/543098566.jpg?k=fdb7a6b4c66cf10c51e86f224a0eb35d7bc334fb0fc01f93a7806a2ee7253300&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/543098567.jpg?k=f96207331236797c46de33b3f7216f43cf25a4a99ef2d55fd47ee767b5f3ca3a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/386294604.jpg?k=0cbcf4442f4ca5ed2bb4d1d94d32585fadf85c2cadd95cffd726a545da95bc73&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/424566389.jpg?k=a3b895d710ba088e15d4e60a1017236ce49207d4fd0fd8bb39a3c6b3f85cd6c6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/395304628.jpg?k=378b5097b01c4a34ae4cca3f7beca5858006a4d260be9dfaa2006f255fb6dc33&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/386294512.jpg?k=338a8f468de829247ddeb9e990b16a092a9412a6530c3c53902e8b1b961d042f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/386294611.jpg?k=303d14a7182da08fa9a9ca1ebbbf61f18a4b18ea6a9adfa1ddf0c52c152a5a4e&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6395095",
+        "longitude": "41.6126595"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/guesthouse-at-the-sea-batumi.html",
+        "title": "Orbi City Luxury Apartment",
+        "description": "Just a few steps from Batumi Beach and a 10-minute walk from Aquapark Batumi, Orbi City Luxury Apartment features accommodations in Batumi with a private...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/580893633.jpg?k=e3af3213a2b26673ffa4215f6e77cb514754d0e4388d907d6d28ab2ab0537b9c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/580893684.jpg?k=9da74bc763cc07205844eec7ca5558fbfdb415bcb4b2f9551e17acd814984820&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/662677047.jpg?k=d7ed141458d72741e542faefdfce5eb6e70f686f56d9a79309ac814c25cd5f07&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/662677160.jpg?k=e08cf744b986329a376dc9b8afa474a3a8c6dda3646b2a2c277cc8c28c5bc33c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/662677060.jpg?k=aac7d6db86ead22c984989cb37b4b0101cb698e7d05d941147d8a4779ada3c87&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/662677098.jpg?k=026515e9c5cdc2317054144c142c83ea29f6998cd5d0f184345653b4b17a0496&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/662677036.jpg?k=5707fe4dcaffa86990480a0f145a4ae0c8e763d28bb4ab4a341df9cfb05b3432&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/662677033.jpg?k=37614f9ac8a02df65ff2cb59c3b40c1ac65c602de6f4969b368f9d3b91011785&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6394213",
+        "longitude": "41.6118334"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/albatross-luxe.html",
+        "title": "Albatross Luxe Hotel",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 14-minute walk, Albatross Luxe Hotel provides concierge services, allergy-free rooms, a shared...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/689803310.jpg?k=d241aea0d185af7c2a36ec6343aab1568a7ddeeb99339ac8ae90e4343b458950&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/689800725.jpg?k=489e6facd14a91befb2438ff60fdebc2965353383edc737144f8dcc03c4e5a8c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/679186907.jpg?k=24c3e08022605e3d924ef11e6c4f951d84235cdfe020da5733207dcfce73e69b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/692844986.jpg?k=b6d19001ccd35fb85c1d45fa50aa94168e6b922424712191898e170ec4318d50&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/689800107.jpg?k=8cdf26fa0b64b49b6806e0c6b66d3416396258eeeb86029b349cb321285ef2df&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/679187369.jpg?k=0d5180e768328f3d29df44f145e1fba63912f451c32f2675f664842eb5297eb2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/679184059.jpg?k=9a3c75197eb0ca3294e3f5c3d75b9e68627e8b46fcebbdc1d94beb95f636f532&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/691083795.jpg?k=73197dbbc88abce1f5c5d1a49a74ceaf0ca4d16d71db3c8bd7a85c4e294a8750&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6472308",
+        "longitude": "41.6391213"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/comfort-inn-orbi-city.html",
+        "title": "Comfort Inn ☆ Orbi City",
+        "description": "Comfort Inn ☆ Orbi City is a 5-star property located in Batumi, facing the beach. The property is around a 5-minute walk from Batumi Beach, 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/688452963.jpg?k=106fa18b2882a0c2a021306c3cb5613f5891ec466aa2647f36ba4e5254276125&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/688453022.jpg?k=8aba44820b0fc3a94f2c751e8313af412b5151de64dae44d01759958f2095335&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/529575675.jpg?k=748c5587a31fe85ac3ddce99617974bbdcc7ae74f7f169f87bd33a76c74a0686&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/529575882.jpg?k=e59cc26b260794c9d9c86db0478ccd123908c18ccb2b62c47912e5f1e9eefd19&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/529575676.jpg?k=a556afdb3a898709b5d4749993592a76691fd668d525273c1a479bbbca2ee865&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/529575678.jpg?k=378f1041ad794927a302bab02fb081c152fd71bb805fc6ebfd3e77108f8bf61c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/529575674.jpg?k=2a768b7a24efb44af8e11f9e54896f04b3820e1f90ac2f1590e41f99094efc9e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/688464405.jpg?k=48477574e735f78d0012ea64eaf588a1af684b505e6bfa4637829da8d22e5743&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6398135",
+        "longitude": "41.6134273"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/sea-view-apartment-batumi6.html",
+        "title": "Panoramic Sea and City View Aparthotel In Orbi City Batumi",
+        "description": "Panoramic Sea and City View Aparthotel In Orbi City Batumi provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/385162649.jpg?k=2f8880956c687dcf55d3dd43023638d8eb0d6fbba15226a6ef873cdb825ddb61&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/385162596.jpg?k=f56ce755bbe8e227c4136a816909623e367490849317d96cd9b2ac146c6affcc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/390766766.jpg?k=e0fa80e2793b477f4a0e40bc5a89dd2ead9bce99c580010c4a8557988833c7b9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428653742.jpg?k=093b40464a5443b63aca660133bdeb04f6dd3d064a727ed8ef793ed0d85bd5f8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/428653659.jpg?k=c98e67e974513c3f8cebd9b8b67835ab833799299c4399a31b216e33ed2ecefe&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/459481400.jpg?k=bc0c332bd5c30ea367565eb801dd03cc6580eb06ed56868240301275bb37cb69&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/385162595.jpg?k=acff857d9bd63654b0be2e73a0cd5fcbc68a8f1921453332c573ce9c59a6c798&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/390766896.jpg?k=639b70e1b8d97b66936b992081c26fd95598cff417994397009f5df3ef5bdcec&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6400868",
+        "longitude": "41.6128419"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/miramar-luxury-residences.html",
+        "title": "MiraMar Luxury Residences",
+        "description": "Facing the beachfront, MiraMar Luxury Residences offers 5-star accommodations in Batumi and features a garden, restaurant and bar.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/572664334.jpg?k=33608bac5590e47c8067c8f7921124ec12c9666de08743cc7b0b90219227ec89&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/332318351.jpg?k=82e86f3ec4d55807a342112625db908271e39f04c59a49baa9591e103c90f607&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/332318405.jpg?k=ae73f5ce6cd2ae024b837fea09e527a89cf17cbb6478312dc05cc8a836abb62f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/333779526.jpg?k=6730bd3ab9e6ee84e9148f4cb70230f29d0a2cdfb84b4a1434add39215bffa9e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/333778715.jpg?k=38966b03af4a0fb6615b1752a1433b65374dbd75146d1c313fd98ba364e056a5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/333422945.jpg?k=9d2f74e49baa05c6d57c69d475aad7bcf0f89a085413378de243009267f2a0d8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/464048317.jpg?k=3855351e16e245e27d2513a5342643e073b29d939488ac5f57a121a91af8b801&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/464069618.jpg?k=53b87dfc99788be74d0732c153215b22ea262f48c66af0be7b1b7a465af02ff1&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6493270",
+        "longitude": "41.6257370"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-grand.html",
+        "title": "ORBI City LUXE HOTEL",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 5-minute walk, ORBI City LUXE HOTEL has express check-in and check-out, non-smoking rooms, a...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/674573877.jpg?k=b190839fff8d3adf17226a1e0284a573981d6c3bccd2c0ce0f8aec612a7c49f2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/674555233.jpg?k=2697670c52ea7b329a368b8052f615f39b4f47c201740ba6602055b6ac7008d0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/674555077.jpg?k=000c58086dd28d1c2bfe6e011ad7471eaecfb0aff3a1cf426cf793899bb4d599&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674574248.jpg?k=1277930323e01937c4b107a4c7af1139f486fd069b3ea07096a459c51a3d5048&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674555017.jpg?k=b156a147d82fdc7fab569a9299e854e595b26bd74d6ed9b1ab79fbf64eaf68b2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674555608.jpg?k=e335df553306984e3a8b47ca00894c46858a17bc5dfa1b32ce889126acafc761&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674554398.jpg?k=6b124110f9cb922e4236be8cc1c738c8ede019809e57bbc28807d9f3b5d9dbd0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/674574188.jpg?k=f6ce90d1b7e50ddfb8bd386462da0e85481d358efd5e5eb726de0d87fba3d8d8&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6398090",
+        "longitude": "41.6137299"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/lovely-flat-in-batumi.html",
+        "title": "Special Sea View Aparthotel In Orbi City",
+        "description": "Special Sea View Aparthotel In Orbi City provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/391207366.jpg?k=2bc9a1b21bd0c9086e14712ba3834d43a343a3322df3088f64184f4e7a83ff63&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/397088900.jpg?k=4ff51665a32004e1bc2712753fbdd487fc5679bdac4f27a5441ba06837e8fed9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/397088924.jpg?k=dbb961cfb7d18725283b560f2cb37e8caa0858d5807145fb9e15f3fbec94149f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/666750247.jpg?k=c8b47e68bccd0385407a5dceaeab9c5a53aacae49d0d94a7d57557f0e362d63a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088927.jpg?k=7cf71b9721569ae68c71f06915a6298237e0bfe9ccb1eae2b304ef026ad7eb67&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088895.jpg?k=23b9472b1a05960f62149244be23cf43ec81c1d895b127cfcc866730c1755dea&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088934.jpg?k=007fb36b51b09c2a0733b122c250aba4aca5d658b4a9822b215c583d1205dd03&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/397088907.jpg?k=001da33f2d9cb8077e7147d333c67ea4a64c9afb2be75202a86d462e0684ffc9&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6394884",
+        "longitude": "41.6125415"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/anzors-apartment-studio-in-orbi-sea-towers.html",
+        "title": "Orbi City Sea Side",
+        "description": "Orbi City Sea Side provides beachfront accommodations in Batumi. The air-conditioned accommodations are a 2-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/496278021.jpg?k=aad4fa60ab266c4741e3f97e3a96a38e05274f22b1f0149e3f281096cae3ab4e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/441546953.jpg?k=18f92da592768d9b643a5070ccd3f4174472528055695cd77434dde16da6bff5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/441546931.jpg?k=bdff3938bc184ac2603c7369ae4eaf02bd8bf6c82a5a9fa9b573035b08589d57&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/441546972.jpg?k=20681fb3c3cf7a43ae29fe0e970c1e216d6e35ba5b1b7e275b69bac3cf15457a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/441546967.jpg?k=cbbb2ae92bd602803406f7aa73d9a26cc9883a3b6487160601ac390351ece9a1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/441547475.jpg?k=55799ca072e69e8b85fc2f9cc9147ac21ebc64dcc72b11012027031b2f05011c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/441546951.jpg?k=2113ebf365b4ca28a3a26cad553b09dc7c2b6c2a23f46ec7582f37bdcf1027e5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/441548106.jpg?k=85037355c574e3eb86db7642471c31f805528535cf94546139ff7b2e7396db87&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-2050.html",
+        "title": "Panorama SeaSide Central Hotel",
+        "description": "Facing the beachfront, Panorama SeaSide Central Hotel offers 5-star accommodations in Batumi and features a garden, private beach area and terrace.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/759691900.jpg?k=751edae5f27801102e31b29cecaa19bc02b276dde28a1efaba17188e514f2bf1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/759691895.jpg?k=517dfd1be0e26573182f47e41400d4ffd9f727bc5e7b590017f4ed0e16a8e985&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/759694361.jpg?k=79926327477fb51f4e9370f5cc88171c9a7a8feaf7ff0d3cfc3b4ba3a89dea21&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759691866.jpg?k=4950e210e2c81dc1aa39c8b1081eb36f766f5bb51de6e30641d6c2bd3abbf07a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759691879.jpg?k=7a82d64ac00e03e2c6dbf7ce48e41ea6a333ad2be6908aa668622096d5aa356b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759691908.jpg?k=e3f56698e9bf95575c84ca2938ccaddf4dc9624cc77aca2561d3b79cd843ff61&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759691877.jpg?k=fc2fac1fa0039d774b85e3e7d81737fce91dcfab8744d1dddc749798e69fdae8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/759694365.jpg?k=71e58de05d4be2277520d07d49cb507ff9ff40a6be749dec4ac469e274d8d5e2&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-superhost.html",
+        "title": "Orbi City SuperHost Aparts",
+        "description": "Located in Batumi, within a 4-minute walk of Batumi Beach and 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/744084934.jpg?k=6114d61e944fdf3cadb3ad3709bb0dd031ebaa45ca54b679a9af42a35a1d4dfe&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/686561269.jpg?k=cfb9fe4500faee47e09a25c482bd4315d98da564572d818f766827312d617b0d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/686558203.jpg?k=d6a09252f657ddaea43edeaf6305e449d2f4d984ce465514f6a9f064a9ed60d6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/686561400.jpg?k=376fdbf00aa063e3e477c1d7ca4d11c4aa8b2304b1f6672fd7923c91a3fbefe7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/743946327.jpg?k=96390646b56f8ea3b8f2b1767990e98f8a9b19dc4d8beffc4b5e363a40afdd0d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/686560200.jpg?k=fe8920ad66c6e00f76940eaa85b2833f33326ca63132f961cde42932f173e419&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/686562286.jpg?k=191be392e13b0049293b1f6f7d76708bd0f57ad47ccc6a80fb66041ceb2b6d6f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/686557057.jpg?k=2f51438c9983b50464e73efacd212fb888741dbb6103cbb000019cdf38169911&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392347",
+        "longitude": "41.6133059"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-1822.html",
+        "title": "PANORAMA Luxury Hotel Batumi",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 2-minute walk, PANORAMA Luxury Hotel Batumi has concierge services, allergy-free rooms, a...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/679975884.jpg?k=4e651b085c8334fbbe0ab3eebd969a1b792180336ed952bc78a4f51ebd82813b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/764111747.jpg?k=b444acbedef6ac585b9b3a3c33126a33c6ba4d0a0140158e2aa818b2589fba19&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/764111306.jpg?k=956f206c863c0d1ecac2e38bf0a913abf593e598b4c4fa1e1d9b6e825f180f3b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/764111878.jpg?k=d87a8deb7410afcdff9feeab6d15e8a474bd15e4b20d5c61cf9a97abeb49ac24&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/764112112.jpg?k=b8dea19debd1440e97109e37adcb158a7b0fd01dd46e58948bccf1c22a20d2bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/764111779.jpg?k=354430b72f88064b94f5cce48dd65aab053d20d74713435db19480788d3a5ebb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/764112689.jpg?k=c05d0438d22abb53f4564c27db793748c928002d62166fbcbaeaf7ffb56515ba&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/764111846.jpg?k=2704e635b0618654c9a27f8acc7ae05698eeddefbd55d3c09b7e7f4cef7e90e1&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/sea-view-apartments-in-orbi-city-batumi3.html",
+        "title": "Sea view Apartments in Orbi City",
+        "description": "Sea view Apartments in Orbi City provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/646286563.jpg?k=acaa47e46d01bf9b6884c82b6d55d04d007df771ae8f1ff618647b092cbf0002&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/669289570.jpg?k=b44a02308dde5167efdd3d4b9cb644499985c86fa4f99fb179d7a6100f4d16b3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/669572038.jpg?k=de8b0d440c712923cce98aa6bb13ad5e69f3f81ef416f6e6019ac35158b7e4fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/648455124.jpg?k=a45a7476f97bc58bcf36baec6c70174978dd2ecb87bffbeb71f2a2730b18663a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/648533556.jpg?k=166343a7a051ae4f308b2d551e98137927dda754d041413e3601c5fa92e103f6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/648276325.jpg?k=73887ad5bd7509dc3acbacfb938c9ff6a0f73430b526534fb53f33ec482c9fa5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/648455648.jpg?k=676d95b6b1f7a46dd48d09046a77c9a9c309a7152e1807d793c6bec1af18a40d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/676075667.jpg?k=9ed33c11bf78ebbcb0724252cee1d0f524f3a44b7a2f54cd56f31c6033e8a7da&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6388296",
+        "longitude": "41.6129302"
     },
     {
         "url": "https://www.booking.com/hotel/ge/landmark-batumi20.html",
@@ -54,6 +972,258 @@
         "longitude": "41.6301673"
     },
     {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-deluxe-apartments.html",
+        "title": "Orbi City VIP Apartments In Batumi Center",
+        "description": "Orbi City VIP Apartments In Batumi Center in Batumi provides adults-only accommodations with a private beach area, a spa and wellness center, and a casino.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751580666.jpg?k=59634fc69673b23ba325f58484297d1c64db02a2f0d6ed35208ee2820abc5b0c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/757299193.jpg?k=b50181801a2dbecbdea03228fffa0d48f9457a90a347ff281ce7fc65798fdee0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/757296131.jpg?k=936cb166f56b6cdd530e5cdd4f57c6255cedac0724fa371969cf23efcdd9b87e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757299202.jpg?k=fc7229ea9eef20cbe0221138ea266343001347997f75fdc7b26726a3808b5a35&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757572847.jpg?k=9d4eea91b4a24715c65d75638355b4f4cc335c93ce33ac91807382a61a3dcf82&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757575704.jpg?k=fbdad66ba1b719a68dbf4532936d0b15a8e9d49fc469f317b58f30b799190c4d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/757299201.jpg?k=30c2c0c8493f693bc4a88daae69291602450763866234989731e572bbbf663c3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/751580887.jpg?k=ab9bb3370ebfc574544edb19601f8d131597e0b2b529570b9bb58eaf1d87b108&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6390346",
+        "longitude": "41.6121109"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/spend-your-time-in-batumi-in-orbi-city-n2.html",
+        "title": "Spend Your Time in Batumi in Orbi City N2",
+        "description": "Located in Batumi, a 2-minute walk from Batumi Beach, Spend Your Time in Batumi in Orbi City N2 features views of the mountain.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/652630151.jpg?k=f2d7f9059baff46f785941e4d6d4bec7b1079f364d8f10d1fa853c8b8a706817&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/652024304.jpg?k=c697d02554a00d0e2a25014f08516580c8f6c98c8a7813ba345fcb247f145765&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/652024226.jpg?k=9b10dc1a359deefedb75ba0fcd1cab2ba3a662a987d70c7f24385cbb1bd6f3f6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652024321.jpg?k=b594904704c98a7b964b953b4beef85ef1369023957e8058e58c547e14715895&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652024202.jpg?k=6512cece9bf05f524160d5dd5f8d82be5b9ad99b12436021ad1ae8f20cee2c9f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652024236.jpg?k=264c9df2af840491ef0e3a5af21c0c81944073b38f381ecc2db095c7b798ff98&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652024316.jpg?k=80c79e0ebe70b906326c41fbf676d7fc6b11caf01a005bad7f896b18b027537c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/652024192.jpg?k=244d4a594c1f50f09ec734fcb84e4468f9ba9d1f603f9a518bbab8fb54541240&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392264",
+        "longitude": "41.6125406"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/apartments-in-batumi-batumi15.html",
+        "title": "Sea View Apartments In Batumi",
+        "description": "Just a 5-minute walk from Batumi Beach and 0.6 miles from Aquapark Batumi, Sea View Apartments In Batumi features accommodations in Batumi, with a private...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/762618106.jpg?k=a65d0e02c94749f98edf06f4f0eb4256829db53ae24f278202f396c4d485abc8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/654069247.jpg?k=da56548965dda8a34110c91090a61ccce1a1b46d07773e3921584654ee4e038e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/762185854.jpg?k=36404a8292cbcb4d82fbc3f377b0efb01b6a841bd45d3659944f1fd0b2a8554a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762617881.jpg?k=b8359d94341966c12ecff39fbcb5cc89edc487c2687caa692af8ccc69de9c19f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/654068713.jpg?k=46a48d0ae5a76fd9d1fca81aea01a736b5c65769c9a46c6a44aa39d9cd251b53&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/654068694.jpg?k=3583f502cc9fb5151b6cfdb80088635c2a288eada341ff0400beb3246a0162f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762185737.jpg?k=65d59fba098d431412d80071e906f3598b61e8e1f0d9aa699058bdd518093f91&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/654068700.jpg?k=3b4dd9c55a2e454a78c696f882d291d6ee2c668214f21fe9406ac38c0d65ff50&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6401289",
+        "longitude": "41.6132931"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/new-orbi-city-batumi-batumi.html",
+        "title": "New Orbi city batumi",
+        "description": "Located in Batumi, a 4-minute walk from Batumi Beach, New Orbi city batumi provides air-conditioned rooms and a garden.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/749842482.jpg?k=cd3b48aa7b8203ad8981b9b539c2310755ac24655eb46389ad328f705e098404&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/737866136.jpg?k=03163b72f41d48779bc55a5eb79aa91f78febf67980baf13c8d9312dabb840fa&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/737866110.jpg?k=76485162be143b1e616ce4d51c00052dae61c3979483ddc76abb8b6d72e16795&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/737866132.jpg?k=7a158f320c57b484d13b80a6ba9dd641e457ecc2a1d72f0f282cff80c126d95e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/749842485.jpg?k=89e89491e7a0962f740a2ceba570cd48a5223477768d034db1d2c00bd4da4681&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/737866128.jpg?k=3360af9e7e2239bf4d64bea4aa5dc1fcceebda80f9df7088c4416a9b21bd9ad8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/749842529.jpg?k=e9c098e8477cd21d656f081c79ce550717f10b8c56c1ef4df8d3249968df5d42&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/737866054.jpg?k=5888697d3b990fd49071d678481687646e465e738597a667f955db89e7af3e52&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6417627",
+        "longitude": "41.6157214"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/real-batumi-batumi.html",
+        "title": "Real Batumi",
+        "description": "Just a 2-minute walk from Batumi Beach and 200 yards from Aquapark Batumi, Real Batumi features accommodations in Batumi, with a terrace.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/547841818.jpg?k=5ca003b0783ec8d77f2c349303cab2edf93682ec8799ce56e07bf7166d2f8451&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/545993484.jpg?k=dac7f1c4fad5ba93a23af252a6f57a01f00b3fea4e85f88ae2b14ae8a6c82c44&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/545993522.jpg?k=637e9bc0ab0b6296fb7fe1056680fe5207d551ad08f3fbfcb5a786060f42ed75&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/530324528.jpg?k=43079faebab05b4464ad6e503dbb8e8e8fca7b978a657b010b6618fcf6845238&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/530324506.jpg?k=51cb8c52686ebba44ca4bbb33803b949ad557a06bd484dc438cab308a6ec1f9a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547841793.jpg?k=e5b7be8fa98486b86933655b548e8a42a61ac1ccfa0adfb9ce3a7e850e027a03&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547842819.jpg?k=c6d2b6b5b1bdef4bc8a291f287aa9e0fe25483a669340a202cccad6a8d6c6a97&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/548687905.jpg?k=ed052acd30545c3d9cc0f5601b635109d029deac5ff723b0126287ef7bdfc43f&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6349157",
+        "longitude": "41.6074268"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/divan-suites-batumi.html",
+        "title": "Hotel London 1889 & Casino",
+        "description": "Experience refined luxury at Hotel London 1889 & Casino, perfectly located in the heart of Batumi, just a 5-minute stroll from the Black Sea beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/655433238.jpg?k=30d6d1cf2c86b7d494d6db64093ae013f5b02dae246accc6be9437e14a8bb83e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/655433242.jpg?k=13a2ec76bc385f95e466f522e6fcfd1b8e78f7917422afcca7b7103609bb5931&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/655433310.jpg?k=160841ccdb4a2713d88ea2b424b32892df87467f91454e1146d4443b6a5037d4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/661236793.jpg?k=41124acc63187e0aaf6603091bb598ab036009fc898de665b42bb8c872057622&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/655433229.jpg?k=2f70d81149ed3f8d1fe624bfe605796644ea68ce89f2f1732bcfe203ae176c06&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/655433243.jpg?k=a0eb050b90713b2b7734e276550100a9d590388680acd5e2b7a95828a38de152&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/655433246.jpg?k=15f32b9403902e57ffd414822a7d08bcd6ed4a501ed11ed6ab1b14677995fd06&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/655433251.jpg?k=59033471d3b61bb2cb18a9ae4445ce362f168f0f9ac60ac5c8fb0f15a613c0fa&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6510421",
+        "longitude": "41.6410375"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/n16.html",
+        "title": "Hotel N16",
+        "description": "Only 3-minute walk from seafront, Hotel N16 offers accommodations in Batumi. Featuring WiFi in all rooms, the property is 2625 feet from Europe Square.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/378840607.jpg?k=ed3fad4116e78f8e3f73576601518d44e72ac70a80ec9c7527b3ee55dbaa86b7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/384100800.jpg?k=239ef72c8a777ce70686ad225eac6b3af57bbb99de84f42160e30245783c0b4d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/101627123.jpg?k=081e7ce60953e1a238907bb2c774eabc10d6c6b4625b4d884285d64498cdc7b0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/115568923.jpg?k=0e3b0febfdc0023e483143cc01f8ffbaf800e7972ea8bf5f27c8a6f048186c41&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/101627108.jpg?k=4cf0fd16f9ddf6991a6df1026489691515b60e7dfc83fdded88e5592dcf6817f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/378830366.jpg?k=1a6a7a81c602592fe7798a33948d25a83c7cc83f4293251dcb5d9edf2bcc3f88&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/115567940.jpg?k=db640f42a294c37121f3925864559c90e0ca14f37c9cc40770f30fbc7109ebda&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/378855844.jpg?k=04d5daa9a00011597ce2f4c89e490dd5be4db8d9719d660a6ebd83971c574a08&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6504614",
+        "longitude": "41.6422435"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-orbi-siti-batumi.html",
+        "title": "Orbi City Superhost",
+        "description": "Featuring a casino and views of city, Orbi City Superhost is located in Batumi, a 2-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/748646239.jpg?k=b3946acbda4cc4b2d0ad86a27b7bcfa1810b2331b07b3aef7fca6cb2444125ba&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744077633.jpg?k=9b2a5301179263119ba56e97d28f5b687cb01f2c5a9190fd10591754899f2e38&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/744077626.jpg?k=1ec6326cfed2a8bbc33ca6b566ed8c5abc66ba40a5c48425d938db636261cbe5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744077610.jpg?k=adb828ef6e44f1e7d955cd212b18baf37d615b7c5dce3f5f8b83706dc9984a7f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744077590.jpg?k=88740e823d37943b6f52224814cf2f2965c8ecec32f67fc04621d0f695fe21d0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744077613.jpg?k=1597d6cbb2820af848e3cc1035fa493673fa202230fda17b7166cdbaa5c1d85c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/739281463.jpg?k=de35c98e709e71a086366b1dd46251c0a87fa6eb022572a83210bfa35c2e2e50&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/744077586.jpg?k=0e5ef9677d8354ad83b5d0a55929a96de9947cd4fee024d2e96fba391663b257&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6388320",
+        "longitude": "41.6122320"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/panorama-batumi3.html",
+        "title": "Hotel 19 Batumi",
+        "description": "Hotel 19 Batumi offers accommodations in Batumi, a 2-minute walk from Batumi Beach and 2.4 miles from Ali and Nino Monument.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/439453591.jpg?k=c1033758b7a612273bb866c3d8c0da83bd0aba0c6ff2295a17ed256bfe13ba8a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/439453854.jpg?k=e18d9b6efda5282bc78fd71135386d85f4c29f85eab3abb08acd5a5f808b3993&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/439413702.jpg?k=568cf7644b2ebcb7debbf33c7cfbc0a005665c98706a6b13c243e6be9b881fb5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/439413891.jpg?k=a5fd51926a4241eafdead84cd63fb5be2dca8045edce86a7d48e131a7f33bf68&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/439689963.jpg?k=15dea5bd2954e9051f9d966fceabfcbf3e9ab9719bef4f4bdfce92bdd1582866&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/445077165.jpg?k=8e9291dd019d149df07d5fd188c4485001553c1e7b8a2084e75d5f27012baf1b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/445167671.jpg?k=4cf5f476fb0433556f46b0103770c31e6dc03afdb27b946708cc86616755d619&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/445167776.jpg?k=38a0f4a2cc1848dc8569be9fcf78f84015c855c46bfe58265d593ac1c43569fb&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6374599",
+        "longitude": "41.6100248"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-black-sea-apartment-batumi1.html",
+        "title": "ORBI CITY - ELIT LUXURY hotel",
+        "description": "ORBI CITY - ELIT LUXURY hotel provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/760650600.jpg?k=ac8d5f0d3b0a1e1af2b3fd2980f25271e9606f2fc700642f514d6430ce437c1a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/760650538.jpg?k=08ae7a0049a911afb80f63296e8bb825652e8073017479acea389e3fb3c75740&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/760650566.jpg?k=177a4aebd639b3d0c4b94eddba8c3300de469a2f6b4fc2e5b66d19f66e64ba8f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650468.jpg?k=9f7749cffa9e5e4f1cd2934ba856f2f5a2de21fd5ac907974987957e694c6822&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650536.jpg?k=2874dfc4707862e6656ebc3b77f21b49a2487873645068af6d8e24f7d99a43c7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650457.jpg?k=a96c0f358bd0dffdcb0bc7e44b2ff66304ec528ba95e6753d9abbfd6aaee9dc0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650575.jpg?k=7cd8425db2ae8016f551e3612c00b3d44d111ad878d8944b22a6857b5b40c978&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650341.jpg?k=0c06c7cc73efc2103c84c13d88077798d02e675b04f4a12f2f3b2ca3483ebc21&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/holiday-point-orbi-city.html",
+        "title": "Holiday Point Orbi City",
+        "description": "Holiday Point Orbi City provides beachfront accommodations in Batumi. The air-conditioned accommodations are a 6-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/688711022.jpg?k=eedba82d35693df78945a3638b576b9042357feb5d2baee97846e9eb2e01047d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/608454500.jpg?k=328a3e67da0e0ff4383b188f07a60c0298d681802db7964be5f18d18757a16f0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/688710884.jpg?k=ad93bd09b7973a228cac20677244be52f9e5c4cd649228b1e5d9028f487e8a90&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/495581140.jpg?k=41d82062449c4854c5aeffcc6f30b6864de22258e80bb529e1be9e9617fba0d8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608456176.jpg?k=a19a48ccf9f63b363293d99b6b13de009593fd847b412191f8b40bc8b71cb5e2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608453391.jpg?k=64ccf05e73f8df59af7245dcf4e288febffd3d1d4e48e797149b3a67f0510157&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/608469180.jpg?k=32ef6d7ca704812c7b3bb66f39ceb032a2e8c5f73d2ce218308f2fa3af072163&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/688710948.jpg?k=7573cc54c4b7c8a214c49ee20ab871f4533a5929a6b9e527b836531236ff11f1&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6411600",
+        "longitude": "41.6150020"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/interstellar-orbi-city.html",
+        "title": "INTERSTELLAR ☆ ORBI CITY",
+        "description": "INTERSTELLAR ☆ ORBI CITY is a 4-star property located in Batumi, facing the beach. The property is around a 4-minute walk from Batumi Beach, 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/689602090.jpg?k=e24d31e26656e396a6bd0d4c363d47edc237d352377964a4daa205be6e092250&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/689602118.jpg?k=79e253a1ba9a183d875ce9a44908d5b87f440b4d7e458e963f9b329cca9ea74d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/531417063.jpg?k=c870ec73deb9ea7c821681822cdcfdd8444e29b3184a1a20425b729b7d8af645&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/531417121.jpg?k=48a05b89fff36578043364531b002fae9ed3f7320186d6e7bca5e1a3050fd47f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/531417349.jpg?k=29898968087aa1f634454f945f620a2196733631de7cc5839585c4a807c0ec53&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/531417072.jpg?k=5ff7095f490d8ca3d43d5c20076b4577d58273aaf00fac6006449dfa03e03700&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/531417043.jpg?k=bf01a614068487bda9e446a996ccb059e80692be02f0628a8d8eba47190c79db&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/689602081.jpg?k=e2181643a73474982b229129f3b6db004a456c784b6195c9f486de59f55bc05e&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6397474",
+        "longitude": "41.6133735"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/hotel-old-town-georgia.html",
+        "title": "Hotel Old Town",
+        "description": "Hotel Old Town is located in the center of Batumi, just a 5-minute walk from the Black Sea coast. Free WiFi access is available.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/717010744.jpg?k=e51940a2f2ea3b8b421fbddaccd134181ad58eaf31a4ee39c0581125cdce0431&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/717014382.jpg?k=bd5cda5c036139a2d7b976c78daa961e7483239c42a07a3ff1406105cff3ae35&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/717014968.jpg?k=cde3d364984b9096dbc9a29db8e66edf82f48ffe049e99a2ac5cc71f1ebbdd70&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/39925066.jpg?k=5dfdf3195003e9bb5accd410fe5639560419627bf49798e73cf599d2949cf57b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/717015005.jpg?k=7c66b8f7c47b824c845088a4556585340c2c1874d58a839374380ccdb0133fe5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/305553898.jpg?k=c0959386a9746de7eccac79b483de13137fbf74cf26111d553d2e3a693157698&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/717012180.jpg?k=5349380b82570840d5c77f25449f46b192451927aed42aa883a07c053c8d5080&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/717013249.jpg?k=b23335672691416d6f5968c9e16dad61d8ac527b639b26608504399788e78bd6&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6498362",
+        "longitude": "41.6429080"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/grand-beach-apartments.html",
+        "title": "Grand Beach Apartments",
+        "description": "Grand Beach Apartments is a recently renovated apartment in Batumi near Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/701166965.jpg?k=39dec83101e7c8b09f2c81917ce2d06cbad0769da903bd9cf4fedecd5c3df68c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/703679908.jpg?k=a80b2158dc7d89e883811954a60072b76e385d9f03df7fb098d40fa6d83b5a56&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/703680518.jpg?k=9f7547a5fc7cd127885ad70b6d5cb1f357cb0d3fe29345eff28f30f2ea05b98c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/711132084.jpg?k=c1ecf0ae3179d71c623fe4d037c3022ac560b0464dff71ba645f9d5933c783b0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/701165640.jpg?k=569f9de2926766657bc5734c89ff641805914024c211abc1d2e710c68c2482a0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/703630114.jpg?k=6267c70ae2276ce2f9076f483e0377043b7abf05444557b52145567ea9bcbf58&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/703598684.jpg?k=ad40e598c34c2cd3b74a37b47b0dde5bff5a934c316ef96eaa0114b11c802cf3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/703598814.jpg?k=16ab6be2ce7dde5c8a422836239b4f2e4ad60e8519e497f053583c99a15725a9&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6333319",
+        "longitude": "41.6088607"
+    },
+    {
         "url": "https://www.booking.com/hotel/ge/ch51.html",
         "title": "Hotel CH51",
         "description": "Located in Batumi, a 14-minute walk from Batumi Beach, Hotel CH51 features rooms with city views and free WiFi.",
@@ -72,111 +1242,561 @@
         "longitude": "41.6349570"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/aniko.html",
-        "title": "Aniko Hotel",
-        "description": "Located in Batumi, a 7-minute walk from Batumi Beach, Aniko Hotel provides air-conditioned rooms and a shared lounge. The property is around 1.",
+        "url": "https://www.booking.com/hotel/ge/eiffel.html",
+        "title": "Eiffel Hotel",
+        "description": "Eiffel Hotel has accommodations in Batumi near Medea Monument and The Neptune Fountain.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658266429.jpg?k=d6a1faddfa0f3d21508a75f085267fff6294a7f8621435a797aad45802424c1a&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/658271704.jpg?k=8c13a2e8f53fde48a33f6e61ca76a91a9fdabae22a92aa3d9c6adec482226dfa&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/658567117.jpg?k=98154fc6540d87db1d51850fd6663a9adc8391f9f013727762c3531f88f2fe2d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/658271655.jpg?k=42982e9e15c69fd7b266ace526accceee92e0215e4f2d6c46a62d30762763351&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/658271046.jpg?k=dcc26a18809f51fa3cae23b5e855f3c74e33f53c3b2a6470f8358278b3a28b92&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/658266558.jpg?k=815df5cfa4b5896a2043b1f4bd32dbbfaa3444b24405433d69cc6cfeddd6e64c&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/658267111.jpg?k=242393d38b52824c14a472f64f73724a9b85efe25d6c3f8e0a18236e1d8146d7&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/658266985.jpg?k=0194451c959214e5aceb5c72d5a4fdce770db28c921660f23deff67e5caa7338&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/422968137.jpg?k=457e4e7c203b219987c67b66fad6d6b6adb52e8f2391f3c8cea61da72fb11ba6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/467523677.jpg?k=4e09908b1db2fb8914a5a9f4591e296022a296e3eefa3ba864b5dfc1a1e0fcd3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309305364.jpg?k=8fe736a2da943ba53c83aa3b47bf03452fb1257e936c63f85640e7703cdd720f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/422978330.jpg?k=fe84d476f6ba184af736d43a47415a28fefd63b5c0884aa6e60d70c9a491bc23&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/422972145.jpg?k=bfec9525b56d61d122b305cfd85e3749e1ed9a9282392d4c1fe9f53b361fcefc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/480847962.jpg?k=940046e5926e30b02fe4a6a4ff0eadb6bcc844bbf75d7efedb539e8f08740bfa&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/440512777.jpg?k=aa6894a64b0f163b593b072831bc81dac3433df96f3998e1246c33fc86336640&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/455538492.jpg?k=0c8824c8f478ba29cd2ae0e060ecf3c1913f0bcfdcc90a289f88eb3569ea1556&o="
         ],
         "facilities": [],
-        "latitude": "41.6418671",
-        "longitude": "41.6216926"
+        "latitude": "41.6464170",
+        "longitude": "41.6287580"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/sunny-batumi5.html",
-        "title": "Hotel Sunny",
-        "description": "Located in Batumi, within 1.6 miles of Batumi Beach and 1.",
+        "url": "https://www.booking.com/hotel/ge/beautiful-apartments-near-the-sea-orbi-city-n7.html",
+        "title": "Beautiful apartments near the sea - ORBI CITY N7",
+        "description": "Located in Batumi, Beautiful apartments near the sea - ORBI CITY N7 offers beachfront accommodations a 2-minute walk from Batumi Beach and provides...",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/583756950.jpg?k=f2d28055950a686651e5dc131344f8efb6b67c9bae46b97e68c7a6d0258330de&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/684013315.jpg?k=3a946879299ec80026738247ec0fbbac72a297d2e11eb0227db6c630f3f13d98&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/684012140.jpg?k=e235a6e2bdfeabed018f2b033999a783100c6cd813c8296bcc3fee0d1877d06b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/684013351.jpg?k=bf319a09e68233711b4bb5b54be6990a28c4506e2b8dfa73a5010f6643a37506&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/583860260.jpg?k=7ff76b910c67382a30018e24fb078df30caf519baacc96159107043b05266bad&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/684017482.jpg?k=b792e6397125e1d480596520a81edf732b715b24ad02f27e8fea680e3c654f62&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/684013714.jpg?k=7e644ae672ed8ec0ffcf6ee24afd1bc89d1f00551bb6b96d0991ca0a53cd8e48&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/684013357.jpg?k=77eafea08df4b82b27809342a839af232b00b0e374fd00631eee9e95ec829dda&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658342464.jpg?k=b3e1b2a5e24754b4015baaca23630051a83bd91f2f9cc73f1dc66d3a9d83918a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342466.jpg?k=7dba3d2f8b7542b4c48bf0be3bd44cec22658be785152f0202176bedc6e3d96a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658342465.jpg?k=f41cff7b7a8f1a0c5fb0a8bb554410760ec47b9b6859bdbb44e537d12382de2e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658342062.jpg?k=00a81019e5fb8322988c6b557ab590b2eb8579e411bea7c8183eec88e46df0d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341261.jpg?k=ccee455d99275a050dd436cdeb02af7dcc40f1911fe9c603eaba630cbac02d71&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341282.jpg?k=c23ea0a0eef080a355b4bb9cea364dc18cf5c5ba389b1b50a2e4302464ab6632&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341257.jpg?k=31aa977840d8d508647a02ea9d64f5c823c124e6d1945a7227045a94fb46e2d6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658341267.jpg?k=5e9483cf56f4a4a4eb69696b3a6760be8763fb934df8e0ce67776be93b728067&o="
         ],
         "facilities": [],
-        "latitude": "41.6381645",
-        "longitude": "41.6476935"
+        "latitude": "41.6392140",
+        "longitude": "41.6126447"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/piazza-epigraph.html",
-        "title": "Piazza Epigraph",
-        "description": "Featuring a bar and views of city, Piazza Epigraph is located in Batumi, a 11-minute walk from Batumi Beach.",
+        "url": "https://www.booking.com/hotel/ge/cozy-villa-pheria.html",
+        "title": "Aura Boutique Hotel",
+        "description": "Aura Boutique Hotel features a garden, shared lounge, a terrace and restaurant in Batumi.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/577494444.jpg?k=544ee05d011c9a1ab1624c3cc46e28a07c6312261abdabbb9626d4a37c853ff7&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/570774893.jpg?k=e07ddb866bfdde858f54b511dc690df15918771547138ad8c4b9b9e76ea9e8eb&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/601642384.jpg?k=746292b84da5e415cfd0ac95a09c72b766e367e3b05f1d786aa31a48b1b57c57&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/769020922.jpg?k=50247fe4276ada823bbd62af83e7920d26e9890ea225a619e68b9092a31e27e3&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/570774951.jpg?k=2ca759cbc45101ef529e6cbb459f62e17e529c8a1a1473fcacb4b81721a73c66&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/570775091.jpg?k=58cfce8a5cb3b8ed033dc665f64539c34f2e232fe34a22009d267b47f41cd667&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/570774992.jpg?k=bf11beb40a6682b70d1428a48de8b6e90158215d5347eb450f2c65dd47c486da&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/577494433.jpg?k=a3318f2de086e7c8b69216de55820ee8905969ee8e642990de21022cb4656d74&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/624305858.jpg?k=e4c0dcd10287e368e87b386854d1d2e2aaae29b02903e8e26a0e12516b52d560&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/646865025.jpg?k=9f3975952b3501cf0a28baf87dd13c634d47debbe51674358fecb061f48c04c1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/646864899.jpg?k=5ea742b45825672910c055be6d7c9f37a2863843b59512655a9572bc54f465b3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/646865307.jpg?k=4ee7744d40c55d032cb36ece29115cbd9deed093ae64fe4bee886a4e5cbecef3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/646864768.jpg?k=b35e2001a253457f49d4e21aefe6bc1fcc08b610e917130eb6ae30db0e603ca3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/646865030.jpg?k=e379c71cb7e40dca60093a21843ebefc0ee0ac6253fcfb7bc947a603fbaf9c45&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/646864991.jpg?k=eebbaae5fb7db1c5318b7707cb302eca74ea1a12d68178bbdbb52a29ec97484a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/646865033.jpg?k=a4d59e4fff6b293ad05b03f927e246b2a80a5527503307fed434a98f28c01996&o="
         ],
         "facilities": [],
-        "latitude": "41.6502287",
-        "longitude": "41.6403091"
+        "latitude": "41.6444764",
+        "longitude": "41.6226912"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/lux-apart-batumi.html",
-        "title": "Luxury Batumi Hotel",
-        "description": "Facing the beachfront, Luxury Batumi Hotel offers 5-star accommodations in Batumi and features a private beach area, terrace and restaurant.",
+        "url": "https://www.booking.com/hotel/ge/near-sea-batumi-stay.html",
+        "title": "Privileged Sea View Aparthotel In Orbi City Batumi",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Privileged Sea View Aparthotel In Orbi City Batumi is a 2-minute walk from Batumi...",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/548688197.jpg?k=52ce7cd597d5578c37fba258e6509b95eedeffd24dc472d3cc4e2dc1afdf58b0&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/548688172.jpg?k=c695edb91a0a440b9474c55669334f6c568216fd5aa3ae8d7332e49b73d6b331&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/548688171.jpg?k=3d083d5b64086e1ae44872833ffe31fd12bb9bea48e49e3dfa5959468843d0f8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548694253.jpg?k=10539447fafdfc0b212c2e1752c414bb712713996052be815e259472fc3c96ec&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/688398098.jpg?k=d6edc3f40f5028da511da728a966f4ed8c48b7f36cc91bc974a63aaa47773ec8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/688397472.jpg?k=6ff4fec87a00e5daaf1732183513d08497e5872cb71b094ee762e941df5435d8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/688397728.jpg?k=7cd9d8fcecd31cebadca0e4660e848baf93bb59a2bb12d58c901d5c769ccc519&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/688398559.jpg?k=d49f69fd067d25ee84a3c0c2ef83e0ab3691ff5d44d9e13c0adb3a427920ee82&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755787799.jpg?k=46fa6c327807257fcfe72c8613e3ddc4c16bd61adfb8a600e71b78117d1eb2b7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755787779.jpg?k=13fe5b550219069cbf309530ce04a525ae5f4359abb4251d4c096fccc1afdc4c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755788262.jpg?k=890de30118780150394ce8c0af16649dabb8142bb3e6cbe48d4c30266494f08e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755787800.jpg?k=b041a61a4556c8e3294e7f0e83503ad5fdfc09b79f12d4de63d74699c86979c9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755787885.jpg?k=dad1b5d2bfbb328c80fe1dcc17bd4034758af80a960238b61e4a3dbbf8355c3a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755787787.jpg?k=6a6c59707e5e68acf0bd3dc733eeb359eb71a9f41c41d3c765fe12c912cbc13f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755787788.jpg?k=f797c301f865a92019516b7187fba7a4ebd3d70dcd69f3e54dbb779442b3a148&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755787778.jpg?k=7a153717c1fe07116f4a83f3b9f710bc592c91fc58d8abe5ba6e05040c39ab20&o="
         ],
         "facilities": [],
         "latitude": "41.6393090",
         "longitude": "41.6126166"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/high-floor-residence.html",
-        "title": "Batumi High View",
-        "description": "Batumi High View has a private beach area, terrace, a restaurant and bar in Batumi. This 5-star hotel offers an ATM and a tour desk.",
+        "url": "https://www.booking.com/hotel/ge/city-center-studio-sea-view.html",
+        "title": "Batumi black sea view central Hotel",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 5-minute walk, Batumi black sea view central Hotel provides concierge services, allergy-free...",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/531656291.jpg?k=b183a7a655107bfb975adac17111c5a491f676b663909a37053b2dee763dbd79&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/548699752.jpg?k=ee53f278851bb61664000c9b48836d82aa6b65cb81be5db16fa7674d13b8ef16&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/548699774.jpg?k=b6a428d7ef97cb2e5712e2b5c7243dff4039b428d9abdcf46179d7f729b8eadc&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548699689.jpg?k=db958ffa779a202478744ff3a9b05bb2f8a5ddc276d79d4d57794df08e7ed5a7&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548699697.jpg?k=4a095404fa776489ad9ba59a53772f429c5feb3c7c29d5128c64a3240abc601d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548703246.jpg?k=a6694e0895eee29b95d1862586f2809b12a08728348faa3985915f69c798d906&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548713875.jpg?k=a0f83e11ada724ff083f8e797956fa0e26491a3c53b3c20221d4f8a3c38434c5&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/548703247.jpg?k=ba5d8fa78edfa84a67da74d98c59d0d48f7a8768f4975c79bab6f2cf6632056e&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/690258610.jpg?k=ed311c749a0c09acf7d8ed8a9108adc7c9b5d8b3b06ccc4939d7f8ba6f9e906f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/690258165.jpg?k=3ee2d8c1c7ffcaa50914b5025e3002bf38f9c3c678922141b9975e1721932fb5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/690258992.jpg?k=3e7cec0cc8d893c2278d3049ee9d819dc4c43eea4295888a4cab453e44b90adc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/687221383.jpg?k=ef85e40411d8989d5702afd75e7ad4c68b3b1372b5c480ca6d2c7ef09eaeb814&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690259097.jpg?k=e7531dc2f6179ec80bc0723386bfe3227654cf26e78707f6a2532aa533cdc363&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690258589.jpg?k=dc43fb096cd2132de50316ee501e84ab020df297e836e8fb9e40f9c8524e9cdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690258524.jpg?k=060811248122f8a51774d2da79b8659be876fc5488b5158fe0fe783119dfa42f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/687221421.jpg?k=8147a7daa186df58c78a2dc818069820876461f6fa2bf37b990b251eb0591bd3&o="
         ],
         "facilities": [],
-        "latitude": "41.6400050",
-        "longitude": "41.6132457"
+        "latitude": "41.6404521",
+        "longitude": "41.6135955"
     },
     {
-        "url": "https://www.booking.com/hotel/ge/chateau-milisi.html",
-        "title": "Chateau Milisi",
-        "description": "Located in Batumi, 22 miles from Gonio Fortress, Chateau Milisi provides accommodations with a garden, free private parking, a shared lounge and a terrace.",
+        "url": "https://www.booking.com/hotel/ge/studio-with-sea-view-batumi2.html",
+        "title": "Black Sea View Resort Hotel",
+        "description": "Providing city views, Black Sea View Resort Hotel in Batumi offers accommodations and a shared lounge.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507120389.jpg?k=1ab5c442a22b11a4c5b33d3ee48b4672e03344cc3e3217a42c6082948f98bd57&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/507115327.jpg?k=601c87c400acd2201d8a0195659bff79ec65ca07f908cc6cc907ff966c8c0fdb&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/507125807.jpg?k=68ee740d81f8ac5f399a94f996fb64dde2c5f2289d1a106cc0f92133b6c500ce&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/513942996.jpg?k=8932f6724537dd5d1808b3a29565d5c3ba54146aec18092b945d329f542ea03d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/515110597.jpg?k=323dd60464dad08868cbda78cd87adb4e3ecc0f56f00ea5ddd144b9235ea021b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/507120470.jpg?k=ccec743fb5fb55318818e0993c628a62b173fd94d2ce456066ed885f6027cc38&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/507117451.jpg?k=d5e63ccbcab0fc597815d18a3c6c1c50d340a626d2b464571eea0143c47ac9db&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/516526574.jpg?k=49ea14ffec44c27bb4a459e73ba297ac77931d091c17947f7378641cff286e33&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/758518063.jpg?k=8e9a5177e3bdbd8effb075bcd9b79cf891483aca399d80683f7f906ee135baf9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/767138243.jpg?k=b55f33c869e14b53d59995151b3a306b4f544dc51e879be7f904abc2ae08e784&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/767146313.jpg?k=758f9de0a0c89d81b32e333b6918074ae8607c3f93687cd4bbd98323e937fb3f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/767146320.jpg?k=95c7cad3665c0d8b398ddb2c9c3ac3dc81cc4d81fa0cb4498fa590e0c55c278a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/767138245.jpg?k=676b27977f89ee80ece3b8b01ba1f4cd008088e6af71f59d7ff8642bc61e98d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/767133884.jpg?k=b6d0ec47b4368d62c72c8c757fc4fd74e397a0b61a0df8ce260336bbb62e524c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/767130981.jpg?k=3bbc50825bfeefc0f6b0d587c0552e479195a4684f29dbf4b541c47f855e6083&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758515947.jpg?k=90a0634308e88673b65768fb5d401a1e3d5e81397882aeefe9c6b8e5f8c72527&o="
         ],
         "facilities": [],
-        "latitude": "41.5461931",
-        "longitude": "41.8221976"
+        "latitude": "41.6394818",
+        "longitude": "41.6139852"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/grand-orbi-city-batumi.html",
+        "title": "GRAND HOTEL ☆ ORBI CITY",
+        "description": "GRAND HOTEL ☆ ORBI CITY is a 5-star property located in Batumi, facing the beach. The property is around a 4-minute walk from Batumi Beach, 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/532358783.jpg?k=fddc6f5cd749611c3e33cbe9c2b27ad5dc41f7748cafaac7248331ecf1044349&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/532358261.jpg?k=1bbafa6677a704f2dd1cf0ca5edfc2cba0e5e5330ef03784baed24cbbc4d1590&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/532357929.jpg?k=3f543b82b08bfdad5e80d0f8e59f708193523d5841e41429e3cb64a59f2d8923&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/532358660.jpg?k=8497e5d1b77c41d31b90ef200745789ddfa31ecb7f1be80084f2b6859a48bba1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/532358852.jpg?k=31b46dd9061e1e1bf9034fbb6a8b415fb617c4165c86249c3722d8697c7c87b3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/532358542.jpg?k=2757b58c0f05ca20fd838069792a36c0db6309d41fd17e41e1169c5963365c4b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/687518075.jpg?k=3f19d483cbb0d43ddeec0c893a235bab279543d45dee1669be592e8da90900ed&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/532358753.jpg?k=a73512ebea3577526fd6f444b446b8b39173fd581cdcf0139387410191b22410&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6399224",
+        "longitude": "41.6133193"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/guest-house-on-vaja-pshavela.html",
+        "title": "Apartments On Vaja Pshavela",
+        "description": "Apartments On Vaja Pshavela offers accommodations in Batumi, 3.3 miles from Batumi Train Station and 7.4 miles from Gonio Fortress.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/205190762.jpg?k=802a8d548704e7e09d022656bebb4873db4455093b6ad80d8da8ab633aca6bc8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/205189687.jpg?k=aa39a1728af65d5302dd78aa02551942a2464cac93d6034cfff87b96e60dd155&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/205190020.jpg?k=404d51552f13c7c595f30670a6827bd8b3a29e94a269ddb2c115f00be95a9d93&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/546746660.jpg?k=0707949d640ab933da32dd1abcda3b12f0697c028115c6b123bf66c7eac3960b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/546746534.jpg?k=329ef7fbffd06a6b98e78157e410e568dd6921b0c5a7b6e6296f9690d32e01ab&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/573539635.jpg?k=e16af93b1f2ddae893cf41d1b783c51217314ba1722d5e978060822b8a7a8e07&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/205190300.jpg?k=9ee6d4c3a54fdffb00b908c4d88f7d67c3c686a58e2cadc7090c47da3910fba5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/573538338.jpg?k=6782de0e1294a85b1f02a9ccf0d6b6c519f82cf639eb0c68def1b2ca018fd134&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6485912",
+        "longitude": "41.6328648"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/rock-first-line.html",
+        "title": "Rock Hotel First Line",
+        "description": "Located in Batumi, 328 feet from black sea beach and 2625 feet from Aquapark Batumi, Rock Hotel First Line offers accommodations with free WiFi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/141305864.jpg?k=cc5f8352a48f3da59ff3ba214ec58c4a3b82657f646d5cddb1946efd9ce31fd8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/43993988.jpg?k=57541d3981099c195cc98ce61979899bb3530709aa0a8f850740c7a762e41b0d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/43993771.jpg?k=e7c48765294afe4a0d7653f82718ea5d6c92b1bbd97b15c7f02c8da675819647&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/635953841.jpg?k=14ee15e51cb1b86deb7470a513f3a3a82099f7b1ae779feb93e1d61c3a09c635&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/636100905.jpg?k=44af0c3b887bd39fd24ed0c24d537807c1133c46aa25169342b87c104950a450&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/355144371.jpg?k=7c93ac0ee2bd25b372858a7ebf37cf2f15b0936adc710972f4e42d8a86fc7913&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/567191168.jpg?k=5c5bc437a5e2c1233bfde5616694e5b5c4e382bf53b1f1b58b41c75f700addbf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/635954132.jpg?k=f664febd51f836ff1c55baa4f89e5e39a507cb0174f36dc30f63b35f7af11bf4&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393435",
+        "longitude": "41.6119033"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/skyline.html",
+        "title": "Hotel Skyline Batumi",
+        "description": "Located in Batumi, within 1.8 miles of Batumi Beach and 4.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/146535751.jpg?k=d531d87ed45761f12617b1aa344499e5130349482f8518455e0567dffa17898e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/146542596.jpg?k=e0016606840452fda426d0647ac58d488610cb73ad4c17cac4fabcc26d0e0a46&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/214657614.jpg?k=39a655645410ede270a1c918b6ede5c119a3cd80f46d999f04bccf9b7d4fd7f6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/309257417.jpg?k=38e89d9625a0d178cca4c5959027348b45a506a8cdb2e860eccb520427f219c3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/360171651.jpg?k=2b0e9904da105c5cabf857a520efdbd210c4cedbbffad06cd7f6bcfa71c2e6f6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/147870511.jpg?k=87a5d848742b6ae30c5848cc7ab446f7e3d5b6b4cf41ad6f472c91863733c0e2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/147871114.jpg?k=a2ee00f62ca82c3652e1aa457b056d1adfab1d54e54a9113237809ce8fd55971&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/146546466.jpg?k=980e3f8f1f7402b70b78ee15c9fe031b0c52275ac7637d22d3030d60222316e4&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6092518",
+        "longitude": "41.6127071"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/holidays-in-panorama-batumi-batumi.html",
+        "title": "Holidays in Panorama Batumi",
+        "description": "Providing free Wifi, parking on-site, and a private beach area, the recently renovated property Holidays in Panorama Batumi offers rooms in Batumi, a...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/528859224.jpg?k=6011ac120ec97030870ab3795bdcb73f1d0a4b27a61741f83afba7fbf5abeeaa&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/527830330.jpg?k=0b035e7298211eb2ec3123e580a2954335ca1a3250e987c6fffaaef437e62b9c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/527830466.jpg?k=593cc16bfbb4c5edf9e2b0dfce6aa4f9f75bd8a2f1299bb40589100d138065f3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/527830436.jpg?k=f9570a50ab1ea047a4f91dc07212304e7e3096db006868ee6e08b987d79e3769&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/527830382.jpg?k=f1c9a55939f93c5e4ce3a8a990639bbcf4b74fdc21d9cce33fdfbb3cdc5d1ee0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/527801014.jpg?k=f80f1b64b5e99153751d6cc00b92626ca3391681bdc30fb4c2621886d77f3cc6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/546241456.jpg?k=c42d2abd6831ed447bd8537a67bb6046fc9449720dc417cc196acc313f15e560&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/528358674.jpg?k=92b5e33125c0b55cec4a20df81ccb2c6fcd0aa8bf806b52657b49f5b8cd24e28&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6377180",
+        "longitude": "41.6105165"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/apartment-eto-batumi.html",
+        "title": "Premium apartment in Batumi 1718",
+        "description": "Premium apartment in Batumi 1718 is a recently renovated apartment in Batumi, near Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751595102.jpg?k=e5716305e8fc7f8824eae69f1f641cef32435bccb78dab78a491c5628bbf472e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/708929847.jpg?k=d1f28d2a51f2727fd4a6bb0609f9cb00231382016ab12a61a1b7b6ea0af84b94&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/707437424.jpg?k=6c8d9957a8ad23383b143315e7a13393f357249e0a5dd3d0558239729ae71eed&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/740107365.jpg?k=dc37939927f2ad563c26dbdd61d39d6ca3e766b1a6e20088e9131565eebf2c26&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/751593730.jpg?k=7cd3cbd5a765ca885bf1b191c56f6d6fd545d72e848d30648b8e895161c7a204&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/707437419.jpg?k=88e0ecdb4fc9b1551489282099645e1286587f40c858961cbf0149d21071d7b3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/740107368.jpg?k=3316f979f3e5857622302059cd89209e769083280550966e972ba5a36c6f659f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/746770441.jpg?k=6fff816d6bf31fcd49385c0bc77ae3733c75052b40bbfcbb4a9e9ce91079c8c2&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6315090",
+        "longitude": "41.6047735"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/apartment-in-batumi-sea-towers.html",
+        "title": "Apartment Natalia Sea Towers",
+        "description": "Located 1640 feet from the Black Sea Coast in Batumi, Apartment in Batumi Sea Towers offers free WiFi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/136678027.jpg?k=e7584cc25669cd1f81fbcc6d7046696b45f0981a21c737e561149e67058ab040&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/136678009.jpg?k=bdd47c118fef573867d1d6af0ccc032ce349848b00e83b362201d28b93f83994&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/136678035.jpg?k=f4a899029a1da8a5e7bccf09e27ffd7b90a62ce069666b8e02139b6f131c12eb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/136678000.jpg?k=1806adf9620b88b936ca2af802ef7b013e7dac9e36cf4e33f54bd36178127f05&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/136677585.jpg?k=0be2efe3846a10640f465ecb27b72e045e72578dea4178a9d8100c8e211176c4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/115477456.jpg?k=b5800f83a87f8f8a38d8ece214706accd16875fb3df62fa37e4490bc414c0fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/115895326.jpg?k=4a9bfddf0bb39d29ff90a63d7b56c965b52bc7a65fdd90113e6b74fecd71b834&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/219291923.jpg?k=e51ce79054441d6b1359cbf438ac0a538fd319672ade432272a559fa94408d71&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6379412",
+        "longitude": "41.6104607"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/gg-aparthotel.html",
+        "title": "GG ApartHotel",
+        "description": "GG ApartHotel offers accommodations in Batumi, 3.8 miles from Ali and Nino Monument and 4.6 miles from Batumi Train Station.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/541402519.jpg?k=5183736599dd77a73629a221988702e043c2972dca23bc4b298a36083a922623&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/541402525.jpg?k=73898442338107b5a8c227ccc888893e1fecef72983a7a9d61908d5cbff4705c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/445769640.jpg?k=b7b9d9fc0fe1bd5fe684948fee90f37bb70b56a1ed70eb9f7e21b4ba5ad336f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547992052.jpg?k=97e77d11875b8bf656c4ae359e4b3ddc5c53a10bea93538be620349791a230b2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547993118.jpg?k=f4819d493a68893189a9170142e82785d210786d2272333a1d5c39c17ba9baa5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547992056.jpg?k=a6aadef145fa67937976f968661c89eda0ba2165d69476a36cb9b5c880cfab13&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/547992017.jpg?k=c85877d6d9738f6baa7faf8f7f025e004f0671de5558c81db244d4e6798030a4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/443893806.jpg?k=188ffb09653899c68bea0af26460c319e596658e696f9aef9d364e047d47193e&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6330730",
+        "longitude": "41.6232960"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/bellevue-residence-batumi.html",
+        "title": "Bellevue Residence Suites",
+        "description": "Bellevue Residence Suites provides beachfront accommodations in Batumi. Featuring sea and lake views, this condo hotel also comes with free Wifi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/742370881.jpg?k=b9eb1b11a8c28ee8c15d61dbd5a1e6fa82dcddccc7fb64fff55706039bed9d04&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/538686910.jpg?k=51e81625ea53eb54d1a9e2ca0097db116432e0097403ea097621c8333c9040d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/538685576.jpg?k=8c9e9cc80adf640d04febf873c95f82f29d8437b4caa9539e31f2f1906979c37&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/748349260.jpg?k=2ba6a9bc5df1c9e2bbbb80dada3e18e5cb1d708511616b0db1fffa1ba5f73511&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538687579.jpg?k=f7d0d6fd03137fbedcb56e3ea5bb5f752f83520c7fb4ffa9d68f31f223498ec7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/525404004.jpg?k=7a8a10fe1cd94b45d6ccd8565e0f30546258bffa2fc43c2bd65afc42857dd32f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/742370855.jpg?k=2290b560c72840be60bd223b3688ebd99040090dbc6c51da92cce9a6a0e7eb57&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538684469.jpg?k=b0e1307f7a34ad3dc798b2ddda3e0a28c0637f257b82e0541d8e4bbbf856399f&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6490276",
+        "longitude": "41.6257696"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/good-place-in-batumi-batumi.html",
+        "title": "Come a Lot Aparthotel Batumi",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Come a Lot Aparthotel Batumi is a 2-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/760966332.jpg?k=bd100cad07014d572c82b8b76af517a002a166d7b4c6b167e111ca17bade0761&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/760966433.jpg?k=8bc1b60aafee7dee220e1ff5e5abe7b071b5884aca900a12265982db115fd329&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/761028066.jpg?k=91b89095c250a5fa17bf5e0d6f2aafd7f510a49dbb21ffaffa7571d7169d197a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/761023719.jpg?k=2900ad1ef57e9d967b8522e3c031d17c2ef27cff54250f9d847390edf814aaf4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760966321.jpg?k=15a3f7c83c553687e93023954a66a9f27ca040a077919c17c2e6fb30ee0250cb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760966375.jpg?k=087b15384ff743308dc8e40b008ed9547762bb4d8bf7024f7faa7d1230856251&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760966182.jpg?k=d50d806a57d7b4d0ee234e6b493a97469633c2608fb4dd2b01b164220e6b3e01&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760966246.jpg?k=b58bad7f3c01768438b6ce77b31b96d0b4b8bb7774f7c7959fedec5fc04d9445&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/sea-views-batumi.html",
+        "title": "Apart Hotel Royal sunset BATUMI sea-view RESORT",
+        "description": "Apart Hotel Royal sunset BATUMI sea-view RESORT is a recently renovated condo hotel in Batumi near Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/382909174.jpg?k=85506fec0d42887ed170c85a52dc08dbe881a8ada51f0a69d46191260fc729f3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/415012618.jpg?k=d5c529ff90a0b71c77ce12d65649c87505c5f7187353dfe8ce1818d12a15b63b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/485596206.jpg?k=66b430da1d842b77c97bc21cf333a576adfdf7faf85eca6e66615cf4ed9099c7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/690422174.jpg?k=619ac21b26a9694d827bf6743753334a8f45dbc52f885b73d6b48816eb88bed8&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/476794591.jpg?k=e510d3b5a5ce29f9a25bcf505868a0e2b89b665803c8023232b8f787fa6342f5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483270280.jpg?k=e6319074f93f434af01754bc6fce908d79920540ddceb048915b0a8f690851f7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/467930029.jpg?k=17795f4498eb42f8ced18ec903ecbdfc6351a969e81c0f47dcb6f00a06fd829b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/382879503.jpg?k=45955011ac10405ff09476673654901930d400a560acc52b763583d8b10e5968&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126170"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/hotel-old-city-batumi.html",
+        "title": "Aparthotel Old City",
+        "description": "Located in Batumi and with Batumi Beach reachable within a 11-minute walk, Aparthotel Old City provides concierge services, allergy-free rooms, a shared...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/369354635.jpg?k=4e735e614d9b48ae05c2ed060eb8a9137315bdfa4340aa05f3a013437e1eb1ca&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/369352940.jpg?k=2cfaec51c5d60c581fb345dff3f3684fc5b31d6f716958200eb9461bfe165527&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/369353175.jpg?k=cb661ac85d3313a8fe1e66f76ef8430060b32cef1cfd3969fd99ddc907e2e17b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/685087746.jpg?k=cfed4a963bed4f29f6d33092f8153e12751ccea8b6aa3b68aa29f01918f78160&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/374058168.jpg?k=23ab9480f2ea8661cfe5a15aca98866ec0bcb39ef0e405bd34d89ac656d5a389&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/369355337.jpg?k=9df51c4115dfdf89ac2617ce1af1c71feba202d0a4814beb164a41bbedd341d0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/685087284.jpg?k=17f357eefe7f36bbe5ad5fbd394464a5d2701f063b0bc0da22412d5d6c2a4f36&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/685079912.jpg?k=d20a43a2402197a53312a788b1ecbc1a510cadfba977f54518dc39ebe81539a4&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6475447",
+        "longitude": "41.6371563"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/kvartira-studio-v-gostinitse-orbi-city-s-vidom-na-more.html",
+        "title": "Orbi City Superb Sea View",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Orbi City Superb Sea View is a 2-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/507055309.jpg?k=a7f6c248a1e050bbc4afca0c0713c8aadbe47ea37cfc06482741e951c72002d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/526457480.jpg?k=5d2f85c447b25ee9d65c4bb686b5ee4a7ae2cd862e24421ea03502e430265a04&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/505932311.jpg?k=5f606578e013c00614407a3e56263f0f378c16f3e900913c5b6af6d3f5bc1b59&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/708778266.jpg?k=fd7153962a7afaef153f240b67438abfd5d0df45afaca7053ab70d18a93980d6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/505846673.jpg?k=4fb3fefcd21b8e3a5fe33d4855892551b63544b449001f3248555e19e4375a9f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/708776559.jpg?k=61bb5562654adf7395c700bf6b6b957f85e472b35f3f6449c4f36339a07f488b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/503816601.jpg?k=934b1c4370c383f769fcfb563f5fc6dd9288f321c046003e8ee30029ca2259f7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/505846670.jpg?k=f80f28ed5e1176a6538400b46f70da8767b99aa9d091bedd142bf80c8bc6c156&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393710",
+        "longitude": "41.6124836"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-city-a-c-d.html",
+        "title": "Orbi City A - C - D",
+        "description": "Orbi City A - C - D is a 4-star property located in Batumi, facing the beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/610138095.jpg?k=ec4c713e7e952e46b74df7408eeae9fa9ff56f47bb7cda32c883abe821381285&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513467099.jpg?k=e015fc15a98fab735daf98c392607619efbcd21b1895a21ebd2e1b1d675efa29&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/702418208.jpg?k=a12572d804d95d83bc0cbd5352217c248f922f54b6f35946f6b67502b0e0c5ad&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/533701460.jpg?k=b46af69dfbceb877a3ef60e46b72bb931889dc8021d05b570d18743494c034b0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/610138511.jpg?k=9593c4c08596aaa6a867a0caadd857d8edf6982d2452a763e0fff4e2f8d4d561&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/610138103.jpg?k=22be63e740e2238d2acea65660981112a3abcccfd351ea9d866134a7075baef1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/610138519.jpg?k=8cb2b7ccb3b42f8cf135581ef04e45edf8a39e2b1712ccbb866bd7bf481ee43c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/610138104.jpg?k=dd236d382f458a294335d2e336d2be26b19861c34e7949f46cfea95e765bb095&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6411600",
+        "longitude": "41.6150020"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/paliashvili.html",
+        "title": "Hotel Phaliashvili",
+        "description": "Paliashvili Guest House is located in the center of Batumi, a 10-minute walk from the Black Sea coast. Free WiFi access is available.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/147182105.jpg?k=1c0386e47fa2481a888069ecc558e9893311c381f0c20e40d05dbccea926b8f9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/435047831.jpg?k=b4e57e8f1a9012b5b49d8787d1363088e744c68574e9d10b28e41a5bb72ce43d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/147191883.jpg?k=82dda90add7da6feada0e484bd8d0fd5ba1c91296e48da7eced2cf66c37dbcd7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/435048054.jpg?k=9217692fa540b5df75b57d855df4101f300754357ad12190ddd1345108faf663&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/147179757.jpg?k=b5a242e31a6303e123beac3fd2febad6baf0c14f7337eb199158dc202e1e97bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/147182014.jpg?k=36c1493d265ab56672860d2c7c95455588a9f67d5731276d48059a166b5357e4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/147192036.jpg?k=39d1354720ae7ea4bbad87726e84cd2568a329b71e4e893d36bf7705dfc882bf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/435048112.jpg?k=638058541eed7561b9e2c24a882cb47604dc78d398099c754dab69b2d3c923bd&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6442410",
+        "longitude": "41.6309604"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/soso-night-batumi-apartment.html",
+        "title": "ORBI CITY - Lovely Apartments",
+        "description": "ORBI CITY - Lovely Apartments offers spa facilities and wellness packages, as well as air-conditioned accommodations in Batumi, a 2-minute walk from Batumi...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/765712960.jpg?k=511f19f3345a727c19ead7236e5497092d155b28bbdabed5ceb1c969ce88f3ff&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765712923.jpg?k=fec475bc51fe6ed5c22a66796b15a61646c2c08fd276de713df9903339b3f568&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765711522.jpg?k=003a1005ef197e35296706e7b3fdb31a2081afe920acc328c6a0d42f8c51a1fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/765712971.jpg?k=de35893e331b3732b3a046877aabb3b9008a15b870173567856f611fef59a51f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/765711469.jpg?k=f1a06eaf0f06b345f5b098a964cceafcbbb724d591b1774be6cde0c3aaf3dd90&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/765711710.jpg?k=4820580b3f293b87bef4cdc1beecb69217b4dd1579e8320b5cfd989d167e7265&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/765712979.jpg?k=37d840e8e4e7780299862a52e772f7a8c4c39fe41784cebc58856ae5d2ddf92f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/765711661.jpg?k=3b47001f53ba16a968849edebc805ab9e28117c73112d761de4a05304e652817&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/beautiful-apartments-near-the-sea-orbi-city-n3.html",
+        "title": "Beautiful apartments near the sea - ORBI CITY N3",
+        "description": "Facing the beachfront, Beautiful apartments near the sea - ORBI CITY N3 offers 5-star accommodations in Batumi and features a private beach area, terrace...",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/658377169.jpg?k=1840e5e3d5be35c99517cd8388f412e4d31f50fa7b62d343c2a4e0d19787de18&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658377124.jpg?k=b5c35564e1e75ce3b16a76687a72689baec011dcd3b2b0234393afda01404070&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/658377153.jpg?k=e4a3a6999aa4c14917376830d07fbd7151330721e6d14d778807c37eaa0480ff&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658377508.jpg?k=ab7fa00c04a9b51ff37137e9faf6d87c8794d9e443df8cabefa7d5a4e85b21c9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658377126.jpg?k=8a5d5a62a878a86f429c0946f235d863a4546ceaf641c4b80c9e456b79c404b9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658377512.jpg?k=a245c9136e9c5f716376dce05b2057b2a83e334cdd939726afb2e946c317872f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658377190.jpg?k=5cf108daddb94ea2f5e2fd6263f4ad4e552c4497b8e42cee3cb278f9ec5a6b3a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/658377113.jpg?k=fb8c1bdaea8fb6292ff83cab72faf87d1b2f24e2128ec01476227c579ac483fe&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392580",
+        "longitude": "41.6124729"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/holiday-lux-beach-tower.html",
+        "title": "Aparthotel Holiday Lux Batumi",
+        "description": "Aparthotel Holiday Lux Batumi features a garden, terrace, a restaurant and bar in Batumi. The property is located a 3-minute walk from Batumi Beach, 2.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/444548894.jpg?k=0fdd12d17ba9ca9fa1e41cb358f06c39f0dc535a72e4b02efb4fdd76bbf5c85e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/421323557.jpg?k=eb7a078da7ec2eec76d6880b309281aed1ffd2db4297dea03118311cdc31eb69&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/455595723.jpg?k=1d51f41096fbc09091b22c116e7b79157b787728b650e8412495059d88d99e44&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/455596023.jpg?k=541ffec12b7817d394a739bc2855e0c8372734fa87634a387f6208fec91e226c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/421928229.jpg?k=8db129f0499c21f2e5dabb579c0189b2a522bba307b58d916b11ff342b2dc730&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/657253870.jpg?k=ff66069022f880d6c76ddc0d4c1e053f1a3701c14454694ff590bc6fd48bbeca&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/455595680.jpg?k=cbbb1e1db9aa8774d1e3610e8d42569c979a5cdf3b88f4d94605571708cf6437&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/455595965.jpg?k=9a0135d834719197d21156b098323502af1cbff6ba1316e9446322d37786e846&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6372287",
+        "longitude": "41.6095361"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/seasons-suits.html",
+        "title": "Season Suite Apart-Hotel",
+        "description": "A good location for a stress-free holiday in Batumi, Season Suite Apart-Hotel is a condo hotel surrounded by views of the mountain.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/423437859.jpg?k=60506325084ebdad7a8d73dacbcae78a4077d5d89937210063d635bbe9a2d7e1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/497516448.jpg?k=0904fda64ea1fc00a96b9b029fab843fa2a7635f49a78fdb430640274f22b341&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/493566258.jpg?k=412b4c6d78ad58f05864b9e22922299daa8617c6d0f400efcab156ad0131f95b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/503966619.jpg?k=975fc3628702a4a60e635ef8e7ab8f80632772619422adf7e7e6e7721f78ffc2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/493564209.jpg?k=5b501272b50ee71433d4d0e4a43043c6812ddd5c52818e378bd4c29a9e5369f2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/510893083.jpg?k=1ad16fe386be211db974a416d9f0a5427298b2de965e7a214ad1b987fc177bbc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/510893414.jpg?k=fabfa3d0b0e7bbd753fb85735cd316487d22a11960547a4598b00cf46c51b9bd&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/427099202.jpg?k=070283c29f5dbea03f0eb103ba4e078571d0fa97630ecac89bea67f6a372daca&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6392583",
+        "longitude": "41.6171270"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/subtropik-apartments-in-batumi.html",
+        "title": "Subtropik Apartments in Batumi",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Subtropik Apartments in Batumi is a 4-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/300623799.jpg?k=15ed442ef24b15272d8cce06e0a897136c78c695c5d1c9b70f88dbc9d82b5e76&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/300617648.jpg?k=0625f07692b9720bc5545c2a4d3de63aa24b7d2910490a3a9eb1f8a55708415d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/300618328.jpg?k=472e0fe343252683ee31b31ffb0443f1b13195fcb7c99115905e1f5fd280235d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300618290.jpg?k=ccfd52d220c590fe9d869b7edbd0530688727b05d37df2befb97e6440b02baa1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300619200.jpg?k=211088c945cedb5d9305395b0c4d470ae106897c07469612ae3277e7fa28c207&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300618327.jpg?k=161a5dc51f9f1d400d13769caad713ee43e2cb6ed10154950b38bf31ea122986&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300620654.jpg?k=8101fb9574ffadc2ace34851f66eb7f7ef224d7b82dcbf1074c6dcc5f7367a2d&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/300620187.jpg?k=30979747f0cc6ee8faeea4518eba2450a2f008dbafec91eef49ff433223913c6&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6398218",
+        "longitude": "41.6131411"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/orbi-sit-i-batumi11.html",
+        "title": "PANORAMA In Orbi complex central Hotel",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, PANORAMA In Orbi complex central Hotel is a 3-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/762121122.jpg?k=43b92a7f49582fa9b3dfb920ab02135c2e1844f82912de7598fa9b3b1822fd67&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/762121187.jpg?k=699c77675fb314e6639fb8828fb700562e968e2cabbb8300d2308da1b7c0b305&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/762221644.jpg?k=ad324787bab9d745fbfc73a73415f724c7cd4378e496528c6df4f01d50930b95&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762221656.jpg?k=c99b8c3360afa4a4108bd0cda3c69207bff2f723c5ff39b00df1c3239fbe2497&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762214653.jpg?k=d0ae2e8788bbc5f56803ec1699de17d5cfbf6cd89dd52ad4395c7dee7c8316db&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762214642.jpg?k=663b0de2ac0b64b8f265c7cea97bf9e9dd558e3141fc6ac60f05bfae1907bdab&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762207006.jpg?k=4db342b0994c7fbb2cc6dcd4ee3c1522d8390244f778cc5c1a098699e35f2875&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/762214053.jpg?k=26f09ac02840c6984b4d721577a5f6f45b060e0809822552a8b5232d01b312e2&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6386474",
+        "longitude": "41.6129988"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/appartamenti-premium-batumi12345.html",
+        "title": "appartamenti premium",
+        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, appartamenti premium is a 3-minute walk from Batumi Beach.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/562758965.jpg?k=343fe078552ca4fac5e6361c55c150185867e88bcf7bdfc0888bcbe05ff37089&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/562759035.jpg?k=71f09cde46ac26d268be38f71b9f9ff3c9f472848910edf55dfc7139aff0741a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/166713468.jpg?k=3d20c2a9e53b9b0b8beb5b3cab5bc788867cd606e04ad36b4cd2609e14de9948&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/148021608.jpg?k=d8c4a7140bc804cfcfe5ca7b18e763ce1007d6f04257ccf6cf9c1344f34e52ee&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/319416872.jpg?k=35269116721ed891796c0c13994f03ff511e3f24bdc8325e289663e3624bacdf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/319416863.jpg?k=fb958252c8bc8196bc44e50dd9b9fb739a9a158224ce77bdb19de6f84515c643&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/319416568.jpg?k=9a6b2e903f728c033d068a7642a54ce5443c803fb0dd018ed6893a7365082189&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/148021477.jpg?k=d938a66c5ab77292701479ec864d01ce4efcc2786b3d0c5789c2e79e09bae5b5&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6428683",
+        "longitude": "41.6185412"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/station-22.html",
+        "title": "Station 22 Hotel",
+        "description": "Located a 15-minute walk from Batumi Beach, Station 22 Hotel offers 4-star accommodations in Batumi and has a shared lounge, a terrace and a bar.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/569628447.jpg?k=56eede0bde10426ce07587df50e9124138ddb073f09463160aa5c1e585264e3c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/561746778.jpg?k=f915801a6c161834d6bcf0c0c95704b84f810a404cc2370248d8c55148857897&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/569628505.jpg?k=862215e6f25fa69903588a471a969dc5070afcdd4bbe1e4401b3c4e834c33465&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/569628433.jpg?k=e22ec55cc0642158836c93f800a5913de48a759c327dce15f00257cd05ee64c9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/561746514.jpg?k=a4a294d245ecbb9dc6aa15e1811563ab65d2096f1d8fdf87148921880cf01bb9&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/638626795.jpg?k=cf8443ec415e3d9672a7e21b04003a35a3914427c1460073963eb813576b7985&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/561746643.jpg?k=b4510c83d973a77bf3f2c6296a28c6dda9b558a6fcfb155418487b2d6c3789fb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/561746679.jpg?k=0fb0a502bbaac3b88c52a6c936bd4843b0967af1a7cb3ce9a494373c46dd538f&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6467887",
+        "longitude": "41.6417223"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/batumi-view-apartment-batumi8.html",
+        "title": "ORBI CITY - Batumi View Apartment",
+        "description": "ORBI CITY - Batumi View Apartment provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/753674040.jpg?k=73a37606deeabc9988c200898076d5b04f1a7f8ae42dc0e77850cc2cfc8b28d0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/756725558.jpg?k=419cfdc74c5d2da88ce88242dedb921f641a6dac035b496f17172e8d6caae086&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/753673164.jpg?k=f2fa7596fefe32dad2fa8dacba261786076b1c53cff47552870a0348c63b6569&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/756725565.jpg?k=3a43c98e3f6201272126408d1d339a06384cd81cde54c941c3103158c5af0c51&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/756725572.jpg?k=1e813374531bdc76f6e9e97cbc6630d1fa2473736a5e44cfea3ced9d6ed7321a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/754838825.jpg?k=27aacbdb43ef326275bee0c6ddb7129c06e36352be257ffbd2f8429721aa8b9c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/756725546.jpg?k=77f5498300df04220ace651ee6e9c76bca0d19f3d93ff854eeaf62522ea1fecc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/756725607.jpg?k=bd02ea8a193fe9c8677f7ce66ea000a5b8fcdb146c5682e2cbb3dc127d8d1f20&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
+    },
+    {
+        "url": "https://www.booking.com/hotel/ge/room-number-2024.html",
+        "title": "Orbi City Center Apartment",
+        "description": "Orbi City Center Apartment provides beachfront accommodations in Batumi.",
+        "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/723279523.jpg?k=b1ac15f2f1bb88acbe4e9f5f89ff078ef6917feb3215a55477aca113d596224f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/723279522.jpg?k=b40cab6b7437ab3be607b62c0b6cc105972cc2b9cad1917be2f961ae1761b67c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/723280455.jpg?k=8588ff92119ca8b15d083774ffefa06e9374a2ed814b4ccc8d2cb1ed5e729bd7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723279520.jpg?k=0507f21f47db00a683634047a2bc2c81c41b06f174bb15e8cc16ef35c9e38d55&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723281049.jpg?k=5a46e92e0d6adbbad4e8543acc59ec7f5c5ecd787910db2c5f49aca05352ff69&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723279614.jpg?k=9e25f20ac61204d0b3184b25946ea2e81f372481446e2a636cdcc3ac0dd618cb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723280917.jpg?k=0e88ab38422c0b9319554d6018b013464115e9588d6c047c2ea5b7ab47b82dc5&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/723279512.jpg?k=1f2419689c501da6ea65f6d758375e588a8ad77dc2e377f56d06cee14b202825&o="
+        ],
+        "facilities": [],
+        "latitude": "41.6393090",
+        "longitude": "41.6126166"
     }
 ]
