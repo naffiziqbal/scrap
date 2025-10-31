@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Tuple
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -19,7 +19,7 @@ from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
 
 OUTPUT_PATH = Path("georgia_hotels.json")
-MAX_HOTELS = 100
+MAX_HOTELS = 10
 SEARCH_RESULTS_PAGE_SIZE = 25
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
@@ -28,6 +28,7 @@ DEFAULT_SEARCH_QUERY = {
     "label": "gen173nr-10CAQoggJCDnNlYXJjaF9nZW9yZ2lhSDNYBGgUiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKzg4nIBsACAdICJGNjYmE2MGNiLTBkMjAtNDI3ZS05ODkzLWFhZWZlMzQ2ZWNhZtgCAeACAQ",
     "sid": "35788a66b0bc8369c8d88feab7d284bc",
     "lang": "en-us",
+    "selected_currency":"USD",
     "sb": "1",
     "src": "searchresults",
     "src_elem": "sb",
@@ -92,6 +93,178 @@ def safe_select_text(
     return text or None
 
 
+PRICE_COMPONENT_PATTERN = re.compile(r"(?P<currency>[^\d\s]+)\s*(?P<amount>[\d.,]+)")
+
+
+def _to_float(amount_text: str) -> Optional[float]:
+    cleaned = amount_text.replace("\xa0", "").strip()
+    if not cleaned:
+        return None
+
+    cleaned = cleaned.replace(" ", "")
+
+    last_comma = cleaned.rfind(",")
+    last_dot = cleaned.rfind(".")
+
+    decimal_sep: Optional[str] = None
+    thousands_sep: Optional[str] = None
+
+    if last_comma != -1 and last_dot != -1:
+        if last_comma > last_dot:
+            decimal_sep = ","
+            thousands_sep = "."
+        else:
+            decimal_sep = "."
+            thousands_sep = ","
+    elif last_comma != -1:
+        fractional = cleaned[last_comma + 1 :]
+        if fractional.isdigit() and 0 < len(fractional) <= 2:
+            decimal_sep = ","
+        else:
+            thousands_sep = ","
+    elif last_dot != -1:
+        fractional = cleaned[last_dot + 1 :]
+        if fractional.isdigit() and 0 < len(fractional) <= 2:
+            decimal_sep = "."
+        else:
+            thousands_sep = "."
+
+    if thousands_sep:
+        cleaned = cleaned.replace(thousands_sep, "")
+
+    if decimal_sep and decimal_sep != ".":
+        cleaned = cleaned.replace(decimal_sep, ".")
+    elif decimal_sep is None:
+        cleaned = cleaned.replace(",", "").replace(".", "")
+
+    try:
+        return float(cleaned)
+    except ValueError:
+        return None
+
+
+def _split_price_components(text: Optional[str]) -> Tuple[Optional[str], Optional[str], Optional[float]]:
+    if not text:
+        return None, None, None
+
+    cleaned = text.replace("\xa0", " ").strip()
+    match = PRICE_COMPONENT_PATTERN.search(cleaned)
+    if not match:
+        return None, cleaned or None, None
+
+    currency = match.group("currency").strip() or None
+    amount_text = match.group("amount").strip() or None
+    amount_value = _to_float(amount_text) if amount_text else None
+    return currency, amount_text, amount_value
+
+
+def extract_price_info(
+    soup: BeautifulSoup,
+    structured_data: Optional[Dict[str, object]] = None,
+) -> Dict[str, object]:
+    price_info: Dict[str, object] = {}
+
+    container = soup.select_one("[data-testid='availability-rate-information']")
+    breakdown_text: Optional[str] = None
+
+    if container:
+        stay_summary = safe_select_text(container, "[data-testid='price-for-x-nights']")
+        if stay_summary:
+            price_info["stay_summary"] = stay_summary
+
+        taxes = safe_select_text(container, "[data-testid='taxes-and-charges']")
+        if taxes:
+            price_info["taxes_and_charges"] = taxes
+
+        current_display = safe_select_text(container, "[data-testid='price-and-discounted-price']")
+        if current_display:
+            currency, amount_text, amount_value = _split_price_components(current_display)
+            price_info["current_price_display"] = current_display
+            if currency:
+                price_info["current_price_currency"] = currency
+            if amount_text is not None:
+                price_info["current_price_amount_text"] = amount_text
+            if amount_value is not None:
+                price_info["current_price_amount"] = amount_value
+
+        breakdown_text = safe_select_text(container, "div.bc946a29db")
+        if not breakdown_text:
+            for candidate in container.select("div"):
+                candidate_text = candidate.get_text(" ", strip=True)
+                if not candidate_text:
+                    continue
+                lowered = candidate_text.lower()
+                if "original price" in lowered or "current price" in lowered:
+                    breakdown_text = candidate_text
+                    break
+
+        if breakdown_text:
+            price_info["price_breakdown_text"] = breakdown_text
+            original_match = re.search(
+                r"Original price\s+(?P<value>[^.]+)",
+                breakdown_text,
+                flags=re.IGNORECASE,
+            )
+            if original_match:
+                original_display = original_match.group("value").strip().rstrip(".")
+                currency, amount_text, amount_value = _split_price_components(original_display)
+                price_info["original_price_display"] = original_display
+                if currency and "original_price_currency" not in price_info:
+                    price_info["original_price_currency"] = currency
+                if amount_text and "original_price_amount_text" not in price_info:
+                    price_info["original_price_amount_text"] = amount_text
+                if amount_value is not None and "original_price_amount" not in price_info:
+                    price_info["original_price_amount"] = amount_value
+
+            current_match = re.search(
+                r"Current price\s+(?P<value>[^.]+)",
+                breakdown_text,
+                flags=re.IGNORECASE,
+            )
+            if current_match and "current_price_display" not in price_info:
+                current_display_from_breakdown = current_match.group("value").strip().rstrip(".")
+                currency, amount_text, amount_value = _split_price_components(current_display_from_breakdown)
+                price_info["current_price_display"] = current_display_from_breakdown
+                if currency:
+                    price_info["current_price_currency"] = currency
+                if amount_text:
+                    price_info["current_price_amount_text"] = amount_text
+                if amount_value is not None:
+                    price_info["current_price_amount"] = amount_value
+
+    if structured_data:
+        offers = structured_data.get("offers")
+        offer_candidates: List[Dict[str, object]] = []
+        if isinstance(offers, list):
+            offer_candidates = [offer for offer in offers if isinstance(offer, dict)]
+        elif isinstance(offers, dict):
+            offer_candidates = [offers]
+
+        for offer in offer_candidates:
+            price_value = offer.get("price")
+            price_currency = offer.get("priceCurrency")
+
+            if price_currency and "current_price_currency" not in price_info:
+                price_info["current_price_currency"] = str(price_currency)
+
+            if price_value and "current_price_amount" not in price_info:
+                try:
+                    numeric_price = float(price_value)
+                except (TypeError, ValueError):
+                    numeric_price = None
+
+                if numeric_price is not None:
+                    price_info["current_price_amount"] = numeric_price
+                    price_info.setdefault("current_price_amount_text", str(price_value))
+                else:
+                    price_info.setdefault("current_price_amount_text", str(price_value))
+
+            if "current_price_currency" in price_info and "current_price_amount" in price_info:
+                break
+
+    return {key: value for key, value in price_info.items() if value is not None}
+
+
 def parse_structured_data(page_source: str) -> Dict[str, object]:
     """Extract the first Hotel JSON-LD block from the page if available."""
 
@@ -127,8 +300,8 @@ def build_search_url(offset: int = 0) -> str:
 def collect_hotel_links(
     driver: webdriver.Chrome,
     max_results: int = MAX_HOTELS,
-) -> List[str]:
-    """Scroll through the search results and collect up to max_results hotel URLs."""
+) -> List[Dict[str, object]]:
+    """Scroll through the search results and collect up to max_results hotel entries including price snippets."""
 
     driver.get(build_search_url(0))
     try:
@@ -138,7 +311,7 @@ def collect_hotel_links(
     except TimeoutException:
         time.sleep(5)
 
-    links: List[str] = []
+    entries: List[Dict[str, object]] = []
     seen: set[str] = set()
     idle_rounds = 0
 
@@ -152,17 +325,32 @@ def collect_hotel_links(
             absolute = urljoin("https://www.booking.com", clean)
             if absolute not in seen:
                 seen.add(absolute)
-                links.append(absolute)
+                card_html: Optional[str] = None
+                try:
+                    card_element = anchor.find_element(
+                        By.XPATH,
+                        "./ancestor::div[@data-testid='property-card']",
+                    )
+                    card_html = card_element.get_attribute("outerHTML")
+                except Exception:
+                    card_html = None
+
+                search_pricing: Dict[str, object] = {}
+                if card_html:
+                    card_soup = BeautifulSoup(card_html, "html.parser")
+                    search_pricing = extract_price_info(card_soup)
+
+                entries.append({"url": absolute, "search_pricing": search_pricing})
                 added += 1
-                if len(links) >= max_results:
+                if len(entries) >= max_results:
                     break
         return added
 
-    while len(links) < max_results and idle_rounds < 3:
+    while len(entries) < max_results and idle_rounds < 3:
         elements = driver.find_elements(By.CSS_SELECTOR, TITLE_LINK_SELECTOR)
         previous_total = len(elements)
         collect_from_elements(elements)
-        if len(links) >= max_results:
+        if len(entries) >= max_results:
             break
 
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -189,7 +377,7 @@ def collect_hotel_links(
         except TimeoutException:
             idle_rounds += 1
 
-    return links[:max_results]
+    return entries[:max_results]
 
 
 def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str, object]:
@@ -283,7 +471,7 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     gallery_images = list(dict.fromkeys(gallery_images))
     facilities = list(dict.fromkeys(facilities))
 
-    return {
+    hotel_details = {
         "url": hotel_url,
         "title": title,
         "description": description,
@@ -293,19 +481,34 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         "longitude": longitude,
     }
 
+    pricing = extract_price_info(soup, structured_data)
+    if pricing:
+        hotel_details["pricing"] = pricing
+
+    return hotel_details
+
 
 def main(max_hotels: int = MAX_HOTELS) -> None:
     driver = build_driver(headless=True)
     try:
-        hotel_links = collect_hotel_links(driver, max_results=max_hotels)
-        if not hotel_links:
+        hotel_entries = collect_hotel_links(driver, max_results=max_hotels)
+        if not hotel_entries:
             print("No hotels found on the search results page.")
             return
 
         hotel_data: List[Dict[str, object]] = []
-        for index, link in enumerate(hotel_links, start=1):
-            print(f"[{index}/{len(hotel_links)}] Scraping {link}")
-            details = extract_hotel_details(driver, link)
+        for index, entry in enumerate(hotel_entries, start=1):
+            url = entry.get("url")
+            if not isinstance(url, str) or not url:
+                print(f"[{index}/{len(hotel_entries)}] Skipping entry with invalid URL: {entry}")
+                continue
+
+            print(f"[{index}/{len(hotel_entries)}] Scraping {url}")
+            details = extract_hotel_details(driver, url)
+            search_pricing = entry.get("search_pricing")
+            if isinstance(search_pricing, dict) and search_pricing:
+                details["search_pricing"] = search_pricing
+
             hotel_data.append(details)
             time.sleep(1)
 
