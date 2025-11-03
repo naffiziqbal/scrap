@@ -12,14 +12,15 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup, SoupStrainer, Tag
+import csv
 import json
 import re
 import time
 from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
 
-OUTPUT_PATH = Path("georgia_hotels.json")
-MAX_HOTELS = 1
+OUTPUT_PATH = Path("georgia_hotels.csv")
+MAX_HOTELS = 100
 SEARCH_RESULTS_PAGE_SIZE = 25
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
@@ -178,10 +179,7 @@ def _split_price_components(text: Optional[str]) -> Tuple[Optional[str], Optiona
     return currency, amount_text, amount_value
 
 
-def extract_price_info(
-    soup: BeautifulSoup,
-    structured_data: Optional[Dict[str, object]] = None,
-) -> Dict[str, object]:
+def extract_price_info(soup: BeautifulSoup) -> Dict[str, object]:
     price_info: Dict[str, object] = {}
 
     container = soup.select_one("[data-testid='availability-rate-information']")
@@ -251,36 +249,6 @@ def extract_price_info(
                     price_info["current_price_amount_text"] = amount_text
                 if amount_value is not None:
                     price_info["current_price_amount"] = amount_value
-
-    if structured_data:
-        offers = structured_data.get("offers")
-        offer_candidates: List[Dict[str, object]] = []
-        if isinstance(offers, list):
-            offer_candidates = [offer for offer in offers if isinstance(offer, dict)]
-        elif isinstance(offers, dict):
-            offer_candidates = [offers]
-
-        for offer in offer_candidates:
-            price_value = offer.get("price")
-            price_currency = offer.get("priceCurrency")
-
-            if price_currency and "current_price_currency" not in price_info:
-                price_info["current_price_currency"] = str(price_currency)
-
-            if price_value and "current_price_amount" not in price_info:
-                try:
-                    numeric_price = float(price_value)
-                except (TypeError, ValueError):
-                    numeric_price = None
-
-                if numeric_price is not None:
-                    price_info["current_price_amount"] = numeric_price
-                    price_info.setdefault("current_price_amount_text", str(price_value))
-                else:
-                    price_info.setdefault("current_price_amount_text", str(price_value))
-
-            if "current_price_currency" in price_info and "current_price_amount" in price_info:
-                break
 
     return {key: value for key, value in price_info.items() if value is not None}
 
@@ -560,11 +528,10 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         if isinstance(images, list):
             gallery_images.extend(str(url) for url in images if isinstance(url, str))
 
-    if not gallery_images:
-        for img in soup.select("div#photo_wrapper img"):
-            img_url = img.get("src") or img.get("data-src") or img.get("data-lazy")
-            if img_url:
-                gallery_images.append(img_url)
+    for img in soup.select("div#photo_wrapper img"):
+        img_url = img.get("src") or img.get("data-src") or img.get("data-lazy")
+        if img_url:
+            gallery_images.append(img_url)
 
     facilities: List[str] = []
     if structured_data:
@@ -576,11 +543,10 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
                     if isinstance(name, str) and name.strip():
                         facilities.append(name.strip())
 
-    if not facilities:
-        for badge in soup.select("[data-testid='facility-badge']"):
-            text = badge.get_text(strip=True)
-            if text:
-                facilities.append(text)
+    for badge in soup.select("[data-testid='facility-badge']"):
+        text = badge.get_text(strip=True)
+        if text:
+            facilities.append(text)
 
     latitude: Optional[str] = None
     longitude: Optional[str] = None
@@ -595,15 +561,14 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
             if isinstance(lon_val, (float, int, str)):
                 longitude = str(lon_val)
 
-        if not latitude or not longitude:
-            has_map = structured_data.get("hasMap")
-            if isinstance(has_map, str):
-                parsed_url = urlparse(has_map)
-                center = parse_qs(parsed_url.query).get("center")
-                if center:
-                    parts = center[0].split(",")
-                    if len(parts) == 2:
-                        latitude, longitude = parts[0], parts[1]
+        has_map = structured_data.get("hasMap")
+        if (not latitude or not longitude) and isinstance(has_map, str):
+            parsed_url = urlparse(has_map)
+            center = parse_qs(parsed_url.query).get("center")
+            if center:
+                parts = center[0].split(",")
+                if len(parts) == 2:
+                    latitude, longitude = parts[0], parts[1]
 
     if not latitude or not longitude:
         map_image = soup.select_one("div.a88a546fb2 img, img[data-testid='static-map']")
@@ -627,7 +592,7 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         "longitude": longitude,
     }
 
-    pricing = extract_price_info(soup, structured_data)
+    pricing = extract_price_info(soup)
     if pricing:
         hotel_details["pricing"] = pricing
 
@@ -636,6 +601,34 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         hotel_details["rooms"] = rooms
 
     return hotel_details
+
+
+def _serialize_for_csv(value: object) -> str:
+    if value is None:
+        return ""
+    if isinstance(value, bool):
+        return "true" if value else "false"
+    if isinstance(value, (int, float)):
+        return str(value)
+    if isinstance(value, str):
+        return value.replace("\r\n", " ").replace("\r", " ").replace("\n", " ")
+    return json.dumps(value, ensure_ascii=False)
+
+
+def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
+    if not hotel_data:
+        print("No hotel data to write.")
+        return
+
+    fieldnames = sorted({key for entry in hotel_data for key in entry.keys()})
+
+    with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
+        writer.writeheader()
+        for entry in hotel_data:
+            writer.writerow({field: _serialize_for_csv(entry.get(field)) for field in fieldnames})
+
+    print(f"Saved {len(hotel_data)} hotels to {OUTPUT_PATH}")
 
 
 def main(max_hotels: int = MAX_HOTELS) -> None:
@@ -662,11 +655,7 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
             hotel_data.append(details)
             time.sleep(1)
 
-        OUTPUT_PATH.write_text(
-            json.dumps(hotel_data, indent=4, ensure_ascii=False),
-            encoding="utf-8",
-        )
-        print(f"Saved {len(hotel_data)} hotels to {OUTPUT_PATH}")
+        write_hotels_to_csv(hotel_data)
     finally:
         driver.quit()
 

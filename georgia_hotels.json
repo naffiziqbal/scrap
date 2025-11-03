@@ -1,299 +1,1570 @@
 [
     {
-        "url": "https://www.booking.com/hotel/ge/grand-orbi-city-batumi.html",
-        "title": "GRAND HOTEL ☆ ORBI CITY",
-        "description": "GRAND HOTEL ☆ ORBI CITY is a 5-star property located in Batumi, facing the beach. The property is around a 4-minute walk from Batumi Beach, 2.",
+        "url": "https://www.booking.com/hotel/ge/batumi-black-sea-apartment-batumi1.html",
+        "title": "ORBI CITY - ELIT LUXURY hotel",
+        "description": "ORBI CITY - ELIT LUXURY hotel provides beachfront accommodations in Batumi.",
         "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/532358783.jpg?k=fddc6f5cd749611c3e33cbe9c2b27ad5dc41f7748cafaac7248331ecf1044349&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/532358261.jpg?k=1bbafa6677a704f2dd1cf0ca5edfc2cba0e5e5330ef03784baed24cbbc4d1590&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/532357929.jpg?k=3f543b82b08bfdad5e80d0f8e59f708193523d5841e41429e3cb64a59f2d8923&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/532358660.jpg?k=8497e5d1b77c41d31b90ef200745789ddfa31ecb7f1be80084f2b6859a48bba1&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/532358852.jpg?k=31b46dd9061e1e1bf9034fbb6a8b415fb617c4165c86249c3722d8697c7c87b3&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/532358542.jpg?k=2757b58c0f05ca20fd838069792a36c0db6309d41fd17e41e1169c5963365c4b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/687518075.jpg?k=3f19d483cbb0d43ddeec0c893a235bab279543d45dee1669be592e8da90900ed&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/532358753.jpg?k=a73512ebea3577526fd6f444b446b8b39173fd581cdcf0139387410191b22410&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6399224",
-        "longitude": "41.6133193",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$29",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "29",
-            "current_price_amount": 29.0,
-            "price_breakdown_text": "Original price US$33. Current price US$29.",
-            "original_price_display": "US$33",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "33",
-            "original_price_amount": 33.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/radisson-blu-batumi.html",
-        "title": "Radisson Blu Hotel Batumi",
-        "description": "A 3-minute walk from Iveria Beach in Batumi, this hotel features indoor and outdoor pools, a rooftop restaurant and free WiFi.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/696439244.jpg?k=3de5e6a8482dd1fb7e74dc12c8ce9e5d71faecf1c9893b30b98f12f7cbd3975a&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/657349364.jpg?k=b358d18e4fa754a163de236f6a46ff9d9fea2297beaf1e1649853c07f2d69c74&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/316807455.jpg?k=33a9e512e207af4362a063c6ce86070cfb23e523a3e3498480b88e17f88e79c3&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/232824135.jpg?k=c6b732ab12ffabb7de01448421b6f3963a30bf12c06112b5f5fee9c8719eead8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/696439265.jpg?k=a1bc61c15f9d3be345ae3fb1e085ba8d4cfbe7cac4917628ce6e1cb98af86b51&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/657349365.jpg?k=1aba9540a439855a92bab9506826511985c1ac55cd942c5e907bf661f357c1dd&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/657349368.jpg?k=0a48de487d8cd3564515716fbf0b765bf038231d8d83980b64729994debe5640&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/562338452.jpg?k=2cfa52f7b7f5b523e77cbcacf678f79ae97085b1bbe7e260ef07252060b7333a&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6537396",
-        "longitude": "41.6378188",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$239",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "239",
-            "current_price_amount": 239.0,
-            "price_breakdown_text": "Price US$239"
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/orbi-city-premium-sea-view-apartments.html",
-        "title": "Orbi City Premium Sea View Apartments",
-        "description": "Orbi City Premium Sea View Apartments provides beachfront accommodations in Batumi.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/770102488.jpg?k=0b374f75df87ceff8527abebc9a26656302d0093c20f475b57f2492de6e6af3c&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/770103209.jpg?k=f333e03c846c6f8b284cc6d1d4103d0c494918d023a373100cccf812e31894cf&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/763402350.jpg?k=9a88c69e29ce55d1bb6f14ae9f04da35148266cb53f9c17c485ada821eb0e8bc&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/753048469.jpg?k=7db80796f9b877b3e8f8d38cf0f4afa14273a2a53d82ef5f11b2df6800951f61&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/753048539.jpg?k=8eb0ea03a24bb70227cca831e5252b97bd0782fe61ef859882e0dd21f57daf2b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/753576127.jpg?k=5bfec03f2d3afcb3f8eadbcbdd4bc9ff9702d52c648eaa49ef1c964cb5a6c5f8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/753048542.jpg?k=924646d3a822c9ac511008ccf9ff24f68d146850ef360b423172c45f4ebbc9e2&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/763401809.jpg?k=c6a43bb4a1206ce6b7073b449115858598784bb926ade46b778039d973b8bb97&o="
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/760650600.jpg?k=ac8d5f0d3b0a1e1af2b3fd2980f25271e9606f2fc700642f514d6430ce437c1a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/760650538.jpg?k=08ae7a0049a911afb80f63296e8bb825652e8073017479acea389e3fb3c75740&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/760650566.jpg?k=177a4aebd639b3d0c4b94eddba8c3300de469a2f6b4fc2e5b66d19f66e64ba8f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650468.jpg?k=9f7749cffa9e5e4f1cd2934ba856f2f5a2de21fd5ac907974987957e694c6822&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650536.jpg?k=2874dfc4707862e6656ebc3b77f21b49a2487873645068af6d8e24f7d99a43c7&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650457.jpg?k=a96c0f358bd0dffdcb0bc7e44b2ff66304ec528ba95e6753d9abbfd6aaee9dc0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650575.jpg?k=7cd8425db2ae8016f551e3612c00b3d44d111ad878d8944b22a6857b5b40c978&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/760650341.jpg?k=0c06c7cc73efc2103c84c13d88077798d02e675b04f4a12f2f3b2ca3483ebc21&o="
         ],
         "facilities": [],
         "latitude": "41.6393090",
         "longitude": "41.6126166",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$21",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "21",
-            "current_price_amount": 21.0,
-            "price_breakdown_text": "Original price US$35. Current price US$21.",
-            "original_price_display": "US$35",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "35",
-            "original_price_amount": 35.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/orbi-sit-i-batumi12.html",
-        "title": "Sunny Sea View Aparthotel in Orbi City Batumi",
-        "description": "Sunny Sea View Aparthotel in Orbi City Batumi provides rooms in Batumi near Batumi Beach and Aquapark Batumi.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/766296701.jpg?k=bac9fe8d47a3d034ccc3e1f901f28e636231a41e01ffef5ba5e9d6584e55d8d4&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/766296478.jpg?k=867b0e3a5d0d44bd1e6a5b515867c588986ee03c9a0efe3af0a20c6d8ad79635&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/766305442.jpg?k=16d803f041bd74d1e0d7c64d5f15d9599bc7073f0b7af7c718236ac112d25cb4&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/766112341.jpg?k=aecb7390f922bc0401b0fb8725aa1442db0f43c33fe2a1dce878c109468bb025&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/766304970.jpg?k=1ae6d2a68bcaf3ec58c42348fe09556121195cb6d85eb10a93f06f3fb5d0b135&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/766293551.jpg?k=fa4378b64d830e56958d63056d1b6fef9e878191ec7d9e950c1165d13de59dc9&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/766111831.jpg?k=8350f6078b0d2eaecbbf36a044b6f45b0365a826741077f1e674461493e7071c&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/766305393.jpg?k=af68a8622b3afd79e1a5d2539f25cf599660c03e3753e300a27714897c801d0e&o="
+        "rooms": [
+            {
+                "block_id": "1501592602_421980342_2_2_0",
+                "rounded_price": 32,
+                "name": "Deluxe King Studio",
+                "description": "The well-fitted kitchen features a stovetop, a refrigerator, kitchenware and an electric kettle. This air-conditioned studio includes a flat-screen TV with cable channels, a private bathroom as well as a terrace with sea views. The unit offers 1 bed.",
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "bed_configuration": [
+                    "1 king bed"
+                ],
+                "highlights": [
+                    "Entire studio",
+                    "30 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Entire unit wheelchair accessible",
+                    "Hand sanitizer",
+                    "Air purifiers",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector"
+                ],
+                "included_facilities": [
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Entire unit wheelchair accessible",
+                    "Hand sanitizer",
+                    "Air purifiers",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector"
+                ],
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$12",
+                "price_currency": "US$",
+                "price_amount_text": "12",
+                "price_amount": 12.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$12)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$24)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$36)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$48)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$60)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$72)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$84)"
+                    },
+                    {
+                        "value": "8",
+                        "label": "8 (US$96)"
+                    },
+                    {
+                        "value": "9",
+                        "label": "9 (US$108)"
+                    },
+                    {
+                        "value": "10",
+                        "label": "10 (US$120)"
+                    }
+                ],
+                "badges": [
+                    "Entire studio",
+                    "30 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592602_421980342_2_1_0",
+                "rounded_price": 47,
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$17",
+                "price_currency": "US$",
+                "price_amount_text": "17",
+                "price_amount": 17.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$17)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$35)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$52)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$70)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$87)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$104)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$122)"
+                    },
+                    {
+                        "value": "8",
+                        "label": "8 (US$139)"
+                    },
+                    {
+                        "value": "9",
+                        "label": "9 (US$157)"
+                    },
+                    {
+                        "value": "10",
+                        "label": "10 (US$174)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592602_421980342_1_2_0",
+                "rounded_price": 31,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$12",
+                "price_currency": "US$",
+                "price_amount_text": "12",
+                "price_amount": 12.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$12)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$23)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$35)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$46)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$58)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$69)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$81)"
+                    },
+                    {
+                        "value": "8",
+                        "label": "8 (US$92)"
+                    },
+                    {
+                        "value": "9",
+                        "label": "9 (US$104)"
+                    },
+                    {
+                        "value": "10",
+                        "label": "10 (US$115)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592602_421980342_1_1_0",
+                "rounded_price": 46,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$17",
+                "price_currency": "US$",
+                "price_amount_text": "17",
+                "price_amount": 17.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$17)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$34)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$51)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$68)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$85)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$102)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$119)"
+                    },
+                    {
+                        "value": "8",
+                        "label": "8 (US$136)"
+                    },
+                    {
+                        "value": "9",
+                        "label": "9 (US$153)"
+                    },
+                    {
+                        "value": "10",
+                        "label": "10 (US$170)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592603_421980342_2_2_0",
+                "rounded_price": 37,
+                "name": "King Studio with Sofa Bed",
+                "description": "In the well-equipped kitchen, guests will find a stovetop, a refrigerator, kitchenware and an electric kettle. This air-conditioned studio is consisted of of a flat-screen TV with cable channels, a private bathroom as well as a terrace with sea views. The unit has 2 beds.",
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "bed_configuration": [
+                    "1 king bed and",
+                    "1 sofa bed"
+                ],
+                "highlights": [
+                    "Entire studio",
+                    "35 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Air purifiers",
+                    "Hand sanitizer",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector",
+                    "More"
+                ],
+                "included_facilities": [
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Air purifiers",
+                    "Hand sanitizer",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector"
+                ],
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$14",
+                "price_currency": "US$",
+                "price_amount_text": "14",
+                "price_amount": 14.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$14)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$27)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$41)"
+                    }
+                ],
+                "badges": [
+                    "Entire studio",
+                    "35 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592603_421980342_2_1_0",
+                "rounded_price": 54,
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$20",
+                "price_currency": "US$",
+                "price_amount_text": "20",
+                "price_amount": 20.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$20)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$40)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$60)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592603_421980342_1_2_0",
+                "rounded_price": 36,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$13",
+                "price_currency": "US$",
+                "price_amount_text": "13",
+                "price_amount": 13.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$13)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$27)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$40)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592603_421980342_1_1_0",
+                "rounded_price": 53,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$20",
+                "price_currency": "US$",
+                "price_amount_text": "20",
+                "price_amount": 20.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$20)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$39)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$59)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592604_421980342_2_2_0",
+                "rounded_price": 52,
+                "name": "One-Bedroom Apartment with Balcony and Sea View",
+                "description": "Boasting a private entrance, this air-conditioned apartment includes 1 living room, 1 separate bedroom and 1 bathroom with a walk-in shower and a hairdryer. In the well-equipped kitchen, guests will find a stovetop, a refrigerator, kitchenware and an electric kettle. Featuring a terrace with sea views, this apartment also offers soundproof walls and a flat-screen TV with cable channels. The unit has 2 beds.",
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "bed_configuration": [
+                    "Bedroom 1: 1 king bed",
+                    "Living room: 1 sofa bed"
+                ],
+                "highlights": [
+                    "Entire apartment",
+                    "60 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector",
+                    "Hand sanitizer",
+                    "Air purifiers",
+                    "More"
+                ],
+                "included_facilities": [
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector",
+                    "Hand sanitizer",
+                    "Air purifiers"
+                ],
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$19",
+                "price_currency": "US$",
+                "price_amount_text": "19",
+                "price_amount": 19.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$19)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$38)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$57)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$76)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$95)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$114)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$133)"
+                    }
+                ],
+                "badges": [
+                    "Entire apartment",
+                    "60 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592604_421980342_2_1_0",
+                "rounded_price": 76,
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$28",
+                "price_currency": "US$",
+                "price_amount_text": "28",
+                "price_amount": 28.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$28)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$56)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$84)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$112)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$140)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$168)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$196)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592604_421980342_1_2_0",
+                "rounded_price": 50,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$19",
+                "price_currency": "US$",
+                "price_amount_text": "19",
+                "price_amount": 19.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$19)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$37)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$56)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$74)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$93)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$112)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$130)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592604_421980342_1_1_0",
+                "rounded_price": 75,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$28",
+                "price_currency": "US$",
+                "price_amount_text": "28",
+                "price_amount": 28.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$28)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$55)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$83)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$110)"
+                    },
+                    {
+                        "value": "5",
+                        "label": "5 (US$138)"
+                    },
+                    {
+                        "value": "6",
+                        "label": "6 (US$166)"
+                    },
+                    {
+                        "value": "7",
+                        "label": "7 (US$193)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592601_421980342_2_2_0",
+                "rounded_price": 61,
+                "name": "Two-Bedroom Apartment with Terrace",
+                "description": "Boasting a private entrance, this air-conditioned apartment comes with 1 living room, 2 separate bedrooms and 1 bathroom with a walk-in shower and a hairdryer. Guests can make meals in the kitchen that features a stovetop, a refrigerator, kitchenware and an electric kettle. The spacious apartment features a flat-screen TV with cable channels, soundproof walls, a seating area, a dining area as well as sea views. The unit has 3 beds.",
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "bed_configuration": [
+                    "Bedroom 1: 1 king bed",
+                    "Bedroom 2: 1 king bed",
+                    "Living room: 1 sofa bed"
+                ],
+                "highlights": [
+                    "Entire apartment",
+                    "75 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Hand sanitizer",
+                    "Air purifiers",
+                    "Carbon monoxide detector",
+                    "Single-room AC for guest accommodation",
+                    "More"
+                ],
+                "included_facilities": [
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Hand sanitizer",
+                    "Air purifiers",
+                    "Carbon monoxide detector",
+                    "Single-room AC for guest accommodation"
+                ],
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$22",
+                "price_currency": "US$",
+                "price_amount_text": "22",
+                "price_amount": 22.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$22)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$45)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$67)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$89)"
+                    }
+                ],
+                "badges": [
+                    "Entire apartment",
+                    "75 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592601_421980342_2_1_0",
+                "rounded_price": 90,
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$33",
+                "price_currency": "US$",
+                "price_amount_text": "33",
+                "price_amount": 33.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$33)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$67)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$100)"
+                    },
+                    {
+                        "value": "4",
+                        "label": "4 (US$133)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592605_421980342_2_2_0",
+                "rounded_price": 67,
+                "name": "Suite with Sea View",
+                "description": "Featuring a private entrance, this air-conditioned suite consists of 1 living room, 2 separate bedrooms and 1 bathroom with a walk-in shower and a hairdryer. Guests can make meals in the kitchen that comes with a stovetop, a refrigerator, kitchenware and an electric kettle. The spacious suite provides a flat-screen TV with cable channels, soundproof walls, a seating area, a dining area as well as sea views. The unit offers 3 beds.",
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "bed_configuration": [
+                    "Bedroom 1: 1 king bed",
+                    "Bedroom 2: 1 king bed",
+                    "Living room: 1 sofa bed"
+                ],
+                "highlights": [
+                    "85 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Air purifiers",
+                    "Hand sanitizer",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector",
+                    "More"
+                ],
+                "included_facilities": [
+                    "Shower",
+                    "Bathrobe",
+                    "Kitchen",
+                    "Toilet",
+                    "Sofa",
+                    "Hardwood or parquet floors",
+                    "Towels",
+                    "Socket near the bed",
+                    "Electric blankets",
+                    "Cleaning products",
+                    "Hypoallergenic",
+                    "Sitting area",
+                    "Private entrance",
+                    "TV",
+                    "Slippers",
+                    "Refrigerator",
+                    "Ironing facilities",
+                    "Iron",
+                    "Heating",
+                    "Hairdryer",
+                    "Kitchenware",
+                    "Kitchenette",
+                    "Extra long beds (> 6.5 ft)",
+                    "Walk-in closet",
+                    "Electric kettle",
+                    "Outdoor furniture",
+                    "Outdoor dining area",
+                    "Cable channels",
+                    "Dryer",
+                    "Wardrobe or closet",
+                    "Stovetop",
+                    "Dining area",
+                    "Dining table",
+                    "Upper floors accessible by elevator",
+                    "Private apartment in building",
+                    "Clothes rack",
+                    "Toilet paper",
+                    "Sofa bed",
+                    "Entire unit wheelchair accessible",
+                    "Air purifiers",
+                    "Hand sanitizer",
+                    "Single-room AC for guest accommodation",
+                    "Carbon monoxide detector"
+                ],
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$25",
+                "price_currency": "US$",
+                "price_amount_text": "25",
+                "price_amount": 25.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$25)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$50)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$74)"
+                    }
+                ],
+                "badges": [
+                    "85 m²",
+                    "Private kitchen",
+                    "Private bathroom",
+                    "Balcony",
+                    "Sea view",
+                    "Lake view",
+                    "Garden view",
+                    "Mountain view",
+                    "Landmark view",
+                    "City view",
+                    "Inner courtyard view",
+                    "Air conditioning",
+                    "Flat-screen TV",
+                    "Soundproof",
+                    "Terrace",
+                    "Free Wifi",
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592605_421980342_2_1_0",
+                "rounded_price": 99,
+                "max_occupancy_text": "Max. people: 2",
+                "max_occupancy": 2,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$37",
+                "price_currency": "US$",
+                "price_amount_text": "37",
+                "price_amount": 37.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$37)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$73)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$110)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592605_421980342_1_2_0",
+                "rounded_price": 66,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Breakfast US$13 (optional)",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$24",
+                "price_currency": "US$",
+                "price_amount_text": "24",
+                "price_amount": 24.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$24)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$49)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$73)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            },
+            {
+                "block_id": "1501592605_421980342_1_1_0",
+                "rounded_price": 98,
+                "max_occupancy_text": "Max. people: 1",
+                "max_occupancy": 1,
+                "policies": [
+                    "Continental breakfast included",
+                    "Free cancellation anytime",
+                    "No prepayment needed – pay at the property",
+                    "No credit card needed"
+                ],
+                "price_display": "US$36",
+                "price_currency": "US$",
+                "price_amount_text": "36",
+                "price_amount": 36.0,
+                "price_note": "Includes taxes and fees",
+                "availability": [
+                    {
+                        "value": "0",
+                        "label": "0"
+                    },
+                    {
+                        "value": "1",
+                        "label": "1 (US$36)"
+                    },
+                    {
+                        "value": "2",
+                        "label": "2 (US$72)"
+                    },
+                    {
+                        "value": "3",
+                        "label": "3 (US$108)"
+                    }
+                ],
+                "badges": [
+                    "40% off",
+                    "Limited-time Deal"
+                ]
+            }
         ],
-        "facilities": [],
-        "latitude": "41.6386468",
-        "longitude": "41.6129826",
         "search_pricing": {
-            "stay_summary": "1 night,2 adults",
+            "stay_summary": "1 night, 2 adults",
             "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$22",
+            "current_price_display": "US$12",
             "current_price_currency": "US$",
-            "current_price_amount_text": "22",
-            "current_price_amount": 22.0,
-            "price_breakdown_text": "Original price US$28. Current price US$22.",
-            "original_price_display": "US$28",
+            "current_price_amount_text": "12",
+            "current_price_amount": 12.0,
+            "price_breakdown_text": "Original price US$20. Current price US$12.",
+            "original_price_display": "US$20",
             "original_price_currency": "US$",
-            "original_price_amount_text": "28",
-            "original_price_amount": 28.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/batumi-apartment-batumi24.html",
-        "title": "Deluxe Aparthotel In Orbi City official",
-        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Deluxe Aparthotel In Orbi City official is a 4-minute walk from Batumi Beach.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/752440844.jpg?k=0f7fe5bfe3cf3e2f228d3a374dcb5a5d4b1cf85a6c4a2937d58f199fc209a2be&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/399504315.jpg?k=1734b852ee0fea311fa0ffbf5cf4e98448ea247932c46a75acb0478c2c2f2470&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/752440513.jpg?k=31ccbc3df52ee8ac49a2d0ed022371df066d0c3d7763e8dc010e9a4f5227c93c&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/751033008.jpg?k=8c66589b7a955d0f899fefaf30e70dbe1f075ab4e0ddacab8a74747abc8a754b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/428652321.jpg?k=397677b5d282b8a8adf03790151cbaee1bc551792d03863f0096d5cc6f7f9cdc&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/751033003.jpg?k=9b75f818725545d726a0cf2ddd1198b73117e15f5c1cbeb211160de4e7405a39&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/752440983.jpg?k=4bb8ca5c137b86f341473d4b00b787b46b3f16546cd40914c7ccebb7f1d7a720&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/428652320.jpg?k=a39f1e472d357d8b1fcf2f228c2f5e82895e5e0f70d93af2e66207f5f59f99d2&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6398700",
-        "longitude": "41.6129059",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$14",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "14",
-            "current_price_amount": 14.0,
-            "price_breakdown_text": "Original price US$18. Current price US$14.",
-            "original_price_display": "US$18",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "18",
-            "original_price_amount": 18.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/briliant-apartment.html",
-        "title": "Sea View Luxury Apartments in Orbi City",
-        "description": "Offering air-conditioned rooms in the New Boulevard district of Batumi, Sea View Luxury Apartments in Orbi City is a 3-minute walk from Batumi Beach.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/690554872.jpg?k=b5f959f55b304ff6554351a0e80a293d5b0784909d0bc571c3911e80a088df88&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/690556383.jpg?k=f061ef743efc287250592ff64f2d763511ab87c5a81b3adf2432a5671f11b944&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/690555730.jpg?k=263a5802bdcaad858bfe1dddb84864e3be51ea07a7f0350308ad36e279fb1c78&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/690555059.jpg?k=6982665e83ced00d22bfeb65c667a0874cf6b051909650a83c58fe0d91debdae&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/736508866.jpg?k=015c3d7840c5cabce2a256a0adfd35d1a6ea731cfc4bbc650bfe845c8be0ae67&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/690555466.jpg?k=ce9eaa9978d78fe0d59ed8f41db65675b2f9c006e896381b46b6f19f1cb1e107&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/690554988.jpg?k=6634b677706d86540d17ad32fbddefa65076f4815a725b499d376e03ab692bf8&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/690556211.jpg?k=e4732933ba906c1c25dd08b18a3213f00e48689e99a2b21352cbae41f101c791&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6392518",
-        "longitude": "41.6130941",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$18",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "18",
-            "current_price_amount": 18.0,
-            "price_breakdown_text": "Original price US$22. Current price US$18.",
-            "original_price_display": "US$22",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "22",
-            "original_price_amount": 22.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/batumi-best-apartment-batumi.html",
-        "title": "Sea Line Aparthotel & Batumi Beach Resort",
-        "description": "Sea Line Aparthotel & Batumi Beach Resort provides beachfront accommodations in Batumi.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/395338511.jpg?k=f6d2ac03617671525cbf5434fe20c80c81e6f90ea8e507dbb9a500e03fce27cd&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/385135688.jpg?k=94baf629b83896a20f3b6cdb1b00fc4b7d84d9b00387c8e0c136f2fce87367c9&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/385135676.jpg?k=4385123d20d6948768d3f1ea45ea32d121814839784ab0b16b2ca92b064e59e4&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/428653476.jpg?k=37761fee784cf878e98ab7d049e8ed64b2cce781a713999e10ea1b443dac547f&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/395337553.jpg?k=da00c1871e9123c94adf2123ccab94a5d29a3ecb0270fb721e8a4adcfd4a24d9&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/395338519.jpg?k=a2b3308444da16ef319f877eceb9db1c21384959b82e3265e11f804ee2445246&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/385135670.jpg?k=0e31668f6eccf888aee4109e8b9e3c5173d3b97a3dd3909253348cd57107eee3&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/395337736.jpg?k=f593f33daeffaab6631ca91dd2c2284823fb6344c6ecb5e161ce9c82d9be8f95&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6399264",
-        "longitude": "41.6129599",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$20",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "20",
-            "current_price_amount": 20.0,
-            "price_breakdown_text": "Original price US$25. Current price US$20.",
-            "original_price_display": "US$25",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "25",
-            "original_price_amount": 25.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/room-number-1732.html",
-        "title": "Orbi City Prestige Apartments Batumi",
-        "description": "A good location for a relaxing getaway in Batumi, Orbi City Prestige Apartments Batumi is a condo hotel surrounded by views of the lake.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/744047345.jpg?k=159471bdce515c5d4513b19b11747a00c4f845d7122687e74300e6f5c63801a6&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/744047292.jpg?k=a07cbd115d30506c588716f77aec9fbc5f4af6f4925a2584e17278f8de045a9b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/744047428.jpg?k=0d8d285755f016edc6376026b01ab493f9e578ac70b8f0cdd3f78e7f23fdb1bc&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/744047361.jpg?k=44184521d21202e39dbf166d9f9e2c37bc72bd50735fe0afa12b73f9ca5aea16&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/744047366.jpg?k=71ec0edc263d0be12c580964d10a1686465a290d36234dd575ad17516ec43916&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/744047375.jpg?k=e07cd939745ba49513af52eff491d9ffa1753068a3cd960a3a0c7a7a08ec7932&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/744047388.jpg?k=f0aeed6f727c02834515f2991d9be3861052f19d819a63cfa6b87b5ec47ae333&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/744047328.jpg?k=043717370a07f44e8ded2c1f39d73e2a453e166863d08046b5d2ebd1eb10dfeb&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6393090",
-        "longitude": "41.6126166",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$19",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "19",
-            "current_price_amount": 19.0,
-            "price_breakdown_text": "Original price US$24. Current price US$19.",
-            "original_price_display": "US$24",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "24",
-            "original_price_amount": 24.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/orbi-batumi-batumi3.html",
-        "title": "Elegance Sea View Aparthotel In Orbi City Batumi",
-        "description": "Elegance Sea View Aparthotel In Orbi City Batumi provides beachfront accommodations in Batumi.",
-        "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/687550340.jpg?k=adac2df6c25168c56f9804e7425a3048de546b06e4e43933087d93d3f371611b&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/687550333.jpg?k=3f39fe0c789e057ba11cea3b5bee4cd6f0ace5deefde71c9b92a8e3a065cc52e&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/687550360.jpg?k=34b73100140af9329979fa0ba4c90cdfac8f333800d9bb428180b8aad70132a5&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/431944483.jpg?k=bf5e675cf6c580dab4abd583d3f2a079e2223c305491029159d6e9921bc91f37&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/687550326.jpg?k=225ae305f10b5ad9f681ca0d2670b482acd02dcbaa1894f6a8b4d58d129f866d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/687550351.jpg?k=ddbe2cfe4d33b60f2ba58ca2940eb6876673d09e59a1e0a3bd1760a72babcf3d&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/687550346.jpg?k=008c8aa3ebd5ddc4f6b9428d35a6bc48014d022bc82f8a503af8066f65fa4bb9&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/687550375.jpg?k=8f568abe90053a5030b55c88bed0ebdffaae6a66a1f18cb3504a0687e47335bd&o="
-        ],
-        "facilities": [],
-        "latitude": "41.6396057",
-        "longitude": "41.6127024",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$21",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "21",
-            "current_price_amount": 21.0,
-            "price_breakdown_text": "Original price US$26. Current price US$21.",
-            "original_price_display": "US$26",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "26",
-            "original_price_amount": 26.0
-        }
-    },
-    {
-        "url": "https://www.booking.com/hotel/ge/nice-stay-in-batumi.html",
-        "title": "Elite Class Sea View Aparthotel In Orbi City Batumi",
-        "description": "Elite Class Sea View Aparthotel In Orbi City Batumi provides beachfront accommodations in Batumi.",
-        "gallery": [],
-        "facilities": [],
-        "latitude": "41.6393090",
-        "longitude": "41.6126166",
-        "search_pricing": {
-            "stay_summary": "1 night,2 adults",
-            "taxes_and_charges": "Includes taxes and fees",
-            "current_price_display": "US$21",
-            "current_price_currency": "US$",
-            "current_price_amount_text": "21",
-            "current_price_amount": 21.0,
-            "price_breakdown_text": "Original price US$26. Current price US$21.",
-            "original_price_display": "US$26",
-            "original_price_currency": "US$",
-            "original_price_amount_text": "26",
-            "original_price_amount": 26.0
+            "original_price_amount_text": "20",
+            "original_price_amount": 20.0
         }
     }
 ]
