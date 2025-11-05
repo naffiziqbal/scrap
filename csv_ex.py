@@ -16,33 +16,42 @@ import csv
 import json
 import re
 import time
+from datetime import datetime
 from urllib.parse import urljoin, urlparse, parse_qs, urlencode
 
 
-OUTPUT_PATH = Path("georgia_hotels.csv")
-MAX_HOTELS = 100
+def get_output_path() -> Path:
+    """Generate output path with timestamp to preserve data from each run."""
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    return Path(f"georgia_hotels_{timestamp}.csv")
+
+
+OUTPUT_PATH = get_output_path()
+MAX_HOTELS = 5
 SEARCH_RESULTS_PAGE_SIZE = 25
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
 DEFAULT_SEARCH_QUERY = {
     "aid": "304142",
-    "label": "gen173nr-10CAQoggJCDnNlYXJjaF9nZW9yZ2lhSDNYBGgUiAEBmAEzuAEHyAEM2AED6AEB-AEBiAIBqAIBuAKzg4nIBsACAdICJGNjYmE2MGNiLTBkMjAtNDI3ZS05ODkzLWFhZWZlMzQ2ZWNhZtgCAeACAQ",
-    "sid": "35788a66b0bc8369c8d88feab7d284bc",
+    "label": "gen173nr-10CAsoUkIQcm9vbS1udW1iZXItMTczNEgzWARoFIgBAZgBM7gBB8gBDNgBA-gBAfgBAYgCAagCAbgCpMGuyAbAAgHSAiQwNzBmZGRkZi1hNmZjLTQwYTctYWI3Yi03YTRhNGZkNTU5OGPYAgHgAgE",
     "lang": "en-us",
-    "selected_currency":"USD",
     "sb": "1",
-    "src": "searchresults",
     "src_elem": "sb",
-    "ss": "Batumi",
-    "ssne": "Batumi",
-    "ssne_untouched": "Batumi",
-    "checkin": "2025-11-01",
-    "checkout": "2025-11-02",
+    "src": "country",
+    "ss": "Georgia",
+    "ssne": "Georgia",
+    "ssne_untouched": "Georgia",
+    "efdco": "1",
+    "dest_id": "79",
+    "dest_type": "country",
+    "checkin": "2025-11-09",
+    "checkout": "2025-11-10",
     "group_adults": "2",
     "group_children": "0",
     "no_rooms": "1",
-    "rows": str(SEARCH_RESULTS_PAGE_SIZE),
     "sb_travel_purpose": "leisure",
+    "sb_lp": "1",
+    "rows": str(SEARCH_RESULTS_PAGE_SIZE),
 }
 
 TITLE_LINK_SELECTOR = "a[data-testid='titleLink'],a[data-testid='title-link']"
@@ -543,6 +552,13 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
                     if isinstance(name, str) and name.strip():
                         facilities.append(name.strip())
 
+    # Extract facilities from spans with class "f6b6d2a959" (e.g., "2 swimming pools (1 open)")
+    for facility_span in soup.select("span.f6b6d2a959"):
+        text = facility_span.get_text(strip=True)
+        if text:
+            facilities.append(text)
+
+    # Also check for facility badges
     for badge in soup.select("[data-testid='facility-badge']"):
         text = badge.get_text(strip=True)
         if text:
@@ -582,6 +598,142 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     gallery_images = list(dict.fromkeys(gallery_images))
     facilities = list(dict.fromkeys(facilities))
 
+    # Extract city information
+    city: Optional[str] = None
+    
+    # First priority: extract city from input[name="ss"] value attribute
+    ss_input = soup.select_one('input[name="ss"]')
+    if ss_input and ss_input.get("value"):
+        city = ss_input.get("value").strip()
+        if city:
+            # Validate it's not empty or just the country name
+            if city.lower() in ("georgia", "ge"):
+                city = None
+    
+    # Second priority: try structured data
+    if not city and structured_data:
+        address_data = structured_data.get("address")
+        if isinstance(address_data, dict):
+            address_locality = address_data.get("addressLocality")
+            if isinstance(address_locality, str):
+                city = address_locality.strip()
+    
+    # Fallback: try to extract city from page elements
+    if not city:
+        city_element = soup.select_one("[data-testid='address'], .hp_address_subtitle, .hp_address")
+        if city_element:
+            city_text = city_element.get_text(strip=True)
+            # Handle format: "Old Boulevard , Batumi (Old Boulevard )" - city appears before parentheses
+            if city_text:
+                # Check if there are parentheses in the address
+                if "(" in city_text:
+                    # Extract text before the opening parenthesis
+                    before_paren = city_text.split("(")[0].strip()
+                    # Split by comma and get the last non-empty part (the city)
+                    parts = [p.strip() for p in before_paren.split(",") if p.strip()]
+                    if parts:
+                        # The city is typically the last part before the parenthesis
+                        city = parts[-1]
+                        # Validate it's not the country name
+                        if city.lower() in ("georgia", "ge"):
+                            city = None
+                            # Try the part before that if available
+                            if len(parts) > 1:
+                                city = parts[-2]
+                
+                # If no city found from parentheses format, try standard comma-separated format
+                if not city:
+                    parts = [p.strip() for p in city_text.split(",") if p.strip()]
+                    # Look for city (usually second to last part, before country)
+                    if len(parts) >= 2:
+                        # Skip if it's just "Georgia" or country name
+                        potential_city = parts[-2] if len(parts) > 2 else parts[0]
+                        if potential_city.lower() not in ("georgia", "ge"):
+                            city = potential_city
+                    elif len(parts) == 1 and parts[0].lower() not in ("georgia", "ge"):
+                        city = parts[0]
+    
+    # Additional fallback: try to find city in breadcrumbs or location info
+    if not city:
+        location_breadcrumb = soup.select_one(".hp_location_breadcrumb, [data-testid='property-location-breadcrumb']")
+        if location_breadcrumb:
+            breadcrumb_text = location_breadcrumb.get_text(" ", strip=True)
+            # Look for city name in breadcrumb (usually before "Georgia")
+            if "Georgia" in breadcrumb_text:
+                parts = breadcrumb_text.split("Georgia")[0].strip().split()
+                if parts:
+                    city = parts[-1] if len(parts) > 1 else parts[0]
+
+    # Extract location from div with classes "b99b6ef58f cb4b7a25d9 b06461926f"
+    # Format: "Kvareli Lake, 4800 Kvareli, Georgia"
+    location: Optional[str] = None
+    location_div = soup.select_one("div.b99b6ef58f.cb4b7a25d9.b06461926f")
+    if location_div:
+        # Get only direct text content (before nested divs)
+        # The location text is the first text node before any nested div elements
+        location_parts = []
+        for child in location_div.children:
+            if isinstance(child, str):
+                # It's a text node - collect it
+                text = child.strip()
+                if text:
+                    location_parts.append(text)
+            elif isinstance(child, Tag):
+                # It's an element node (Tag) - stop here as we've reached nested content
+                break
+        
+        if location_parts:
+            location = " ".join(location_parts).strip()
+        else:
+            # Fallback: get all text and extract first line or reasonable part
+            full_text = location_div.get_text(" ", strip=True)
+            if full_text:
+                # Split by newline to get first line
+                lines = full_text.split("\n")
+                if lines:
+                    location = lines[0].strip()
+                else:
+                    location = full_text.strip()
+                
+                # If location is too long (likely includes nested content), try to extract just the location part
+                if location and len(location) > 200:
+                    # Look for pattern ending with "Georgia" and extract that part
+                    if "Georgia" in location:
+                        parts = location.split("Georgia")
+                        if parts:
+                            location = (parts[0] + "Georgia").strip()
+
+    # Extract reviews count
+    reviews_count: Optional[int] = None
+    # Try to find span with reviews text (e.g., "· 699 reviews")
+    reviews_elements = soup.select("span.f63b14ab7a, span.fb14de7f14, span.eaa8455879")
+    for element in reviews_elements:
+        text = element.get_text(" ", strip=True)
+        if "reviews" in text.lower():
+            # Extract number from text using regex (e.g., "· 699 reviews" -> 699)
+            match = re.search(r"(\d+(?:[,\s]\d+)*)\s*reviews?", text, re.IGNORECASE)
+            if match:
+                number_str = match.group(1).replace(",", "").replace(" ", "")
+                try:
+                    reviews_count = int(number_str)
+                    break
+                except ValueError:
+                    pass
+    
+    # Fallback: search for any element containing "reviews" pattern
+    if reviews_count is None:
+        for element in soup.select("span, div, p"):
+            text = element.get_text(" ", strip=True)
+            if "reviews" in text.lower():
+                match = re.search(r"(\d+(?:[,\s]\d+)*)\s*reviews?", text, re.IGNORECASE)
+                if match:
+                    number_str = match.group(1).replace(",", "").replace(" ", "")
+                    try:
+                        reviews_count = int(number_str)
+                        break
+                    except ValueError:
+                        pass
+
     hotel_details = {
         "url": hotel_url,
         "title": title,
@@ -590,6 +742,9 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         "facilities": facilities,
         "latitude": latitude,
         "longitude": longitude,
+        "city": city,
+        "location": location,
+        "reviews_count": reviews_count,
     }
 
     pricing = extract_price_info(soup)
