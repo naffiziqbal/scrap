@@ -27,7 +27,7 @@ def get_output_path() -> Path:
 
 
 OUTPUT_PATH = get_output_path()
-MAX_HOTELS = 5
+MAX_HOTELS = 100
 SEARCH_RESULTS_PAGE_SIZE = 25
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
