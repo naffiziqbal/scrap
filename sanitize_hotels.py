@@ -5,6 +5,8 @@ import json
 import math
 import re
 import sys
+import time
+import random
 from dataclasses import dataclass
 from hashlib import sha1
 from pathlib import Path
@@ -12,6 +14,40 @@ from typing import Any, Dict, Iterable, List, Optional, Tuple
 
 CSV_PATH = Path("georgia_hotels_20251106_015055.csv")
 BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon
+INPUT_JSON_PATH = Path("georgia_hotels_20251106_015055.json")
+
+# Master list of dummy room services to sample from
+DUMMY_ROOM_SERVICES: List[str] = [
+    "Toilet",
+    "Bathtub or shower",
+    "Towels",
+    "Linens",
+    "Socket near the bed",
+    "Tile/Marble floor",
+    "TV",
+    "Heating",
+    "Carpeted",
+    "Cable channels",
+    "Wake-up service",
+    "Upper floors accessible by elevator",
+    "Upper floors accessible by stairs only",
+    "Clothes rack",
+    "Toilet paper",
+    "Board games/puzzles",
+    "Single-room AC for guest accommodation",
+    "Inner courtyard view",
+    "Air conditioning",
+    "Attached bathroom",
+    "Flat-screen TV",
+    "Soundproof",
+    "Free Wifi",
+    "Private bathroom",
+    "Hair dryer",
+    "Free toiletries",
+    "Shampoo",
+    "Toiletries",
+    "Bathroom",
+]
 
 
 def _safe_json_loads(value: str) -> Any:
@@ -238,12 +274,67 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia"
     return {"hotels": sanitized}
 
 
+def add_room_services_to_json(json_path: Path) -> Dict[str, Any]:
+    """Load existing sanitized hotels JSON and add randomized services to each room.
+
+    The function updates each room dictionary by adding a "service" key containing
+    a random subset of DUMMY_ROOM_SERVICES.
+    """
+    with json_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    hotels = data.get("hotels")
+    if not isinstance(hotels, list):
+        return data
+
+    for hotel in hotels:
+        rooms = hotel.get("rooms")
+        if not isinstance(rooms, list):
+            continue
+        for room in rooms:
+            # Choose a random number of services per room
+            count = random.randint(6, min(14, len(DUMMY_ROOM_SERVICES)))
+            room_services = random.sample(DUMMY_ROOM_SERVICES, k=count)
+            room["service"] = room_services
+
+    return data
+
+
 def main() -> None:
+    start_time = time.time()
+    
+    # If a JSON file exists, enrich rooms with services; otherwise fall back to CSV → JSON.
+    if INPUT_JSON_PATH.exists():
+        print(f"Enhancing existing JSON with room services: {INPUT_JSON_PATH}")
+        data = add_room_services_to_json(INPUT_JSON_PATH)
+        json_start_time = time.time()
+        with INPUT_JSON_PATH.open("w", encoding="utf-8") as f:
+            json.dump(data, f, indent=2, ensure_ascii=False)
+        json_write_time = time.time() - json_start_time
+        total_time = time.time() - start_time
+        print(f"Updated JSON saved to: {INPUT_JSON_PATH}")
+        print(f"\nTiming:")
+        print(f"  JSON writing: {json_write_time:.3f} seconds")
+        print(f"  Total time: {total_time:.3f} seconds")
+        return
+
+    print("Converting CSV to JSON...")
     data = sanitize_hotels_from_csv(CSV_PATH)
+    csv_processing_time = time.time() - start_time
+    
     output_file = CSV_PATH.with_suffix(".json")
+    json_start_time = time.time()
     with output_file.open("w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
+    json_write_time = time.time() - json_start_time
+    
+    total_time = time.time() - start_time
+    
     print(f"Output saved to: {output_file}")
+    print(f"\nTiming:")
+    print(f"  CSV processing: {csv_processing_time:.3f} seconds")
+    print(f"  JSON writing: {json_write_time:.3f} seconds")
+    print(f"  Total time: {total_time:.3f} seconds")
 
 
 if __name__ == "__main__":
