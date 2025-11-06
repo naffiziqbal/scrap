@@ -56,6 +56,20 @@ DEFAULT_SEARCH_QUERY = {
 
 TITLE_LINK_SELECTOR = "a[data-testid='titleLink'],a[data-testid='title-link']"
 
+# Target cities to extract. Each city should have at least 10 entries.
+CITIES: List[str] = [
+    "Tbilisi",
+    "Batumi",
+    "Kutaisi",
+    "Zugdidi",
+    "Rustavi",
+    "Vani",
+    "Telavi",
+    "Gori",
+    "Mtskheta",
+    "Sighnaghi",
+]
+
 
 def build_driver(headless: bool = True) -> webdriver.Chrome:
     """Create a Chrome WebDriver instance."""
@@ -420,6 +434,36 @@ def build_search_url(offset: int = 0) -> str:
     return f"{BASE_SEARCH_URL}?{urlencode(params)}"
 
 
+def build_city_search_url(city: str, offset: int = 0) -> str:
+    """Build a Booking.com search URL for a specific city in Georgia.
+
+    Note: Avoid using country-level dest_id/dest_type so that the query resolves
+    specifically to the provided city.
+    """
+    params: Dict[str, str] = {
+        "aid": DEFAULT_SEARCH_QUERY["aid"],
+        "label": DEFAULT_SEARCH_QUERY["label"],
+        "lang": DEFAULT_SEARCH_QUERY["lang"],
+        "sb": DEFAULT_SEARCH_QUERY["sb"],
+        "src_elem": DEFAULT_SEARCH_QUERY["src_elem"],
+        "ss": f"{city}, Georgia",
+        "ssne": f"{city}",
+        "ssne_untouched": f"{city}",
+        "efdco": DEFAULT_SEARCH_QUERY["efdco"],
+        "checkin": DEFAULT_SEARCH_QUERY["checkin"],
+        "checkout": DEFAULT_SEARCH_QUERY["checkout"],
+        "group_adults": DEFAULT_SEARCH_QUERY["group_adults"],
+        "group_children": DEFAULT_SEARCH_QUERY["group_children"],
+        "no_rooms": DEFAULT_SEARCH_QUERY["no_rooms"],
+        "sb_travel_purpose": DEFAULT_SEARCH_QUERY["sb_travel_purpose"],
+        "sb_lp": DEFAULT_SEARCH_QUERY["sb_lp"],
+        "rows": DEFAULT_SEARCH_QUERY["rows"],
+    }
+    if offset:
+        params["offset"] = str(offset)
+    return f"{BASE_SEARCH_URL}?{urlencode(params)}"
+
+
 def collect_hotel_links(
     driver: webdriver.Chrome,
     max_results: int = MAX_HOTELS,
@@ -464,6 +508,90 @@ def collect_hotel_links(
                     search_pricing = extract_price_info(card_soup)
 
                 entries.append({"url": absolute, "search_pricing": search_pricing})
+                added += 1
+                if len(entries) >= max_results:
+                    break
+        return added
+
+    while len(entries) < max_results and idle_rounds < 3:
+        elements = driver.find_elements(By.CSS_SELECTOR, TITLE_LINK_SELECTOR)
+        previous_total = len(elements)
+        collect_from_elements(elements)
+        if len(entries) >= max_results:
+            break
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+
+        try:
+            load_more = WebDriverWait(driver, 5).until(
+                EC.element_to_be_clickable(
+                    (
+                        By.XPATH,
+                        "//button[.//span[contains(translate(normalize-space(.), 'ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz'), 'load more results')]]",
+                    )
+                )
+            )
+            driver.execute_script("arguments[0].click();", load_more)
+        except TimeoutException:
+            pass
+
+        try:
+            WebDriverWait(driver, 10).until(
+                lambda d: len(d.find_elements(By.CSS_SELECTOR, TITLE_LINK_SELECTOR)) > previous_total
+            )
+            idle_rounds = 0
+        except TimeoutException:
+            idle_rounds += 1
+
+    return entries[:max_results]
+
+
+def collect_hotel_links_for_city(
+    driver: webdriver.Chrome,
+    city: str,
+    max_results: int = 10,
+) -> List[Dict[str, object]]:
+    """Collect up to max_results hotel entries for a specific city."""
+
+    driver.get(build_city_search_url(city, 0))
+    try:
+        WebDriverWait(driver, 20).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, TITLE_LINK_SELECTOR))
+        )
+    except TimeoutException:
+        time.sleep(5)
+
+    entries: List[Dict[str, object]] = []
+    seen: set[str] = set()
+    idle_rounds = 0
+
+    def collect_from_elements(elements) -> int:
+        added = 0
+        for anchor in elements:
+            href = anchor.get_attribute("href")
+            if not href:
+                continue
+            clean = href.split("?")[0]
+            absolute = urljoin("https://www.booking.com", clean)
+            if absolute not in seen:
+                seen.add(absolute)
+                card_html: Optional[str] = None
+                try:
+                    card_element = anchor.find_element(
+                        By.XPATH,
+                        "./ancestor::div[@data-testid='property-card']",
+                    )
+                    card_html = card_element.get_attribute("outerHTML")
+                except Exception:
+                    card_html = None
+
+                search_pricing: Dict[str, object] = {}
+                if card_html:
+                    card_soup = BeautifulSoup(card_html, "html.parser")
+                    search_pricing = extract_price_info(card_soup)
+
+                entries.append({"url": absolute, "search_pricing": search_pricing, "search_city": city})
                 added += 1
                 if len(entries) >= max_results:
                     break
@@ -789,23 +917,36 @@ def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
 def main(max_hotels: int = MAX_HOTELS) -> None:
     driver = build_driver(headless=True)
     try:
-        hotel_entries = collect_hotel_links(driver, max_results=max_hotels)
-        if not hotel_entries:
-            print("No hotels found on the search results page.")
+        all_hotel_entries: List[Dict[str, object]] = []
+
+        # Ensure at least 10 per city
+        per_city_target = 10
+        for city in CITIES:
+            print(f"Collecting hotels for {city}...")
+            city_entries = collect_hotel_links_for_city(driver, city=city, max_results=per_city_target)
+            if len(city_entries) < per_city_target:
+                print(f"Warning: Only found {len(city_entries)} entries for {city} (requested {per_city_target}).")
+            all_hotel_entries.extend(city_entries)
+
+        if not all_hotel_entries:
+            print("No hotels found for the specified cities.")
             return
 
         hotel_data: List[Dict[str, object]] = []
-        for index, entry in enumerate(hotel_entries, start=1):
+        for index, entry in enumerate(all_hotel_entries, start=1):
             url = entry.get("url")
             if not isinstance(url, str) or not url:
-                print(f"[{index}/{len(hotel_entries)}] Skipping entry with invalid URL: {entry}")
+                print(f"[{index}/{len(all_hotel_entries)}] Skipping entry with invalid URL: {entry}")
                 continue
 
-            print(f"[{index}/{len(hotel_entries)}] Scraping {url}")
+            print(f"[{index}/{len(all_hotel_entries)}] Scraping {url}")
             details = extract_hotel_details(driver, url)
             search_pricing = entry.get("search_pricing")
             if isinstance(search_pricing, dict) and search_pricing:
                 details["search_pricing"] = search_pricing
+            search_city = entry.get("search_city")
+            if isinstance(search_city, str) and search_city:
+                details["search_city"] = search_city
 
             hotel_data.append(details)
             time.sleep(1)

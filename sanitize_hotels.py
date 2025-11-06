@@ -12,9 +12,10 @@ from hashlib import sha1
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-CSV_PATH = Path("georgia_hotels_20251106_015055.csv")
+CSV_PATH = Path("georgia_hotels_20251106_162449.csv")
 BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon
 INPUT_JSON_PATH = Path("georgia_hotels_20251106_015055.json")
+BDT_PER_USD = 122.0  # currency conversion: 1 USD = 122 BDT
 
 # Master list of dummy room services to sample from
 DUMMY_ROOM_SERVICES: List[str] = [
@@ -146,6 +147,9 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         room_name = item.get("name") if isinstance(item.get("name"), str) else None
         description = item.get("description") if isinstance(item.get("description"), str) else None
         price_amount = _to_float(item.get("price_amount")) or _to_float(item.get("price"))
+        # Convert BDT → USD if available
+        if price_amount is not None:
+            price_amount = price_amount / BDT_PER_USD
 
         # Derive quantity from availability options if present
         quantity: int = 1
@@ -171,7 +175,7 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
                 "type": infer_type(room_name),
                 "name": room_name or "Room",
                 "image": _first_or_none(hotel_gallery) or "",
-                "price": price_amount or 0.0,
+                "price": round(price_amount, 2) if price_amount is not None else 0.0,
                 "quantity": int(quantity),
                 "information": description or "",
                 "gallery": hotel_gallery[:6],
@@ -193,7 +197,8 @@ def _derive_price(search_pricing: Any, rooms: List[Dict[str, Any]]) -> Optional[
     if isinstance(search_pricing, dict):
         v = _to_float(search_pricing.get("current_price_amount"))
         if v is not None:
-            return v
+            # Convert BDT → USD
+            return v / BDT_PER_USD
     for room in rooms:
         v = _to_float(room.get("price"))
         if v is not None and v > 0:
@@ -261,7 +266,7 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia"
                 "country": country,
                 "latitude": latitude or 0.0,
                 "longitude": longitude or 0.0,
-                "price": float(price) if price is not None else 0.0,
+                "price": round(float(price), 2) if price is not None else 0.0,
                 "rating": float(rating),
                 "status": "active",
                 "service": services,
