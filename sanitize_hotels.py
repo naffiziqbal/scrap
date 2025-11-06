@@ -10,7 +10,7 @@ from hashlib import sha1
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-CSV_PATH = Path("georgia_hotels.csv")
+CSV_PATH = Path("georgia_hotels_20251106_015055.csv")
 BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon
 
 
@@ -165,7 +165,7 @@ def _derive_price(search_pricing: Any, rooms: List[Dict[str, Any]]) -> Optional[
     return None
 
 
-def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, default_location: str = "Batumi", country: str = "Georgia") -> Dict[str, Any]:
+def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia") -> Dict[str, Any]:
     sanitized: List[Dict[str, Any]] = []
 
     with csv_path.open("r", encoding="utf-8") as f:
@@ -174,6 +174,13 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, default_location: str = 
             title = (row.get("title") or "").strip()
             description = (row.get("description") or "").strip()
             url = (row.get("url") or "").strip()
+            
+            # Get location and city from CSV
+            location = (row.get("location") or "").strip()
+            city = (row.get("city") or "").strip()
+            # If location is empty, use city as fallback
+            if not location:
+                location = city
 
             facilities_raw = _safe_json_loads(row.get("facilities") or "")
             services = _clean_services(facilities_raw)
@@ -213,7 +220,8 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, default_location: str = 
                 "description": description or (f"Stay at {title}" if title else ""),
                 "image": image,
                 "gallery": gallery,
-                "location": default_location,
+                "location": location,
+                "city": city,
                 "country": country,
                 "latitude": latitude or 0.0,
                 "longitude": longitude or 0.0,
@@ -232,7 +240,10 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, default_location: str = 
 
 def main() -> None:
     data = sanitize_hotels_from_csv(CSV_PATH)
-    json.dump(data, sys.stdout, ensure_ascii=False)
+    output_file = CSV_PATH.with_suffix(".json")
+    with output_file.open("w", encoding="utf-8") as f:
+        json.dump(data, f, indent=2, ensure_ascii=False)
+    print(f"Output saved to: {output_file}")
 
 
 if __name__ == "__main__":
