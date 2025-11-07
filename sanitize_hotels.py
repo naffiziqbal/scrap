@@ -155,6 +155,12 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         if price_amount is not None:
             price_amount = price_amount / BDT_PER_USD
 
+        # Extract highlights as services
+        highlights = item.get("highlights")
+        room_services: List[str] = []
+        if isinstance(highlights, list):
+            room_services = [str(h).strip() for h in highlights if isinstance(h, (str, int, float)) and str(h).strip()]
+
         # Derive quantity from availability options if present
         quantity: int = 1
         availability = item.get("availability")
@@ -183,6 +189,7 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
                 "quantity": int(quantity),
                 "information": description or "",
                 "gallery": hotel_gallery[:6],
+                "service": room_services,
             }
         )
 
@@ -287,7 +294,8 @@ def add_room_services_to_data(data: Dict[str, Any]) -> Dict[str, Any]:
     """Add randomized services to each room in the data dictionary.
 
     The function updates each room dictionary by adding a "service" key containing
-    a random subset of DUMMY_ROOM_SERVICES.
+    a random subset of DUMMY_ROOM_SERVICES. Only adds services if the room doesn't
+    already have services (e.g., from highlights in the CSV).
     """
     hotels = data.get("hotels")
     if not isinstance(hotels, list):
@@ -298,10 +306,12 @@ def add_room_services_to_data(data: Dict[str, Any]) -> Dict[str, Any]:
         if not isinstance(rooms, list):
             continue
         for room in rooms:
-            # Choose a random number of services per room
-            count = random.randint(6, min(14, len(DUMMY_ROOM_SERVICES)))
-            room_services = random.sample(DUMMY_ROOM_SERVICES, k=count)
-            room["service"] = room_services
+            # Only add services if room doesn't already have them
+            if "service" not in room or not room.get("service"):
+                # Choose a random number of services per room
+                count = random.randint(6, min(14, len(DUMMY_ROOM_SERVICES)))
+                room_services = random.sample(DUMMY_ROOM_SERVICES, k=count)
+                room["service"] = room_services
 
     return data
 
