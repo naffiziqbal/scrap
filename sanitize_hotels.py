@@ -118,7 +118,14 @@ def _first_or_none(items: Optional[Iterable[str]]) -> Optional[str]:
 
 def _clean_services(services: Any) -> List[str]:
     if isinstance(services, list):
-        return [str(s).strip() for s in services if isinstance(s, (str, int, float)) and str(s).strip()]
+        # Filter out "See all X facilities" entries
+        return [
+            str(s).strip() 
+            for s in services 
+            if isinstance(s, (str, int, float)) 
+            and str(s).strip() 
+            and not str(s).strip().lower().startswith("see all")
+        ]
     return []
 
 
@@ -155,11 +162,20 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         if price_amount is not None:
             price_amount = price_amount / BDT_PER_USD
 
-        # Extract highlights as services
+        # Extract highlights as services (max 6)
         highlights = item.get("highlights")
         room_services: List[str] = []
         if isinstance(highlights, list):
-            room_services = [str(h).strip() for h in highlights if isinstance(h, (str, int, float)) and str(h).strip()]
+            # Filter out "See all X facilities" entries and other non-service items
+            room_services = [
+                str(h).strip() 
+                for h in highlights 
+                if isinstance(h, (str, int, float)) 
+                and str(h).strip() 
+                and not str(h).strip().lower().startswith("see all")
+            ]
+            # Limit to maximum 6 services
+            room_services = room_services[:6]
 
         # Derive quantity from availability options if present
         quantity: int = 1
