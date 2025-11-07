@@ -12,9 +12,9 @@ from hashlib import sha1
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-CSV_PATH = Path("georgia_hotels_20251106_162449.csv")
-BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon
-INPUT_JSON_PATH = Path("georgia_hotels_20251106_015055.json")
+CSV_PATH = Path("uae_hotels_20251107_145631.csv")
+BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon (not used for UAE)
+INPUT_JSON_PATH = Path("uae_hotels_20251107_145631.json")
 BDT_PER_USD = 122.0  # currency conversion: 1 USD = 122 BDT
 
 # Master list of dummy room services to sample from
@@ -145,6 +145,10 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         if not isinstance(item, dict):
             continue
         room_name = item.get("name") if isinstance(item.get("name"), str) else None
+        # Skip entries without a name field - these are pricing variants, not actual rooms
+        if not room_name or not room_name.strip():
+            continue
+        
         description = item.get("description") if isinstance(item.get("description"), str) else None
         price_amount = _to_float(item.get("price_amount")) or _to_float(item.get("price"))
         # Convert BDT → USD if available
@@ -173,7 +177,7 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         rooms.append(
             {
                 "type": infer_type(room_name),
-                "name": room_name or "Room",
+                "name": room_name,
                 "image": _first_or_none(hotel_gallery) or "",
                 "price": round(price_amount, 2) if price_amount is not None else 0.0,
                 "quantity": int(quantity),
@@ -232,17 +236,17 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia"
             latitude = _to_float(row.get("latitude"))
             longitude = _to_float(row.get("longitude"))
 
-            rooms_raw = _safe_json_loads(row.get("rooms") or "")
+            # Rooms data is in the column with empty name (between reviews_count and search_city)
+            # Try "rooms" first, then empty string as fallback
+            rooms_raw = _safe_json_loads(row.get("rooms") or row.get("") or "")
             rooms = _parse_rooms(rooms_raw, gallery)
 
             search_pricing_raw = _safe_json_loads(row.get("search_pricing") or "")
             price = _derive_price(search_pricing_raw, rooms)
 
-            # Distance from Batumi center if coords exist
-            if latitude is not None and longitude is not None:
-                distance_km = _haversine_km(latitude, longitude, BATUMI_CENTER[0], BATUMI_CENTER[1])
-            else:
-                distance_km = None
+            # Distance calculation (not used for UAE, set to 0)
+            # For UAE, we don't calculate distance from a specific center
+            distance_km = None
 
             # Fill derived fields
             category = _derive_category_from_title(title or description)
@@ -279,15 +283,12 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia"
     return {"hotels": sanitized}
 
 
-def add_room_services_to_json(json_path: Path) -> Dict[str, Any]:
-    """Load existing sanitized hotels JSON and add randomized services to each room.
+def add_room_services_to_data(data: Dict[str, Any]) -> Dict[str, Any]:
+    """Add randomized services to each room in the data dictionary.
 
     The function updates each room dictionary by adding a "service" key containing
     a random subset of DUMMY_ROOM_SERVICES.
     """
-    with json_path.open("r", encoding="utf-8") as f:
-        data = json.load(f)
-
     hotels = data.get("hotels")
     if not isinstance(hotels, list):
         return data
@@ -303,6 +304,18 @@ def add_room_services_to_json(json_path: Path) -> Dict[str, Any]:
             room["service"] = room_services
 
     return data
+
+
+def add_room_services_to_json(json_path: Path) -> Dict[str, Any]:
+    """Load existing sanitized hotels JSON and add randomized services to each room.
+
+    The function updates each room dictionary by adding a "service" key containing
+    a random subset of DUMMY_ROOM_SERVICES.
+    """
+    with json_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    return add_room_services_to_data(data)
 
 
 def main() -> None:
@@ -324,8 +337,14 @@ def main() -> None:
         return
 
     print("Converting CSV to JSON...")
-    data = sanitize_hotels_from_csv(CSV_PATH)
+    data = sanitize_hotels_from_csv(CSV_PATH, country="UAE")
     csv_processing_time = time.time() - start_time
+    
+    # Add room services to the data
+    print("Adding room services...")
+    services_start_time = time.time()
+    data = add_room_services_to_data(data)
+    services_time = time.time() - services_start_time
     
     output_file = CSV_PATH.with_suffix(".json")
     json_start_time = time.time()
@@ -338,6 +357,7 @@ def main() -> None:
     print(f"Output saved to: {output_file}")
     print(f"\nTiming:")
     print(f"  CSV processing: {csv_processing_time:.3f} seconds")
+    print(f"  Adding room services: {services_time:.3f} seconds")
     print(f"  JSON writing: {json_write_time:.3f} seconds")
     print(f"  Total time: {total_time:.3f} seconds")
 
