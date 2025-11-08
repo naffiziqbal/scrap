@@ -7,9 +7,10 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, NoSuchElementException, StaleElementReferenceException
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup, SoupStrainer, Tag
 import json
@@ -35,8 +36,8 @@ DEFAULT_SEARCH_QUERY = {
     "ss": "Batumi",
     "ssne": "Batumi",
     "ssne_untouched": "Batumi",
-    "checkin": "2025-11-01",
-    "checkout": "2025-11-02",
+    "checkin": "2025-11-15",
+    "checkout": "2025-11-16",
     "group_adults": "2",
     "group_children": "0",
     "no_rooms": "1",
@@ -285,7 +286,185 @@ def extract_price_info(
     return {key: value for key, value in price_info.items() if value is not None}
 
 
-def extract_room_options(soup: BeautifulSoup) -> List[Dict[str, object]]:
+def extract_room_gallery_images(driver: webdriver.Chrome, block_id: str, room_name: str = "Unknown") -> List[str]:
+    """Click room name link to open modal and extract all images from the room gallery.
+
+    Args:
+        driver: Selenium WebDriver instance
+        block_id: The data-block-id attribute value for the room row
+        room_name: The room name for better logging
+
+    Returns:
+        List of image URLs from the room gallery, or empty list if none found
+    """
+    images: List[str] = []
+
+    try:
+        # Find the room row element in the live page
+        row_element = driver.find_element(
+            By.CSS_SELECTOR,
+            f"tr[data-block-id='{block_id}']"
+        )
+
+        # The room name link itself opens the modal with room details and gallery
+        # Look for the room name link (it's an anchor link that triggers a modal)
+        room_link_selectors = [
+            "a.hprt-roomtype-link",
+            ".hprt-roomtype-link",
+            "a.roomtype-link",
+            ".room-name-link",
+        ]
+
+        room_link = None
+        for selector in room_link_selectors:
+            try:
+                room_link = row_element.find_element(By.CSS_SELECTOR, selector)
+                if room_link and room_link.is_displayed():
+                    break
+            except NoSuchElementException:
+                continue
+
+        if not room_link:
+            print(f"    No room link found for {room_name}")
+            return images
+
+        # Scroll to the room link and click it to open the modal
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'instant'});", room_link)
+        time.sleep(0.8)
+
+        # Click to open room detail modal
+        driver.execute_script("arguments[0].click();", room_link)
+        print(f"    Clicked room link for: {room_name}")
+
+        # Wait for modal to appear and load images
+        time.sleep(3)
+
+        # Look for the room photo section that appears after clicking room link
+        # The room details appear in a section with data-testid="roomPagePhotos"
+        photo_section_selectors = [
+            "[data-testid='roomPagePhotos']",
+            "div[data-testid='roomPagePhotos']",
+            "#roomPagePhotos",
+            ".room-photos",
+            "[role='dialog']",  # Fallback
+        ]
+
+        section_found = False
+        photo_element = None
+        for selector in photo_section_selectors:
+            try:
+                photo_element = WebDriverWait(driver, 5).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, selector))
+                )
+                section_found = True
+                print(f"    Found photo section using: {selector}")
+                break
+            except TimeoutException:
+                continue
+
+        if not section_found:
+            print(f"    Photo section not found for {room_name}")
+            # Try closing any overlay and return
+            try:
+                driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+                time.sleep(0.3)
+            except:
+                pass
+            return images
+
+        # Extract images from the photo section
+        modal_soup = BeautifulSoup(driver.page_source, "html.parser")
+
+        # Find the photo section in the soup
+        modal_soup_element = None
+        for selector in photo_section_selectors:
+            modal_soup_element = modal_soup.select_one(selector)
+            if modal_soup_element:
+                print(f"    Located photo section in HTML: {selector}")
+                break
+
+        if modal_soup_element:
+            seen_urls = set()
+
+            # Method 1: Extract from CSS background-image in carousel
+            # Room photos are displayed as background images in divs
+            carousel_divs = modal_soup_element.select("div[style*='background-image']")
+            for div in carousel_divs:
+                style = div.get("style", "")
+                # Extract URL from: background-image: url("https://...");
+                url_match = re.search(r'url\(["\']?(https://[^"\']+)["\']?\)', style)
+                if url_match:
+                    img_url = url_match.group(1)
+                    # Decode HTML entities (&quot; -> ")
+                    img_url = img_url.replace("&quot;", "").replace("&amp;", "&")
+                    if img_url not in seen_urls:
+                        seen_urls.add(img_url)
+                        images.append(img_url)
+
+            # Method 2: Extract from thumbnail strip images
+            # Thumbnails have <img> tags with square60 URLs that can be upgraded
+            thumbnails = modal_soup_element.select("img[src*='square60']")
+            for thumb in thumbnails:
+                thumb_url = thumb.get("src")
+                if thumb_url and thumb_url.startswith("http"):
+                    # Convert thumbnail URL to full-size
+                    full_url = thumb_url.replace("/square60/", "/max1024x768/")
+                    if full_url not in seen_urls:
+                        seen_urls.add(full_url)
+                        images.append(full_url)
+
+            # Method 3: Fallback - check any other images in modal
+            other_imgs = modal_soup_element.select("img")
+            for img in other_imgs:
+                img_url = img.get("src") or img.get("data-src") or img.get("data-lazy")
+                if img_url and img_url.startswith("http"):
+                    # Skip tiny icons
+                    if "/64x/" in img_url or "/32x/" in img_url or "/square60/" in img_url:
+                        continue
+                    if img_url not in seen_urls:
+                        seen_urls.add(img_url)
+                        images.append(img_url)
+
+            print(f"    Extracted {len(images)} images from modal")
+
+        # Close the modal
+        try:
+            # Method 1: Press ESC key
+            driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+            time.sleep(0.5)
+            print(f"    Closed modal with ESC")
+        except Exception:
+            try:
+                # Method 2: Click close button
+                close_selectors = [
+                    "button[aria-label='Close']",
+                    ".bui-modal__close",
+                    ".modal-close",
+                    ".close",
+                    "button.close",
+                    "[data-testid='modal-close']",
+                ]
+                for selector in close_selectors:
+                    try:
+                        close_button = driver.find_element(By.CSS_SELECTOR, selector)
+                        driver.execute_script("arguments[0].click();", close_button)
+                        time.sleep(0.5)
+                        print(f"    Closed modal with button: {selector}")
+                        break
+                    except:
+                        continue
+            except Exception as e:
+                print(f"    Warning: Could not close modal: {e}")
+
+    except (NoSuchElementException, StaleElementReferenceException, TimeoutException) as e:
+        print(f"    Gallery extraction failed for {room_name}: {type(e).__name__}")
+    except Exception as e:
+        print(f"    Warning: Unexpected error extracting gallery for {room_name}: {e}")
+
+    return images
+
+
+def extract_room_options(soup: BeautifulSoup, driver: Optional[webdriver.Chrome] = None) -> List[Dict[str, object]]:
     rooms: List[Dict[str, object]] = []
 
     for row in soup.select("tbody tr[data-block-id]"):
@@ -403,6 +582,20 @@ def extract_room_options(soup: BeautifulSoup) -> List[Dict[str, object]]:
         )
         if badges:
             room_data["badges"] = badges
+
+        # Extract room gallery images if driver is provided
+        if driver and block_id:
+            try:
+                room_name_str = room_data.get('name', 'Unknown')
+                print(f"    Extracting gallery for room: {room_name_str}")
+                room_gallery = extract_room_gallery_images(driver, block_id, room_name_str)
+                if room_gallery:
+                    room_data["gallery"] = room_gallery
+                    print(f"    ✓ Found {len(room_gallery)} gallery images")
+                else:
+                    print(f"    ✗ No gallery images found")
+            except Exception as e:
+                print(f"    Warning: Failed to extract room gallery: {e}")
 
         room_data = {key: value for key, value in room_data.items() if value not in (None, [], {})}
         if room_data:
@@ -529,6 +722,20 @@ def collect_hotel_links(
 def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str, object]:
     """Visit a hotel detail page and extract relevant information."""
 
+    # Ensure the URL includes search parameters for room availability
+    # If the URL doesn't have query parameters, add default ones
+    if '?' not in hotel_url:
+        # Add search parameters to ensure rooms are displayed
+        params = {
+            'checkin': DEFAULT_SEARCH_QUERY['checkin'],
+            'checkout': DEFAULT_SEARCH_QUERY['checkout'],
+            'group_adults': DEFAULT_SEARCH_QUERY['group_adults'],
+            'group_children': DEFAULT_SEARCH_QUERY['group_children'],
+            'no_rooms': DEFAULT_SEARCH_QUERY['no_rooms'],
+            'selected_currency': DEFAULT_SEARCH_QUERY['selected_currency'],
+        }
+        hotel_url = f"{hotel_url}?{urlencode(params)}"
+
     driver.get(hotel_url)
     time.sleep(5)
 
@@ -631,9 +838,12 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     if pricing:
         hotel_details["pricing"] = pricing
 
-    rooms = extract_room_options(soup)
+    # Extract room options with gallery images (pass driver for interactive extraction)
+    print("  Extracting room options and galleries...")
+    rooms = extract_room_options(soup, driver=driver)
     if rooms:
         hotel_details["rooms"] = rooms
+        print(f"  Found {len(rooms)} room options")
 
     return hotel_details
 
