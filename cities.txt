@@ -1,0 +1,50 @@
+All Cities from merged_hotels.json
+============================================================
+
+Total hotels: 200
+Hotels with city: 200
+Hotels without city: 0
+Unique cities: 18
+
+Cities (sorted alphabetically with hotel counts):
+------------------------------------------------------------
+Abu Dhabi: 13 hotels
+Ajman: 16 hotels
+Al Ain: 13 hotels
+Al Ḩamrīyah: 1 hotel
+Batumi: 12 hotels
+Dubai: 13 hotels
+Fujairah: 12 hotels
+Gori: 11 hotels
+Kutaisi: 11 hotels
+Mtskheta: 11 hotels
+Ras al Khaimah: 12 hotels
+Rustavi: 11 hotels
+Sharjah: 12 hotels
+Sighnaghi: 11 hotels
+Tbilisi: 11 hotels
+Telavi: 11 hotels
+Umm Al Quwain: 8 hotels
+Zugdidi: 11 hotels
+
+============================================================
+Cities sorted by hotel count (descending):
+------------------------------------------------------------
+Ajman: 16 hotels
+Abu Dhabi: 13 hotels
+Al Ain: 13 hotels
+Dubai: 13 hotels
+Batumi: 12 hotels
+Fujairah: 12 hotels
+Ras al Khaimah: 12 hotels
+Sharjah: 12 hotels
+Gori: 11 hotels
+Kutaisi: 11 hotels
+Mtskheta: 11 hotels
+Rustavi: 11 hotels
+Sighnaghi: 11 hotels
+Tbilisi: 11 hotels
+Telavi: 11 hotels
+Zugdidi: 11 hotels
+Umm Al Quwain: 8 hotels
+Al Ḩamrīyah: 1 hotel

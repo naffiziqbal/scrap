@@ -11574,65 +11574,6 @@
       ]
     },
     {
-      "id": "5c4fdae0ace62543",
-      "title": "Silk Valley - 4B near Al Hamriyah | Private Pool",
-      "category": "Hotel",
-      "description": "Silk Valley - 4B near Al Hamriyah | Private Pool offers accommodations in Al Ḩamrīyah, 1.",
-      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751887334.jpg?k=d8cd08248ecbec032bbe3b749e7bc75afe6f357f4c2221323e178afdaab25d38&o=",
-      "gallery": [
-        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751887334.jpg?k=d8cd08248ecbec032bbe3b749e7bc75afe6f357f4c2221323e178afdaab25d38&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max500/751887337.jpg?k=ae257c82f5e8883405386a19b0c15cd0ee06f79ae61bf99de4bb014e773775d1&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max500/751887338.jpg?k=fdfaea0b5722fe52f9157c4af0a7d5176c43831df36a84c31c13cd4030fcc1bd&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max300/751887361.jpg?k=e8341146576af0fee3cd8898b1cb02267de0dae6fb663ac5a55ffd3b8fcdd31e&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max300/751887345.jpg?k=e39562b79c3c7793033537c0f9a3278036bc131146de6a87a2ff80fe302b5437&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max300/751887349.jpg?k=ee17586010c775e2e6e9ecb374b899246ac563c397a7b389ea73fdeb9e82e73a&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max300/751887348.jpg?k=03dac94f118949c68a5be62e401945e69e1d8019ac5b9a7c97d3928e694d7f77&o=",
-        "https://cf.bstatic.com/xdata/images/hotel/max300/751887358.jpg?k=7b8d9f942f3b2a30b2d3317c1dba0e64f6e34e21d827d0bab4835e60ad3f19b0&o="
-      ],
-      "location": "Hamriya West, Al Ḩamrīyah, United Arab Emirates",
-      "city": "Al Ḩamrīyah",
-      "country": "UAE",
-      "latitude": 25.5012151,
-      "longitude": 55.5328283,
-      "price": 545.01,
-      "rating": 3.65,
-      "status": "active",
-      "service": [
-        "Outdoor swimming pool",
-        "Non-smoking rooms",
-        "Free parking",
-        "Free Wifi",
-        "Family rooms"
-      ],
-      "distance": 0.0,
-      "rooms": [
-        {
-          "type": "Room",
-          "name": "Villa with Private Pool",
-          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751887334.jpg?k=d8cd08248ecbec032bbe3b749e7bc75afe6f357f4c2221323e178afdaab25d38&o=",
-          "price": 545.01,
-          "quantity": 1,
-          "information": "",
-          "gallery": [
-            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/751887334.jpg?k=d8cd08248ecbec032bbe3b749e7bc75afe6f357f4c2221323e178afdaab25d38&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/751887337.jpg?k=ae257c82f5e8883405386a19b0c15cd0ee06f79ae61bf99de4bb014e773775d1&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max500/751887338.jpg?k=fdfaea0b5722fe52f9157c4af0a7d5176c43831df36a84c31c13cd4030fcc1bd&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/751887361.jpg?k=e8341146576af0fee3cd8898b1cb02267de0dae6fb663ac5a55ffd3b8fcdd31e&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/751887345.jpg?k=e39562b79c3c7793033537c0f9a3278036bc131146de6a87a2ff80fe302b5437&o=",
-            "https://cf.bstatic.com/xdata/images/hotel/max300/751887349.jpg?k=ee17586010c775e2e6e9ecb374b899246ac563c397a7b389ea73fdeb9e82e73a&o="
-          ],
-          "service": [
-            "Entire villa",
-            "258 m²",
-            "Private kitchen",
-            "Attached bathroom",
-            "Pool with a view",
-            "Air conditioning"
-          ]
-        }
-      ]
-    },
-    {
       "id": "900f0e89bcca066f",
       "title": "Top Hotel Apartments",
       "category": "Apartment",

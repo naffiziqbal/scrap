@@ -52,21 +52,55 @@ DEFAULT_SEARCH_QUERY = {
     "sb_travel_purpose": "leisure",
     "sb_lp": "1",
     "rows": str(SEARCH_RESULTS_PAGE_SIZE),
+    "selected_currency": "USD",
 }
 
 TITLE_LINK_SELECTOR = "a[data-testid='titleLink'],a[data-testid='title-link']"
 
 # Target cities to extract. Each city should have at least 10 entries.
 CITIES: List[str] = [
-    "Dubai",
-    "Sharjah",
+    "Abu Dhabi",
     "Ajman",
-    "Fujairah",
-    "Ras Al Khaimah",
-    "Umm Al-Quwain",
     "Al Ain",
-    "Abu Dhabi"
+    "Dubai",
+    "Fujairah",
+    "Ras al Khaimah",
+    "Sharjah",
+    "Umm Al Quwain"
 ]
+
+
+def set_currency_preference(driver: webdriver.Chrome, currency: str = "USD") -> None:
+    """Set currency preference by visiting Booking.com with currency parameter and setting cookies."""
+    # First, visit the main page to establish domain context (required before setting cookies)
+    driver.get("https://www.booking.com")
+    time.sleep(1)
+    
+    # Set currency cookies
+    try:
+        driver.add_cookie({
+            "name": "currency",
+            "value": currency,
+            "domain": ".booking.com",
+            "path": "/",
+        })
+    except Exception:
+        pass  # Cookie might already exist
+    
+    try:
+        driver.add_cookie({
+            "name": "b_selected_currency",
+            "value": currency,
+            "domain": ".booking.com",
+            "path": "/",
+        })
+    except Exception:
+        pass  # Cookie might already exist
+    
+    # Now visit a page with currency parameter to ensure it's applied
+    currency_url = f"https://www.booking.com/index.html?selected_currency={currency}"
+    driver.get(currency_url)
+    time.sleep(2)
 
 
 def build_driver(headless: bool = True) -> webdriver.Chrome:
@@ -456,6 +490,7 @@ def build_city_search_url(city: str, offset: int = 0) -> str:
         "sb_travel_purpose": DEFAULT_SEARCH_QUERY["sb_travel_purpose"],
         "sb_lp": DEFAULT_SEARCH_QUERY["sb_lp"],
         "rows": DEFAULT_SEARCH_QUERY["rows"],
+        "selected_currency": DEFAULT_SEARCH_QUERY["selected_currency"],
     }
     if offset:
         params["offset"] = str(offset)
@@ -868,6 +903,52 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
                     except ValueError:
                         pass
 
+    # Extract rating
+    rating: Optional[float] = None
+    # Look for div with classes "f63b14ab7a dff2e52086" containing rating (e.g., "9.0")
+    # First try the specific combination that typically contains ratings
+    rating_elements = soup.select("div.f63b14ab7a.dff2e52086")
+    for element in rating_elements:
+        rating_text = element.get_text(strip=True)
+        if rating_text and "reviews" not in rating_text.lower():
+            # Try to parse as float (e.g., "9.0" -> 9.0)
+            try:
+                rating_value = float(rating_text)
+                # Validate it's a reasonable rating (typically 0-10 for booking.com)
+                if 0 <= rating_value <= 10:
+                    rating = rating_value
+                    break
+            except ValueError:
+                pass
+    
+    # Fallback: try other div elements with class "f63b14ab7a" that might contain rating
+    if rating is None:
+        fallback_elements = soup.select("div.f63b14ab7a")
+        for element in fallback_elements:
+            rating_text = element.get_text(strip=True)
+            # Skip if it contains "reviews" or other non-rating text
+            if rating_text and "reviews" not in rating_text.lower() and len(rating_text) < 10:
+                try:
+                    rating_value = float(rating_text)
+                    if 0 <= rating_value <= 10:
+                        rating = rating_value
+                        break
+                except ValueError:
+                    pass
+    
+    # Fallback: also check structured data for rating
+    if rating is None and structured_data:
+        aggregate_rating = structured_data.get("aggregateRating")
+        if isinstance(aggregate_rating, dict):
+            rating_value = aggregate_rating.get("ratingValue")
+            if isinstance(rating_value, (int, float)):
+                rating = float(rating_value)
+            elif isinstance(rating_value, str):
+                try:
+                    rating = float(rating_value)
+                except ValueError:
+                    pass
+
     hotel_details = {
         "url": hotel_url,
         "title": title,
@@ -879,6 +960,7 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
         "city": city,
         "location": location,
         "reviews_count": reviews_count,
+        "rating": rating,
     }
 
     pricing = extract_price_info(soup)
@@ -923,44 +1005,55 @@ def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
 def main(max_hotels: int = MAX_HOTELS) -> None:
     driver = build_driver(headless=True)
     try:
+        # Set currency preference to USD before scraping
+        print("Setting currency preference to USD...")
+        set_currency_preference(driver, currency="USD")
+        time.sleep(2)
+        
         all_hotel_entries: List[Dict[str, object]] = []
 
-        # Calculate per_city_target to ensure we get at least max_hotels total
-        # with a minimum of 10 per city
+        # Collect at least 10 hotels per city, aiming for max_hotels total
+        # Distribution: base is min_per_city, distribute remainder
         min_per_city = 10
+        total_target = max_hotels
         num_cities = len(CITIES)
-        # Calculate: max_hotels / num_cities, but ensure minimum of 10
-        per_city_target = max(min_per_city, (max_hotels + num_cities - 1) // num_cities)
         
-        print(f"Target: {max_hotels} hotels total across {num_cities} cities (minimum {min_per_city} per city)")
-        print(f"Collecting {per_city_target} hotels per city...")
+        # Calculate hotels per city: base is min_per_city, distribute remainder
+        base_per_city = min_per_city
+        remainder = total_target - (base_per_city * num_cities)
+        hotels_per_city = [base_per_city] * num_cities
         
-        for city in CITIES:
-            print(f"Collecting hotels for {city}...")
-            city_entries = collect_hotel_links_for_city(driver, city=city, max_results=per_city_target)
-            if len(city_entries) < min_per_city:
-                print(f"Warning: Only found {len(city_entries)} entries for {city} (minimum {min_per_city} required).")
-            elif len(city_entries) < per_city_target:
-                print(f"Info: Found {len(city_entries)} entries for {city} (requested {per_city_target}).")
+        # Distribute remainder across cities (prefer earlier cities, wrap around if needed)
+        for i in range(remainder):
+            city_idx = i % num_cities
+            hotels_per_city[city_idx] += 1
+        
+        print(f"Target: {total_target} hotels across {num_cities} cities")
+        print(f"Distribution: {dict(zip(CITIES, hotels_per_city))}")
+        
+        for idx, city in enumerate(CITIES):
+            target_count = hotels_per_city[idx]
+            print(f"Collecting {target_count} hotels for {city}...")
+            city_entries = collect_hotel_links_for_city(driver, city=city, max_results=target_count)
+            if len(city_entries) < target_count:
+                print(f"Warning: Only found {len(city_entries)} entries for {city} (requested {target_count}).")
             all_hotel_entries.extend(city_entries)
             
-            # If we've collected enough, we can stop early
-            if len(all_hotel_entries) >= max_hotels:
-                print(f"Reached target of {max_hotels} hotels. Stopping collection.")
+            # Stop if we've reached the total target
+            if len(all_hotel_entries) >= total_target:
+                print(f"Reached target of {total_target} hotels. Stopping collection.")
                 break
 
         if not all_hotel_entries:
             print("No hotels found for the specified cities.")
             return
 
-        # Limit to max_hotels if we collected more
-        original_count = len(all_hotel_entries)
-        if original_count > max_hotels:
-            all_hotel_entries = all_hotel_entries[:max_hotels]
-            print(f"Limited collection from {original_count} to {max_hotels} hotels.")
-        
-        print(f"\nTotal hotels to scrape: {len(all_hotel_entries)}")
-        print(f"Starting to scrape hotel details...\n")
+        # Limit to total_target hotels
+        if len(all_hotel_entries) > total_target:
+            print(f"Collected {len(all_hotel_entries)} hotels, limiting to {total_target}.")
+            all_hotel_entries = all_hotel_entries[:total_target]
+
+        print(f"Processing {len(all_hotel_entries)} hotels...")
 
         hotel_data: List[Dict[str, object]] = []
         for index, entry in enumerate(all_hotel_entries, start=1):

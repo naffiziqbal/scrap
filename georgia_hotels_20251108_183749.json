@@ -1,0 +1,1284 @@
+{
+  "hotels": [
+    {
+      "id": "06ac65fc4df10dd5",
+      "title": "Luxury orbi panorama Aparthotel",
+      "category": "Hotel",
+      "description": "Luxury orbi panorama Aparthotel features a garden, shared lounge, a terrace and restaurant in Batumi.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/755316300.jpg?k=e63c1c578e822757f48bd06abd199fc4ba797a3b6b0355689621ebb10b13a1dc&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/755316272.jpg?k=9cdded743b1366813fae6f77edb51f79055eecf6fc49ae63f2ec60652e57f66b&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/755316589.jpg?k=3357230e736acb4382650df480e041221446cf1a79ba6f375482e44e3d5b0a8e&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/755317093.jpg?k=08aa5393ace2dbd45f29179ac15e690a8b8c48054146458e65ab1bbf4bfdf826&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/755317157.jpg?k=466c37264e1efad5f96cb9bf8f818b8dbb967c729fbfac273b7710831b23da72&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/755317025.jpg?k=a814b649e5dcddb668a43403b329653de10340c1de1b6fd53223f25071cbdeb6&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/755317179.jpg?k=b49b3eae9837b465d81cfcea7b8ffc3743f1457a356b99eba6ac7cd7b2138033&o="
+      ],
+      "location": "Sherif Khimshiashvili Street, 6001 Batumi, Georgia",
+      "city": "Batumi",
+      "country": "Georgia",
+      "latitude": 41.6404778,
+      "longitude": 41.613755,
+      "price": 19.0,
+      "rating": 3.7,
+      "status": "active",
+      "service": [
+        "Indoor swimming pool",
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Fitness center",
+        "Spa",
+        "Restaurant",
+        "Family rooms",
+        "Tea/Coffee Maker in All Rooms",
+        "Bar",
+        "Breakfast"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Studio",
+          "name": "Studio with Sea View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+          "price": 19.0,
+          "quantity": 6,
+          "information": "The private pool is the standout feature of this studio. Guests can make meals in the kitchen that features a refrigerator, kitchenware, a microwave and a tea and coffee maker. This air-conditioned studio is consisted of of a flat-screen TV with cable channels, a private bathroom as well as a terrace with sea views. The unit has 1 bed.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316300.jpg?k=e63c1c578e822757f48bd06abd199fc4ba797a3b6b0355689621ebb10b13a1dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316272.jpg?k=9cdded743b1366813fae6f77edb51f79055eecf6fc49ae63f2ec60652e57f66b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755316589.jpg?k=3357230e736acb4382650df480e041221446cf1a79ba6f375482e44e3d5b0a8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317093.jpg?k=08aa5393ace2dbd45f29179ac15e690a8b8c48054146458e65ab1bbf4bfdf826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317157.jpg?k=466c37264e1efad5f96cb9bf8f818b8dbb967c729fbfac273b7710831b23da72&o="
+          ],
+          "service": [
+            "Entire studio",
+            "30 m²",
+            "Private kitchen",
+            "Private bathroom",
+            "Private pool",
+            "Balcony"
+          ]
+        },
+        {
+          "type": "Apartment",
+          "name": "Apartment with Sea View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+          "price": 21.0,
+          "quantity": 9,
+          "information": "Guests will have a special experience as the apartment provides a private pool. The well-equipped kitchen features a refrigerator, kitchenware, a microwave and a tea and coffee maker. This air-conditioned apartment includes a flat-screen TV with cable channels, a private bathroom as well as a terrace with sea views. The unit offers 2 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316300.jpg?k=e63c1c578e822757f48bd06abd199fc4ba797a3b6b0355689621ebb10b13a1dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316272.jpg?k=9cdded743b1366813fae6f77edb51f79055eecf6fc49ae63f2ec60652e57f66b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755316589.jpg?k=3357230e736acb4382650df480e041221446cf1a79ba6f375482e44e3d5b0a8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317093.jpg?k=08aa5393ace2dbd45f29179ac15e690a8b8c48054146458e65ab1bbf4bfdf826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317157.jpg?k=466c37264e1efad5f96cb9bf8f818b8dbb967c729fbfac273b7710831b23da72&o="
+          ],
+          "service": [
+            "Entire apartment",
+            "33 m²",
+            "Private kitchen",
+            "Private bathroom",
+            "Private pool",
+            "Balcony"
+          ]
+        },
+        {
+          "type": "Apartment",
+          "name": "One-Bedroom Apartment",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+          "price": 37.0,
+          "quantity": 4,
+          "information": "The private pool is a top feature of this apartment. This apartment comes with 1 living room, 1 separate bedroom and 1 bathroom with a walk-in shower and free toiletries. The kitchen features a refrigerator, kitchenware and a microwave. The air-conditioned apartment features a flat-screen TV with cable channels, a washing machine, soundproof walls, a tea and coffee maker as well as sea views. The unit has 2 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316300.jpg?k=e63c1c578e822757f48bd06abd199fc4ba797a3b6b0355689621ebb10b13a1dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316272.jpg?k=9cdded743b1366813fae6f77edb51f79055eecf6fc49ae63f2ec60652e57f66b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755316589.jpg?k=3357230e736acb4382650df480e041221446cf1a79ba6f375482e44e3d5b0a8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317093.jpg?k=08aa5393ace2dbd45f29179ac15e690a8b8c48054146458e65ab1bbf4bfdf826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317157.jpg?k=466c37264e1efad5f96cb9bf8f818b8dbb967c729fbfac273b7710831b23da72&o="
+          ],
+          "service": [
+            "Entire apartment",
+            "55 m²",
+            "Private kitchen",
+            "Private bathroom",
+            "Private pool",
+            "Balcony"
+          ]
+        },
+        {
+          "type": "Apartment",
+          "name": "Two-Bedroom Apartment with Sea View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+          "price": 49.0,
+          "quantity": 2,
+          "information": "The private pool is the standout feature of this apartment. This spacious apartment comes with 1 living room, 2 separate bedrooms and 1 bathroom with a walk-in shower and free toiletries. Meals can be prepared in the kitchen, which features a refrigerator, kitchenware and a microwave. The air-conditioned apartment features a flat-screen TV with cable channels, a washing machine, soundproof walls, a tea and coffee maker as well as sea views. The unit has 3 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/755316832.jpg?k=b0aefa1c8dae12dd4de93dab512a705abcaee43e8896d9db0122d7843c591245&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316300.jpg?k=e63c1c578e822757f48bd06abd199fc4ba797a3b6b0355689621ebb10b13a1dc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/755316272.jpg?k=9cdded743b1366813fae6f77edb51f79055eecf6fc49ae63f2ec60652e57f66b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755316589.jpg?k=3357230e736acb4382650df480e041221446cf1a79ba6f375482e44e3d5b0a8e&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317093.jpg?k=08aa5393ace2dbd45f29179ac15e690a8b8c48054146458e65ab1bbf4bfdf826&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/755317157.jpg?k=466c37264e1efad5f96cb9bf8f818b8dbb967c729fbfac273b7710831b23da72&o="
+          ],
+          "service": [
+            "Entire apartment",
+            "85 m²",
+            "Private kitchen",
+            "Private bathroom",
+            "Private pool",
+            "Balcony"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c2f407a78726f65a",
+      "title": "Gori Inn",
+      "category": "Hotel",
+      "description": "Located in Gori, 1.1 miles from Joseph Stalin Museum, Gori Inn has accommodations with a fitness center, free private parking, a garden and a shared...",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/424331977.jpg?k=6aaf0c667f4f2d4171e5b32046abca747996a90d0ff3b3b3415559f50872781f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/769036260.jpg?k=77c3284f2266104802fd8cd4a35a90f4656c230c3ae76f3704ca9b70c45bae76&o="
+      ],
+      "location": "Гурамишвили 1, Гори , Город в Грузии Гурамишвили 1,, 1400 Gori, Georgia",
+      "city": "Gori",
+      "country": "Georgia",
+      "latitude": 41.9786689,
+      "longitude": 44.1033684,
+      "price": 86.0,
+      "rating": 4.25,
+      "status": "active",
+      "service": [
+        "Indoor swimming pool",
+        "Airport shuttle",
+        "Spa",
+        "Non-smoking rooms",
+        "Room service",
+        "Fitness center",
+        "Tea/Coffee Maker in All Rooms",
+        "Bar",
+        "Good Breakfast",
+        "Free crib available on request"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Standard",
+          "name": "Large Double Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 93.0,
+          "quantity": 10,
+          "information": "Featuring free toiletries and bathrobes, this double room includes a private bathroom with a shower, a bidet and a hairdryer. This double room is air-conditioned and has a flat-screen TV, a private entrance, soundproof walls and a mini-bar. The unit has 1 bed.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "23 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 93.0,
+          "quantity": 10,
+          "information": "Offering free toiletries and bathrobes, this twin room includes a private bathroom with a shower, a bidet and a hairdryer. The twin room offers air conditioning, a private entrance, soundproof walls, a mini-bar and a flat-screen TV. The unit has 2 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "23 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Small Double or Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 86.0,
+          "quantity": 2,
+          "information": "Offering free toiletries and bathrobes, this twin/double room includes a private bathroom with a shower, a bidet and a hairdryer. The twin/double room offers air conditioning, a private entrance, soundproof walls, a mini-bar, as well as a flat-screen TV.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "20 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Double Room - Disability Access",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 93.0,
+          "quantity": 1,
+          "information": "Featuring free toiletries and bathrobes, this double room includes a private bathroom with a shower, a bidet and a hairdryer. The double room features air conditioning, a private entrance, soundproof walls, a mini-bar, as well as a flat-screen TV. The unit has 1 bed.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "20 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Suite",
+          "name": "Presidential Suite",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 907.0,
+          "quantity": 1,
+          "information": "The hot tub and spa bath are the special features of this suite. This spacious suite is consisted of of 1 living room, 1 separate bedroom and 3 bathrooms with a bidet and free toiletries. This suite is air-conditioned and features a seating area with a flat-screen TV, a private entrance, soundproof walls, a mini-bar, as well as a tea and coffee maker. The unit offers 2 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "Private suite",
+            "113 m²",
+            "Balcony",
+            "Air conditioning",
+            "Spa tub",
+            "Attached bathroom"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Triple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 143.0,
+          "quantity": 3,
+          "information": "The spacious triple room features air conditioning, a private entrance, as well as a private bathroom boasting a shower and a bidet. Featuring a balcony, this triple room also offers soundproof walls, a mini-bar and a flat-screen TV. The unit has 3 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "35 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Family Room with Balcony",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+          "price": 185.0,
+          "quantity": 1,
+          "information": "Providing free toiletries and bathrobes, this family room includes a private bathroom with a shower, a bidet and a hairdryer. The air-conditioned family room provides a flat-screen TV, a private entrance, soundproof walls and a mini-bar. The unit offers 3 beds.",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/483062771.jpg?k=f428b8e85e030444b4df31f2d31901170f05a96248661170af9433165e2b070a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/482772470.jpg?k=41422f973ba99f8113871c26059914ca1d40e8cb90b0700b5dd0004d74f58490&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/550561656.jpg?k=16ebdfa8611557e4ff53daadee9bd922d5743e88c3dc4f2a5b4f5f9612200bc1&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/758830384.jpg?k=bdafab87ea0d169955d20eba99e1c3d9e89ede0066d864a7ceabbdbd18937e5a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/483059958.jpg?k=5e5011552c6f0754f082d049c6bd2b7db04db520f39df03c951370126dfd0caf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/509469992.jpg?k=5225dac000514d703062a33b12af5c1cdc570a2f9e32a96457bdffa1e5cc7667&o="
+          ],
+          "service": [
+            "1 room",
+            "40 m²",
+            "Balcony",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "d61671f696ff26e3",
+      "title": "Veranda L&G",
+      "category": "Hotel",
+      "description": "Veranda L&G features free Wifi and rooms with air conditioning in Kutaisi.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/513818113.jpg?k=c0d70c362f6649fdfd7bd43947b4bd101ce1cbaaae687bde0b176057037b0c13&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/513818109.jpg?k=db163bb446726c1d69dc5615219089dbf0eaf6a469a62339158cea31585365a6&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/513818098.jpg?k=e094541aa314dff5e2fedf6e5a8a7e68b347d63e25b9efabe4b2149e6e09a256&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/513818123.jpg?k=540e999d428a4c2514e6680473c1a1951eb7f29d2064654acfe4c94818299203&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/513818112.jpg?k=f91d1d3731221d24e1ddbaf4cfc8d7da5062022348c2706de682dab16ca3307d&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/353868237.jpg?k=538eaf09e2b3d1ff9b74cc69ca4b7ffacf97ea385c72bfb89cb1c83a2f0d94d0&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/386530625.jpg?k=2cf13e04c41a1d082969d46be293ddd8260de8515ab71cec2196d6a929d81835&o="
+      ],
+      "location": "David and Consantine Mkheidze Street N:15, 4600 Kutaisi, Georgia",
+      "city": "Kutaisi",
+      "country": "Georgia",
+      "latitude": 42.2745621,
+      "longitude": 42.702511,
+      "price": 34.0,
+      "rating": 4.55,
+      "status": "active",
+      "service": [
+        "Airport shuttle",
+        "Free parking",
+        "Non-smoking rooms",
+        "Free Wifi"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Standard",
+          "name": "Double or Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+          "price": 40.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818113.jpg?k=c0d70c362f6649fdfd7bd43947b4bd101ce1cbaaae687bde0b176057037b0c13&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818109.jpg?k=db163bb446726c1d69dc5615219089dbf0eaf6a469a62339158cea31585365a6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818098.jpg?k=e094541aa314dff5e2fedf6e5a8a7e68b347d63e25b9efabe4b2149e6e09a256&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818123.jpg?k=540e999d428a4c2514e6680473c1a1951eb7f29d2064654acfe4c94818299203&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818112.jpg?k=f91d1d3731221d24e1ddbaf4cfc8d7da5062022348c2706de682dab16ca3307d&o="
+          ],
+          "service": [
+            "18 m²",
+            "View",
+            "Air conditioning",
+            "Private bathroom",
+            "Flat-screen TV",
+            "Soundproof"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Economy Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+          "price": 34.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818113.jpg?k=c0d70c362f6649fdfd7bd43947b4bd101ce1cbaaae687bde0b176057037b0c13&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818109.jpg?k=db163bb446726c1d69dc5615219089dbf0eaf6a469a62339158cea31585365a6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818098.jpg?k=e094541aa314dff5e2fedf6e5a8a7e68b347d63e25b9efabe4b2149e6e09a256&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818123.jpg?k=540e999d428a4c2514e6680473c1a1951eb7f29d2064654acfe4c94818299203&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818112.jpg?k=f91d1d3731221d24e1ddbaf4cfc8d7da5062022348c2706de682dab16ca3307d&o="
+          ],
+          "service": [
+            "20 m²",
+            "Air conditioning",
+            "Private bathroom",
+            "Flat-screen TV",
+            "Soundproof",
+            "Free Wifi"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Single Room with Private Bathroom",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+          "price": 29.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/513818116.jpg?k=4f8e0be4bc34d6609c4765ef911110d341b1bcb9ece3da84fc406218103bbe83&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818113.jpg?k=c0d70c362f6649fdfd7bd43947b4bd101ce1cbaaae687bde0b176057037b0c13&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/513818109.jpg?k=db163bb446726c1d69dc5615219089dbf0eaf6a469a62339158cea31585365a6&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818098.jpg?k=e094541aa314dff5e2fedf6e5a8a7e68b347d63e25b9efabe4b2149e6e09a256&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818123.jpg?k=540e999d428a4c2514e6680473c1a1951eb7f29d2064654acfe4c94818299203&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/513818112.jpg?k=f91d1d3731221d24e1ddbaf4cfc8d7da5062022348c2706de682dab16ca3307d&o="
+          ],
+          "service": [
+            "18 m²",
+            "Balcony",
+            "City view",
+            "Air conditioning",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "31ac04c8bb27f30a",
+      "title": "Golden Fleece",
+      "category": "Hotel",
+      "description": "Located in Mtskheta, 12 miles from Medical University Metro Station, Golden Fleece has accommodations with a terrace, free private parking and a...",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/185931401.jpg?k=f66b0928254f6174ea0e9ca8ab2455de4a339fa9d401169b112de2d95c35df05&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/185931226.jpg?k=b620a22649c6cd4385285efeda0718cf9ecd89aaa0702b4d91f9b347bfa0ba92&o="
+      ],
+      "location": "mtskheta 3302, 3302 Mtskheta, Georgia",
+      "city": "Mtskheta",
+      "country": "Georgia",
+      "latitude": 41.8649268,
+      "longitude": 44.7297525,
+      "price": 33.0,
+      "rating": 4.25,
+      "status": "active",
+      "service": [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Room service",
+        "Free parking",
+        "Family rooms",
+        "Free Wifi",
+        "2 restaurants",
+        "Breakfast",
+        "Free crib available on request"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Standard",
+          "name": "Economy Double or Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+          "price": 33.0,
+          "quantity": 4,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o="
+          ],
+          "service": [
+            "1 room",
+            "View",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV",
+            "Soundproof"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Standard Double or Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+          "price": 44.0,
+          "quantity": 5,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o="
+          ],
+          "service": [
+            "1 room",
+            "20 m²",
+            "River view",
+            "Air conditioning",
+            "Attached bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Deluxe Double or Twin Room with River View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+          "price": 55.0,
+          "quantity": 3,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o="
+          ],
+          "service": [
+            "1 room",
+            "30 m²",
+            "Balcony",
+            "River view",
+            "Air conditioning",
+            "Attached bathroom"
+          ]
+        },
+        {
+          "type": "Suite",
+          "name": "Presidential Suite",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+          "price": 100.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o="
+          ],
+          "service": [
+            "Private suite",
+            "48 m²",
+            "Balcony",
+            "River view",
+            "Air conditioning",
+            "Attached bathroom"
+          ]
+        },
+        {
+          "type": "Suite",
+          "name": "Two-Bedroom Suite",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+          "price": 115.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/161763154.jpg?k=30e6151703ed244d717eca87632bf426ba1cae5619aaefcc7fd2a78206ddd14a&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931312.jpg?k=3843947a53d000008a11cb4f4d5f0ba88fccce784700c560c035b884a6edf9bb&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/185931385.jpg?k=521077aa0c736fb9383a8a471c9586afa399e60edbff322aa923737124f7fc5f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931194.jpg?k=7ba1c1be2ea44ffc3ed9b365fb131d31b04a984cf35902e14aa0cccc32899fdc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/161763309.jpg?k=a979b39cac3b17abbf21d9972407de9503bceff9b551eb83bae50a011e28dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/185931372.jpg?k=092d3d6d407a563fbc1f3b5af57ddf8aa1c99ea50b9c4e3f9213562dd38f876f&o="
+          ],
+          "service": [
+            "Private suite",
+            "51 m²",
+            "Balcony",
+            "River view",
+            "Air conditioning",
+            "Attached bathroom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "06d6a9c31259d94f",
+      "title": "Hotel Selika",
+      "category": "Hotel",
+      "description": "Located in Rustavi, 15 miles from Freedom Square, Hotel Selika provides accommodations with a garden, free private parking, a terrace and a bar.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/213414503.jpg?k=9d5d8d3390a0213466183654b4c497f88fe8ece98181e7b1ba07e965e021b297&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/213414243.jpg?k=67b8fe61a4d8107601e8d45985ab29eef11fae2cb921abf14a2201e5b86751e0&o="
+      ],
+      "location": "Rustavskoye shose 22 km, 3700 Rustavi, Georgia",
+      "city": "Rustavi",
+      "country": "Georgia",
+      "latitude": 41.5589225,
+      "longitude": 44.9645019,
+      "price": 22.0,
+      "rating": 3.75,
+      "status": "active",
+      "service": [
+        "Non-smoking rooms",
+        "Free Wifi",
+        "Bar"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Room",
+          "name": "Standard Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 22.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "16 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Deluxe Double or Twin Room with Garden View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 26.0,
+          "quantity": 3,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "18 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Twin Room with Terrace",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 26.0,
+          "quantity": 3,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "18 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Basic Triple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 33.0,
+          "quantity": 3,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "Attached bathroom",
+            "Board games/puzzles",
+            "Toilet paper",
+            "Tile/Marble floor",
+            "Upper floors accessible by stairs only",
+            "Cable channels",
+            "Bathtub or shower",
+            "Flat-screen TV",
+            "Private bathroom",
+            "Free toiletries",
+            "Bathroom",
+            "Hair dryer"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Deluxe Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 37.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "30 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Standard Quadruple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 44.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "20 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Superior Quadruple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+          "price": 55.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/213414846.jpg?k=633d0928cbbf766f24802779d3c38cafaea70cf968196856191a96e6f0d2480c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/213417148.jpg?k=03878a7de1ad54635b523d1c20f6d47c2dddab37d0c2d429a09f8c89e8a174d3&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/211509652.jpg?k=c1c274f682fc874d6c871a9c44e93974e058ede77a55c54295e54db0a4b38602&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509604.jpg?k=c596a3c34c53ac00fad668ad9c2367f0d918c7d215d282866f5ac2930c6e2e4f&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/213414165.jpg?k=b5f27cb3d2dd4a506667f585e602a908e0a7a59790cadf37d479257d6fc10cd4&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/211509628.jpg?k=2bab83aa90677791e8ec2ad57827c520a20b5aba14913412be259b43998bde17&o="
+          ],
+          "service": [
+            "40 m²",
+            "Inner courtyard view",
+            "Air conditioning",
+            "Patio",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "1f6211715e6fccc6",
+      "title": "Three Gracia",
+      "category": "Hotel",
+      "description": "Three Gracia enjoys a location in Sighnaghi, 1.8 miles from Bodbe Monastery and a 6-minute walk from Sighnaghi National Museum.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/136784486.jpg?k=91755e992dd48586a73c8644982507185bf6cb76f0c3e09a612105485c09c1cc&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/136784486.jpg?k=91755e992dd48586a73c8644982507185bf6cb76f0c3e09a612105485c09c1cc&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/136784095.jpg?k=4e1079e16ad7581fc0b98f9a4f97e63e845d5f6729b4a6bcf06447a93f6d7099&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/136784261.jpg?k=e598514e51d12df2d7053168239e9ac91dd613953845ae5fe000802172ae4210&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/171367754.jpg?k=6cf300b097c5ce7d009a00c008d97ad35037e84b454816679c58f1742f29db87&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/167731591.jpg?k=ac1ffdcff0ba75ef09dfe5822e747bf2efcecd18fb4c018fd9e4a6e764bac081&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/178431467.jpg?k=e8401449a711900d7ac18918e9c2085b17879c34cf2792314d3100704ec1f97f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/171367926.jpg?k=c20e141fa31ac113161f5baf2eaf729edc69dd6e75c27950be03eaa0acf3c13e&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/135524252.jpg?k=d4de867d49b7633e31fb90b13560855878d5209aa8c435d45a3829682286bc12&o="
+      ],
+      "location": "Baratashvili St. 8., 4200 Sighnaghi, Georgia",
+      "city": "Sighnaghi",
+      "country": "Georgia",
+      "latitude": 41.6164217,
+      "longitude": 45.9208132,
+      "price": 14.0,
+      "rating": 4.5,
+      "status": "active",
+      "service": [
+        "Free parking",
+        "Room service",
+        "Non-smoking rooms",
+        "Free Wifi",
+        "Tea/Coffee Maker in All Rooms",
+        "Wonderful Breakfast"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Standard",
+          "name": "Double Room with Balcony",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/136784486.jpg?k=91755e992dd48586a73c8644982507185bf6cb76f0c3e09a612105485c09c1cc&o=",
+          "price": 14.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/136784486.jpg?k=91755e992dd48586a73c8644982507185bf6cb76f0c3e09a612105485c09c1cc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/136784095.jpg?k=4e1079e16ad7581fc0b98f9a4f97e63e845d5f6729b4a6bcf06447a93f6d7099&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/136784261.jpg?k=e598514e51d12df2d7053168239e9ac91dd613953845ae5fe000802172ae4210&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/171367754.jpg?k=6cf300b097c5ce7d009a00c008d97ad35037e84b454816679c58f1742f29db87&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/167731591.jpg?k=ac1ffdcff0ba75ef09dfe5822e747bf2efcecd18fb4c018fd9e4a6e764bac081&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/178431467.jpg?k=e8401449a711900d7ac18918e9c2085b17879c34cf2792314d3100704ec1f97f&o="
+          ],
+          "service": [
+            "Private kitchen",
+            "Private bathroom",
+            "Balcony",
+            "Mountain view",
+            "Landmark view",
+            "City view"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "4c958ea998adb893",
+      "title": "Hotel Nikala Palace",
+      "category": "Hotel",
+      "description": "Located in Tbilisi, a 19-minute walk from Freedom Square, Hotel Nikala Palace provides accommodations with a garden, free private parking and a terrace.",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/757233227.jpg?k=a18e87d7ba06367355a9bbf7ad54e0e5517331ebcc230a6ef0ae540dd73ac238&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/739618627.jpg?k=16af08033d0ec667b46c9589ef35f5f3a6ff6f4718ae5f9699f7cc9299a06407&o="
+      ],
+      "location": "5 Firdousi St 5, 0105 Tbilisi, Georgia",
+      "city": "Tbilisi",
+      "country": "Georgia",
+      "latitude": 41.6881242,
+      "longitude": 44.8131396,
+      "price": 28.0,
+      "rating": 4.4,
+      "status": "active",
+      "service": [
+        "Airport shuttle",
+        "Non-smoking rooms",
+        "Free parking",
+        "Family rooms",
+        "24-hour front desk",
+        "Terrace",
+        "Garden",
+        "Air conditioning",
+        "Tea/Coffee Maker in All Rooms",
+        "Breakfast"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Room",
+          "name": "Superior Triple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 28.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "1 room",
+            "26 m²",
+            "Private kitchen",
+            "Attached bathroom",
+            "Garden view",
+            "Inner courtyard view"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Comfort Quadruple Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 29.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "1 room",
+            "35 m²",
+            "Private kitchen",
+            "Attached bathroom",
+            "Garden view",
+            "Inner courtyard view"
+          ]
+        },
+        {
+          "type": "Suite",
+          "name": "Two-Bedroom Suite",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 31.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "Private suite",
+            "30 m²",
+            "Private kitchen",
+            "Attached bathroom",
+            "Garden view",
+            "Inner courtyard view"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Quadruple Room with Private External Bathroom",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 31.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "1 room",
+            "30 m²",
+            "Private kitchen",
+            "Private bathroom",
+            "Garden view",
+            "City view"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Family Room with Garden View",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 33.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "1 room",
+            "44 m²",
+            "Private kitchen",
+            "Attached bathroom",
+            "Balcony",
+            "Garden view"
+          ]
+        },
+        {
+          "type": "Suite",
+          "name": "Two-Bedroom Suite",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+          "price": 33.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/726930750.jpg?k=ef8ec09dd018a5fda327948033c354f73387056079a3fbc7d86685ae606eeeaf&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/726930852.jpg?k=99b97a20a2ce0629c216cd4488324b72e4d95ab57238a5228e93a5d8b5a938d2&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/765575870.jpg?k=f367d9e88fdad59049809d5caeb0510796b9209aacd531957fb707da0003a910&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/729916492.jpg?k=a16fa27a4610155aee045e1e54b7a07e6877330963dc7670a04addcab8b1af79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930861.jpg?k=7dc7845a5a46cba0ebebfd2dd0370cdebc5c2f9d9e1c897e0e3253d20d59df0b&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/726930839.jpg?k=5e3882635057bd6407bf614d88b198b5f38fa2a4a8ac6ce68cfb8446de9cae8f&o="
+          ],
+          "service": [
+            "Private suite",
+            "42 m²",
+            "Private kitchen",
+            "Attached bathroom",
+            "Garden view",
+            "Inner courtyard view"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bb08f50b38b8cd35",
+      "title": "Seventeen Rooms",
+      "category": "Hotel",
+      "description": "Located in Telavi, a 10-minute walk from King Erekle II Palace, Seventeen Rooms has accommodations with a seasonal outdoor swimming pool, free private...",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/423330828.jpg?k=16fd555485e28b53591a1284d03eb601bad1d8f9e7be7e50bc605db4054f9614&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/562409820.jpg?k=f19433ab93dddfe160ebe33b15ce7a303a391c64b0879bc16c08be2eef26e96b&o="
+      ],
+      "location": "3 Leonidze st Tel, 2200 Telavi, Georgia",
+      "city": "Telavi",
+      "country": "Georgia",
+      "latitude": 41.9112943,
+      "longitude": 45.4770995,
+      "price": 71.0,
+      "rating": 4.75,
+      "status": "active",
+      "service": [
+        "Pool  – outdoor (kids)",
+        "Non-smoking rooms",
+        "Free parking",
+        "Family rooms",
+        "Free Wifi",
+        "Restaurant",
+        "Tea/Coffee Maker in All Rooms",
+        "Bar",
+        "Wonderful Breakfast",
+        "Free crib available on request"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Room",
+          "name": "Standard Twin Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+          "price": 78.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o="
+          ],
+          "service": [
+            "18 m²",
+            "Balcony",
+            "Mountain view",
+            "City view",
+            "Air conditioning",
+            "Private bathroom"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Economy Double Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+          "price": 71.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o="
+          ],
+          "service": [
+            "18 m²",
+            "City view",
+            "Air conditioning",
+            "Private bathroom",
+            "Flat-screen TV",
+            "Free Wifi"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "King Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+          "price": 78.0,
+          "quantity": 6,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o="
+          ],
+          "service": [
+            "18 m²",
+            "Balcony",
+            "Garden view",
+            "Pool view",
+            "Mountain view",
+            "Air conditioning"
+          ]
+        },
+        {
+          "type": "Standard",
+          "name": "Standard Queen Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+          "price": 87.0,
+          "quantity": 2,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o="
+          ],
+          "service": [
+            "22 m²",
+            "Balcony",
+            "Pool view",
+            "Mountain view",
+            "City view",
+            "Air conditioning"
+          ]
+        },
+        {
+          "type": "Room",
+          "name": "Family Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+          "price": 117.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/268186130.jpg?k=d38eece2ca1cf30409f3abc051704f296f4d1051b9cfdec4bc75bf707bd2dd79&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/548406569.jpg?k=a4ec871d15cab0a068591580dfee0fc492d0b347f907f50679066e0c350f063c&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/309084601.jpg?k=dd4273f81f8990265800977f373cec423f9b5a9cc44d6d5faabb19c9288544ef&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/538331373.jpg?k=03a933428f3b4325afb202902862a8399dc317cd10f6caf21b0cec6919e409ae&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559958548.jpg?k=1080a417b51d92f89cac4d05afe54b7267e4586e7b23e20f493642960932bc32&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/559995223.jpg?k=c433075a08d72d67694b3d8ab78939f7767b1ad096a1a496042df1049d938271&o="
+          ],
+          "service": [
+            "36 m²",
+            "Balcony",
+            "Garden view",
+            "Pool view",
+            "Air conditioning",
+            "Private bathroom"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "e013dee821550e35",
+      "title": "HOTEL KOSHKI",
+      "category": "Hotel",
+      "description": "HOTEL KOSHKI provides accommodations in Zugdidi. The property has a 24-hour front desk, airport transportation, room service and free WiFi throughout the...",
+      "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346007512.jpg?k=c8ae4908e1e8d3bfc2318a155779990a6ac6df7e6c3b4246855595f95e283432&o=",
+      "gallery": [
+        "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346007512.jpg?k=c8ae4908e1e8d3bfc2318a155779990a6ac6df7e6c3b4246855595f95e283432&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/346007630.jpg?k=5fc76d7a56401c8ce9706d2f12b301d06e4d3ea5feb6888ef81007de160e9446&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max500/347326777.jpg?k=abe1ffe847615893cb9f2bde4a47c9e4c326e2b3a90ec63d64b72c3d74985570&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/346429740.jpg?k=fbe9c2c4b78d1ed2593fc32d678556f39f37858cba073a2131d77627102e9bfc&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/346007626.jpg?k=939b3f00cb6c9b771b944c50aba88ab4b7f55ce74e723e694f3201b61e404ce0&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/346007610.jpg?k=ed20c0c386232832a6b7eb6c67298a3498676d60fa6f8b21f9ed59c63831824d&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/346007602.jpg?k=a3796d902f54cfc9d105a674c3358e62a24ad39e9a545d256df6bee63dc68c30&o=",
+        "https://cf.bstatic.com/xdata/images/hotel/max300/346007639.jpg?k=e6e22880965dca50a6cf059852d94b7762856ad307b8360ea399801eda25af07&o="
+      ],
+      "location": "Besiki's str 1, 2100 Zugdidi, Georgia",
+      "city": "Zugdidi",
+      "country": "Georgia",
+      "latitude": 42.5109976,
+      "longitude": 41.868022,
+      "price": 23.0,
+      "rating": 4.45,
+      "status": "active",
+      "service": [
+        "Airport shuttle",
+        "Free parking",
+        "Room service",
+        "Non-smoking rooms",
+        "Family rooms",
+        "Free Wifi"
+      ],
+      "distance": 0.0,
+      "rooms": [
+        {
+          "type": "Standard",
+          "name": "Large Double Room",
+          "image": "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346007512.jpg?k=c8ae4908e1e8d3bfc2318a155779990a6ac6df7e6c3b4246855595f95e283432&o=",
+          "price": 23.0,
+          "quantity": 1,
+          "information": "",
+          "gallery": [
+            "https://cf.bstatic.com/xdata/images/hotel/max1024x768/346007512.jpg?k=c8ae4908e1e8d3bfc2318a155779990a6ac6df7e6c3b4246855595f95e283432&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/346007630.jpg?k=5fc76d7a56401c8ce9706d2f12b301d06e4d3ea5feb6888ef81007de160e9446&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max500/347326777.jpg?k=abe1ffe847615893cb9f2bde4a47c9e4c326e2b3a90ec63d64b72c3d74985570&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/346429740.jpg?k=fbe9c2c4b78d1ed2593fc32d678556f39f37858cba073a2131d77627102e9bfc&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/346007626.jpg?k=939b3f00cb6c9b771b944c50aba88ab4b7f55ce74e723e694f3201b61e404ce0&o=",
+            "https://cf.bstatic.com/xdata/images/hotel/max300/346007610.jpg?k=ed20c0c386232832a6b7eb6c67298a3498676d60fa6f8b21f9ed59c63831824d&o="
+          ],
+          "service": [
+            "25 m²",
+            "Balcony",
+            "View",
+            "Air conditioning",
+            "Private bathroom",
+            "Flat-screen TV"
+          ]
+        }
+      ]
+    }
+  ]
+}

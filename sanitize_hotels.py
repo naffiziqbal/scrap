@@ -12,10 +12,9 @@ from hashlib import sha1
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-CSV_PATH = Path("uae_hotels_20251107_145631.csv")
+CSV_PATH = Path("uae_hotels_20251108_201430.csv")
 BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon (not used for UAE)
-INPUT_JSON_PATH = Path("uae_hotels_20251107_145631.json")
-BDT_PER_USD = 122.0  # currency conversion: 1 USD = 122 BDT
+INPUT_JSON_PATH = Path("uae_hotels_20251108_201430.json")
 
 # Master list of dummy room services to sample from
 DUMMY_ROOM_SERVICES: List[str] = [
@@ -158,9 +157,6 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
         
         description = item.get("description") if isinstance(item.get("description"), str) else None
         price_amount = _to_float(item.get("price_amount")) or _to_float(item.get("price"))
-        # Convert BDT → USD if available
-        if price_amount is not None:
-            price_amount = price_amount / BDT_PER_USD
 
         # Extract highlights as services (max 6)
         highlights = item.get("highlights")
@@ -224,8 +220,7 @@ def _derive_price(search_pricing: Any, rooms: List[Dict[str, Any]]) -> Optional[
     if isinstance(search_pricing, dict):
         v = _to_float(search_pricing.get("current_price_amount"))
         if v is not None:
-            # Convert BDT → USD
-            return v / BDT_PER_USD
+            return v
     for room in rooms:
         v = _to_float(room.get("price"))
         if v is not None and v > 0:
@@ -274,7 +269,13 @@ def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia"
             # Fill derived fields
             category = _derive_category_from_title(title or description)
             image = _first_or_none(gallery) or ""
-            rating = _derive_rating_from_services(services)
+            # Use actual rating from CSV, fall back to derived rating if not available
+            # Convert rating from 10-point scale to 5-point scale (divide by 2)
+            csv_rating = _to_float(row.get("rating"))
+            if csv_rating is not None:
+                rating = csv_rating / 2.0
+            else:
+                rating = _derive_rating_from_services(services)
             distance = round(distance_km, 2) if distance_km is not None else 0.0
 
             # Build id from stable hash of url or title
