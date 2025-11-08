@@ -7,6 +7,8 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.common.exceptions import TimeoutException
@@ -309,10 +311,165 @@ def extract_price_info(soup: BeautifulSoup) -> Dict[str, object]:
     return {key: value for key, value in price_info.items() if value is not None}
 
 
-def extract_room_options(soup: BeautifulSoup) -> List[Dict[str, object]]:
-    rooms: List[Dict[str, object]] = []
+def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, debug: bool = False) -> List[str]:
+    """Extract room-specific gallery images from a modal that opens when clicking the room name link.
+    
+    Args:
+        driver: Chrome WebDriver instance
+        room_link_element: The room name link element (a.hprt-roomtype-link)
+        debug: Whether to print debug messages
+        
+    Returns:
+        List of image URLs for the room gallery
+    """
+    room_images: List[str] = []
+    seen_urls: set[str] = set()
+    
+    try:
+        # Scroll to the room link to ensure it's visible
+        driver.execute_script("arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});", room_link_element)
+        time.sleep(0.3)
+        
+        # Click the room name link to open the modal
+        try:
+            room_link_element.click()
+        except Exception:
+            # Fallback to JavaScript click
+            try:
+                driver.execute_script("arguments[0].click();", room_link_element)
+            except Exception:
+                if debug:
+                    print(f"    [DEBUG] Failed to click room link")
+                return room_images
+        
+        # Wait for the photo section to appear
+        try:
+            room_photos_container = WebDriverWait(driver, 5).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, "[data-testid='roomPagePhotos']"))
+            )
+            time.sleep(0.8)  # Give modal content time to render
+        except TimeoutException:
+            if debug:
+                print(f"    [DEBUG] roomPagePhotos container not found")
+            # Try to close modal and return
+            try:
+                driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+                time.sleep(0.2)
+            except Exception:
+                pass
+            return room_images
+        
+        # Get the modal HTML and parse with BeautifulSoup
+        try:
+            modal_html = driver.find_element(By.CSS_SELECTOR, "[data-testid='roomPagePhotos']").get_attribute("outerHTML")
+            modal_soup = BeautifulSoup(modal_html, "html.parser")
+        except Exception:
+            # Fallback: get page source and find the modal
+            page_source = driver.page_source
+            modal_soup = BeautifulSoup(page_source, "html.parser")
+            room_photos_container_soup = modal_soup.select_one("[data-testid='roomPagePhotos']")
+            if not room_photos_container_soup:
+                if debug:
+                    print(f"    [DEBUG] Could not find roomPagePhotos in page source")
+                try:
+                    driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+                    time.sleep(0.2)
+                except Exception:
+                    pass
+                return room_images
+            modal_soup = room_photos_container_soup
+        
+        # Extract images from CSS background-image in carousel divs
+        # Look for divs with style attribute containing background-image
+        carousel_divs = modal_soup.select("div[style*='background-image']")
+        for div in carousel_divs:
+            style = div.get("style", "")
+            # Extract URL from: background-image: url("https://...");
+            url_match = re.search(r'url\(["\']?(https://[^"\']+)["\']?\)', style)
+            if url_match:
+                img_url = url_match.group(1)
+                # Decode HTML entities
+                img_url = img_url.replace("&quot;", "").replace("&amp;", "&")
+                if img_url and img_url not in seen_urls:
+                    room_images.append(img_url)
+                    seen_urls.add(img_url)
+        
+        # Extract thumbnail images and upgrade to full size
+        # Thumbnails are typically in /square60/ and can be upgraded to /max1024x768/
+        thumbnail_imgs = modal_soup.select("img[src*='/square60/']")
+        for img in thumbnail_imgs:
+            thumb_url = img.get("src") or img.get("data-src") or img.get("data-lazy")
+            if thumb_url:
+                # Convert thumbnail URL to full-size
+                # /square60/ -> /max1024x768/
+                full_url = thumb_url.replace("/square60/", "/max1024x768/")
+                # Also handle other thumbnail sizes
+                full_url = full_url.replace("/square200/", "/max1024x768/")
+                full_url = full_url.replace("/square300/", "/max1024x768/")
+                full_url = full_url.replace("/max300/", "/max1024x768/")
+                
+                # Clean up URL
+                full_url = full_url.replace("&amp;", "&")
+                if full_url.startswith("//"):
+                    full_url = "https:" + full_url
+                elif full_url.startswith("/"):
+                    full_url = "https://www.booking.com" + full_url
+                
+                if full_url and full_url not in seen_urls and full_url.startswith("http"):
+                    room_images.append(full_url)
+                    seen_urls.add(full_url)
+        
+        # Fallback: extract from other img tags
+        other_imgs = modal_soup.select("img[src]")
+        for img in other_imgs:
+            img_url = img.get("src") or img.get("data-src") or img.get("data-lazy")
+            if img_url:
+                # Skip if already processed as thumbnail
+                if "/square60/" in img_url or "/square200/" in img_url or "/square300/" in img_url:
+                    continue
+                
+                # Clean up URL
+                img_url = img_url.replace("&amp;", "&")
+                if img_url.startswith("//"):
+                    img_url = "https:" + img_url
+                elif img_url.startswith("/"):
+                    img_url = "https://www.booking.com" + img_url
+                
+                # Validate it's actually an image URL
+                if img_url and img_url not in seen_urls and img_url.startswith("http"):
+                    if (
+                        "/images/" in img_url.lower() or 
+                        "/image/" in img_url.lower() or
+                        any(ext in img_url.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", ".gif"]) or
+                        "bstatic.com" in img_url.lower() or
+                        "booking.com" in img_url.lower()
+                    ):
+                        room_images.append(img_url)
+                        seen_urls.add(img_url)
+        
+        if debug:
+            print(f"    [DEBUG] Extracted {len(room_images)} images from room gallery")
+        
+    except Exception as e:
+        if debug:
+            print(f"    [DEBUG] Error extracting room gallery images: {e}")
+    
+    finally:
+        # Close the modal with ESC key
+        try:
+            driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
+            time.sleep(0.3)
+        except Exception:
+            pass
+    
+    return room_images
 
-    for row in soup.select("tbody tr[data-block-id]"):
+
+def extract_room_options(soup: BeautifulSoup, driver: Optional[webdriver.Chrome] = None) -> List[Dict[str, object]]:
+    rooms: List[Dict[str, object]] = []
+    room_rows = soup.select("tbody tr[data-block-id]")
+
+    for row_idx, row in enumerate(room_rows):
         room_data: Dict[str, object] = {}
 
         block_id = row.get("data-block-id")
@@ -428,9 +585,83 @@ def extract_room_options(soup: BeautifulSoup) -> List[Dict[str, object]]:
         if badges:
             room_data["badges"] = badges
 
+        # Extract room gallery images if driver is available
+        # Only extract for rooms that have a clickable name link (main room types, not "Unknown" rate packages)
+        if driver is not None and name_element:
+            try:
+                room_name_for_debug = room_data.get("name", f"room {block_id}")
+                
+                # Find the room name link (a.hprt-roomtype-link) using Selenium
+                # First try to find it by room type ID if available
+                room_link_element = None
+                
+                if name_element.has_attr("id"):
+                    try:
+                        room_type_id = name_element["id"]
+                        # Find the link element by finding the anchor within the room type container
+                        room_type_elem = driver.find_element(By.ID, room_type_id)
+                        # Look for the link within the room type element or its parent
+                        try:
+                            room_link_element = room_type_elem.find_element(By.CSS_SELECTOR, "a.hprt-roomtype-link")
+                        except Exception:
+                            # Try finding in parent container
+                            try:
+                                parent_container = room_type_elem.find_element(By.XPATH, "./ancestor::div[contains(@class, 'hprt-roomtype-block')][1]")
+                                room_link_element = parent_container.find_element(By.CSS_SELECTOR, "a.hprt-roomtype-link")
+                            except Exception:
+                                pass
+                    except Exception:
+                        pass
+                
+                # Fallback: find by block_id using XPath
+                if not room_link_element and block_id:
+                    try:
+                        room_link_elements = driver.find_elements(
+                            By.XPATH,
+                            f"//tr[@data-block-id='{block_id}']//a[contains(@class, 'hprt-roomtype-link')]"
+                        )
+                        if room_link_elements:
+                            # Filter for visible and enabled links
+                            for link in room_link_elements:
+                                try:
+                                    if link.is_displayed() and link.is_enabled():
+                                        room_link_element = link
+                                        break
+                                except Exception:
+                                    continue
+                            # If no visible link found, use the first one
+                            if not room_link_element and room_link_elements:
+                                room_link_element = room_link_elements[0]
+                    except Exception:
+                        pass
+                
+                if room_link_element:
+                    print(f"  Extracting gallery images for room: {room_name_for_debug}")
+                    room_gallery = extract_room_gallery_images(driver, room_link_element, debug=False)
+                    if room_gallery:
+                        room_data["gallery"] = room_gallery
+                        print(f"  ✓ Found {len(room_gallery)} gallery images for {room_name_for_debug}")
+                    else:
+                        print(f"  ⚠ No gallery images found for {room_name_for_debug}")
+                else:
+                    # Room doesn't have a clickable link (likely an "Unknown" rate package)
+                    # This is expected for rate variations of the same room type
+                    pass
+            except Exception as e:
+                # If image extraction fails, continue without images
+                room_name_for_debug = room_data.get("name", f"room {block_id}")
+                print(f"  ✗ Error extracting gallery images for {room_name_for_debug}: {e}")
+                pass
+
         room_data = {key: value for key, value in room_data.items() if value not in (None, [], {})}
-        if room_data:
+        
+        # Only add room if it has both a name and gallery images
+        room_name = room_data.get("name")
+        room_gallery = room_data.get("gallery", [])
+        
+        if room_data and room_name and room_gallery:
             rooms.append(room_data)
+        # Skip rooms without name or without gallery images
 
     return rooms
 
@@ -669,7 +900,15 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     """Visit a hotel detail page and extract relevant information."""
 
     driver.get(hotel_url)
-    time.sleep(5)
+    # Wait for page to load using key elements instead of fixed sleep
+    try:
+        # Wait for either the title or room table to be present (whichever loads first)
+        WebDriverWait(driver, 10).until(
+            lambda d: d.find_elements(By.CSS_SELECTOR, "[data-testid='title'], tbody tr[data-block-id], div.hp-description")
+        )
+    except TimeoutException:
+        # If key elements don't appear, wait a shorter time for page to stabilize
+        time.sleep(1)
 
     page_source = driver.page_source
     soup = BeautifulSoup(page_source, "html.parser")
@@ -960,7 +1199,7 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     if pricing:
         hotel_details["pricing"] = pricing
 
-    rooms = extract_room_options(soup)
+    rooms = extract_room_options(soup, driver=driver)
     if rooms:
         hotel_details["rooms"] = rooms
 
@@ -977,6 +1216,49 @@ def _serialize_for_csv(value: object) -> str:
     if isinstance(value, str):
         return value.replace("\r\n", " ").replace("\r", " ").replace("\n", " ")
     return json.dumps(value, ensure_ascii=False)
+
+
+def compare_hotel_vs_room_images(hotel_data: List[Dict[str, object]]) -> None:
+    """Print comparison of hotel gallery images vs room images for testing."""
+    for hotel in hotel_data:
+        hotel_title = hotel.get("title", "Unknown Hotel")
+        hotel_gallery = hotel.get("gallery", [])
+        rooms = hotel.get("rooms", [])
+        
+        print("\n" + "="*80)
+        print(f"HOTEL: {hotel_title}")
+        print("="*80)
+        
+        print(f"\nHotel Gallery Images ({len(hotel_gallery)} images):")
+        for i, img in enumerate(hotel_gallery[:5], 1):  # Show first 5
+            print(f"  {i}. {img}")
+        if len(hotel_gallery) > 5:
+            print(f"  ... and {len(hotel_gallery) - 5} more")
+        
+        print(f"\nRoom Galleries ({len(rooms)} rooms):")
+        for room_idx, room in enumerate(rooms, 1):
+            room_name = room.get("name", f"Room {room_idx}")
+            room_gallery = room.get("gallery", [])
+            print(f"\n  Room {room_idx}: {room_name}")
+            if room_gallery:
+                print(f"    Room Gallery ({len(room_gallery)} images):")
+                for i, img in enumerate(room_gallery[:5], 1):  # Show first 5
+                    print(f"      {i}. {img}")
+                if len(room_gallery) > 5:
+                    print(f"      ... and {len(room_gallery) - 5} more")
+                
+                # Check for overlap
+                hotel_img_set = set(hotel_gallery)
+                room_img_set = set(room_gallery)
+                overlap = hotel_img_set & room_img_set
+                if overlap:
+                    print(f"    ⚠️  WARNING: {len(overlap)} images overlap with hotel gallery!")
+                    for img in list(overlap)[:3]:
+                        print(f"      - {img}")
+                else:
+                    print(f"    ✓ No overlap with hotel gallery (images are different)")
+            else:
+                print(f"    (No gallery images for this room)")
 
 
 def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
@@ -1005,30 +1287,35 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
         
         all_hotel_entries: List[Dict[str, object]] = []
 
-        # Collect at least 10 hotels per city, aiming for 100 total
-        # With 9 cities: base 10 per city = 90, need 10 more = 100 total
-        # Distribution: first city gets 12, remaining 8 cities get 11 each = 12 + 88 = 100
-        # (Remainder is distributed evenly, wrapping around if needed)
-        min_per_city = 10
-        total_target = 100
+        total_target = max_hotels
         num_cities = len(CITIES)
         
-        # Calculate hotels per city: base is min_per_city, distribute remainder
-        base_per_city = min_per_city
-        remainder = total_target - (base_per_city * num_cities)
-        hotels_per_city = [base_per_city] * num_cities
+        # For small numbers (like 10), distribute evenly across first few cities
+        # For larger numbers, use the original logic
+        if total_target < num_cities:
+            # If target is less than number of cities, use first N cities with 1 hotel each
+            hotels_per_city = [1] * total_target
+            cities_to_use = CITIES[:total_target]
+        else:
+            # Original logic: distribute evenly with remainder
+            min_per_city = max(1, total_target // num_cities)
+            remainder = total_target - (min_per_city * num_cities)
+            hotels_per_city = [min_per_city] * num_cities
+            
+            # Distribute remainder across cities (prefer earlier cities)
+            for i in range(remainder):
+                city_idx = i % num_cities
+                hotels_per_city[city_idx] += 1
+            
+            cities_to_use = CITIES
         
-        # Distribute remainder across cities (prefer earlier cities, wrap around if needed)
-        for i in range(remainder):
-            city_idx = i % num_cities
-            hotels_per_city[city_idx] += 1
+        print(f"Target: {total_target} hotels across {len(cities_to_use)} cities")
+        if len(cities_to_use) <= 10:
+            print(f"Distribution: {dict(zip(cities_to_use, hotels_per_city))}")
         
-        print(f"Target: {total_target} hotels across {num_cities} cities")
-        print(f"Distribution: {dict(zip(CITIES, hotels_per_city))}")
-        
-        for idx, city in enumerate(CITIES):
+        for idx, city in enumerate(cities_to_use):
             target_count = hotels_per_city[idx]
-            print(f"Collecting {target_count} hotels for {city}...")
+            print(f"Collecting {target_count} hotel(s) for {city}...")
             city_entries = collect_hotel_links_for_city(driver, city=city, max_results=target_count)
             if len(city_entries) < target_count:
                 print(f"Warning: Only found {len(city_entries)} entries for {city} (requested {target_count}).")
@@ -1066,12 +1353,27 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
                 details["search_city"] = search_city
 
             hotel_data.append(details)
-            time.sleep(1)
+            # Reduced sleep between hotels - page loads are handled by WebDriverWait
+            time.sleep(0.3)
 
         write_hotels_to_csv(hotel_data)
+        
+        # Also save as JSON for easier inspection
+        json_path = OUTPUT_PATH.with_suffix('.json')
+        with json_path.open("w", encoding="utf-8") as json_file:
+            json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
+        print(f"Saved {len(hotel_data)} hotels to {json_path}")
+        
+        # Print comparison of hotel gallery vs room galleries for testing
+        print("\n" + "="*80)
+        print("IMAGE COMPARISON: Hotel Gallery vs Room Galleries")
+        print("="*80)
+        compare_hotel_vs_room_images(hotel_data)
+        
     finally:
         driver.quit()
 
 
 if __name__ == "__main__":
-    main()
+    # For testing: extract 1 hotel to verify hotel gallery vs room images are different
+    main(max_hotels=1)

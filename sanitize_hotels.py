@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import argparse
 import csv
 import json
 import math
@@ -12,9 +13,7 @@ from hashlib import sha1
 from pathlib import Path
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-CSV_PATH = Path("uae_hotels_20251108_201430.csv")
 BATUMI_CENTER = (41.650677, 41.636669)  # approx city center lat, lon (not used for UAE)
-INPUT_JSON_PATH = Path("uae_hotels_20251108_201430.json")
 
 # Master list of dummy room services to sample from
 DUMMY_ROOM_SERVICES: List[str] = [
@@ -147,6 +146,9 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
             return "Standard"
         return "Room"
 
+    # Track used images across all rooms to ensure no duplicates
+    used_images: set[str] = set()
+
     for item in rooms_raw:
         if not isinstance(item, dict):
             continue
@@ -192,15 +194,51 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
                             max_val = max(max_val, int(m.group(1)))
             quantity = max_val
 
+        # Extract room images from the item
+        room_images_raw = item.get("images")
+        room_images: List[str] = []
+        if isinstance(room_images_raw, list):
+            # Clean and filter room images
+            room_images = [
+                str(img).strip()
+                for img in room_images_raw
+                if isinstance(img, (str, int, float)) and str(img).strip()
+            ]
+        
+        # Filter out already used images and assign unique images to this room
+        available_room_images = [img for img in room_images if img not in used_images]
+        room_gallery: List[str] = []
+        
+        if available_room_images:
+            # Use room images (limit to 6 for gallery)
+            room_gallery = available_room_images[:6]
+            # Mark these images as used
+            used_images.update(room_gallery)
+            room_image = room_gallery[0] if room_gallery else ""
+        else:
+            # Fall back to hotel gallery if room has no unique images
+            # Get unused hotel gallery images
+            available_hotel_images = [img for img in hotel_gallery if img not in used_images]
+            if available_hotel_images:
+                # Use up to 6 unused hotel images
+                room_gallery = available_hotel_images[:6]
+                used_images.update(room_gallery)
+                room_image = room_gallery[0] if room_gallery else ""
+            else:
+                # No unique images available - leave empty rather than reusing
+                # This ensures no image is reused twice as required
+                room_image = ""
+                room_gallery = []
+
         rooms.append(
             {
                 "type": infer_type(room_name),
                 "name": room_name,
-                "image": _first_or_none(hotel_gallery) or "",
+                "image": room_image,
                 "price": round(price_amount, 2) if price_amount is not None else 0.0,
                 "quantity": int(quantity),
                 "information": description or "",
-                "gallery": hotel_gallery[:6],
+                "gallery": room_gallery,
                 "service": room_services,
             }
         )
@@ -228,7 +266,7 @@ def _derive_price(search_pricing: Any, rooms: List[Dict[str, Any]]) -> Optional[
     return None
 
 
-def sanitize_hotels_from_csv(csv_path: Path = CSV_PATH, country: str = "Georgia") -> Dict[str, Any]:
+def sanitize_hotels_from_csv(csv_path: Path, country: str = "Georgia") -> Dict[str, Any]:
     sanitized: List[Dict[str, Any]] = []
 
     with csv_path.open("r", encoding="utf-8") as f:
@@ -345,26 +383,90 @@ def add_room_services_to_json(json_path: Path) -> Dict[str, Any]:
     return add_room_services_to_data(data)
 
 
+def parse_arguments() -> argparse.Namespace:
+    """Parse command-line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Sanitize hotel data from CSV files and convert to JSON format.",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Convert CSV to JSON (output will be input_file.json)
+  python sanitize_hotels.py -i hotels.csv
+
+  # Specify output file and country
+  python sanitize_hotels.py -i hotels.csv -o output.json -c "UAE"
+
+  # Enhance existing JSON file with room services
+  python sanitize_hotels.py -j existing_hotels.json
+        """,
+    )
+    
+    # Input/output group
+    input_group = parser.add_mutually_exclusive_group(required=True)
+    input_group.add_argument(
+        "-i", "--input",
+        type=Path,
+        help="Input CSV file to sanitize",
+    )
+    input_group.add_argument(
+        "-j", "--json",
+        type=Path,
+        help="Existing JSON file to enhance with room services",
+    )
+    
+    parser.add_argument(
+        "-o", "--output",
+        type=Path,
+        help="Output JSON file (defaults to input CSV filename with .json extension)",
+    )
+    
+    parser.add_argument(
+        "-c", "--country",
+        type=str,
+        default="Georgia",
+        help="Country name for hotels (default: Georgia)",
+    )
+    
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_arguments()
     start_time = time.time()
     
-    # If a JSON file exists, enrich rooms with services; otherwise fall back to CSV → JSON.
-    if INPUT_JSON_PATH.exists():
-        print(f"Enhancing existing JSON with room services: {INPUT_JSON_PATH}")
-        data = add_room_services_to_json(INPUT_JSON_PATH)
+    # If JSON file is provided, enhance it with room services
+    if args.json:
+        json_path = args.json
+        if not json_path.exists():
+            print(f"Error: JSON file not found: {json_path}", file=sys.stderr)
+            sys.exit(1)
+        
+        print(f"Enhancing existing JSON with room services: {json_path}")
+        data = add_room_services_to_json(json_path)
         json_start_time = time.time()
-        with INPUT_JSON_PATH.open("w", encoding="utf-8") as f:
+        
+        output_path = args.output if args.output else json_path
+        with output_path.open("w", encoding="utf-8") as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
         json_write_time = time.time() - json_start_time
         total_time = time.time() - start_time
-        print(f"Updated JSON saved to: {INPUT_JSON_PATH}")
+        print(f"Updated JSON saved to: {output_path}")
         print(f"\nTiming:")
         print(f"  JSON writing: {json_write_time:.3f} seconds")
         print(f"  Total time: {total_time:.3f} seconds")
         return
-
-    print("Converting CSV to JSON...")
-    data = sanitize_hotels_from_csv(CSV_PATH, country="UAE")
+    
+    # Process CSV file
+    csv_path = args.input
+    if not csv_path.exists():
+        print(f"Error: CSV file not found: {csv_path}", file=sys.stderr)
+        sys.exit(1)
+    
+    print(f"Converting CSV to JSON...")
+    print(f"  Input: {csv_path}")
+    print(f"  Country: {args.country}")
+    
+    data = sanitize_hotels_from_csv(csv_path, country=args.country)
     csv_processing_time = time.time() - start_time
     
     # Add room services to the data
@@ -373,7 +475,12 @@ def main() -> None:
     data = add_room_services_to_data(data)
     services_time = time.time() - services_start_time
     
-    output_file = CSV_PATH.with_suffix(".json")
+    # Determine output file path
+    if args.output:
+        output_file = args.output
+    else:
+        output_file = csv_path.with_suffix(".json")
+    
     json_start_time = time.time()
     with output_file.open("w", encoding="utf-8") as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
