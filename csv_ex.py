@@ -1,3 +1,36 @@
+"""
+Georgia Hotels Scraper with HTML Caching
+
+This script scrapes hotel data from Booking.com with the following features:
+
+CACHING SYSTEM:
+- HTML pages are cached to disk after first download
+- Subsequent runs reuse cached HTML (much faster, no re-download)
+- Cache directory: ./html_cache/
+- Toggle caching with USE_CACHE constant (line ~112)
+
+BENEFITS OF CACHING:
+✓ 10-100x faster re-scraping (no network delays)
+✓ Can fix extraction bugs without re-downloading
+✓ Less likely to trigger anti-bot measures
+✓ Inspect cached HTML files manually for debugging
+
+NOTE ON ROOM IMAGES:
+- Room-specific images require clicking room links (interactive)
+- When using cached HTML, room image extraction is skipped
+- To get room images: First run with USE_CACHE = False to download fresh HTML
+
+BATCH PROCESSING:
+- Saves progress every 30 hotels (batches: 30, 30, 30, 10)
+- Creates single CSV file with all results
+- JSON backup saved after each batch
+
+USAGE:
+1. First run: Downloads HTML and caches it
+2. Subsequent runs: Uses cached HTML (super fast)
+3. To refresh data: Set USE_CACHE = False or delete html_cache/ directory
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -28,9 +61,88 @@ def get_output_path() -> Path:
     return Path(f"georgia_hotels_{timestamp}.csv")
 
 
+def get_cache_dir() -> Path:
+    """Get or create the HTML cache directory."""
+    cache_dir = Path("html_cache")
+    cache_dir.mkdir(exist_ok=True)
+    return cache_dir
+
+
+def get_cached_html_path(url: str) -> Path:
+    """Generate a safe filename for caching HTML based on URL."""
+    # Extract hotel ID from URL (e.g., /hotel/ge/radisson-blu-iveria-hotel.html)
+    parsed = urlparse(url)
+    path_parts = parsed.path.strip('/').split('/')
+    
+    # Use hotel slug as filename (last part of path without .html)
+    if path_parts:
+        hotel_slug = path_parts[-1].replace('.html', '').replace('.htm', '')
+        # Sanitize filename
+        hotel_slug = re.sub(r'[^\w\-]', '_', hotel_slug)
+    else:
+        # Fallback to hash if can't parse
+        hotel_slug = str(hash(url))
+    
+    cache_dir = get_cache_dir()
+    return cache_dir / f"{hotel_slug}.html"
+
+
+def save_html_to_cache(url: str, html_content: str) -> None:
+    """Save HTML content to cache file."""
+    cache_path = get_cached_html_path(url)
+    try:
+        cache_path.write_text(html_content, encoding='utf-8')
+        print(f"  💾 Cached HTML to {cache_path.name}")
+    except Exception as e:
+        print(f"  ⚠️  Failed to cache HTML: {e}")
+
+
+def load_html_from_cache(url: str) -> Optional[str]:
+    """Load HTML content from cache if available."""
+    cache_path = get_cached_html_path(url)
+    if cache_path.exists():
+        try:
+            return cache_path.read_text(encoding='utf-8')
+        except Exception:
+            return None
+    return None
+
+
+def get_cache_stats() -> Dict[str, object]:
+    """Get statistics about the HTML cache."""
+    cache_dir = get_cache_dir()
+    html_files = list(cache_dir.glob("*.html"))
+    
+    if not html_files:
+        return {"cached_files": 0, "total_size_mb": 0}
+    
+    total_size = sum(f.stat().st_size for f in html_files if f.exists())
+    total_size_mb = total_size / (1024 * 1024)
+    
+    return {
+        "cached_files": len(html_files),
+        "total_size_mb": round(total_size_mb, 2),
+        "cache_dir": str(cache_dir)
+    }
+
+
+def clear_cache() -> None:
+    """Clear all cached HTML files."""
+    cache_dir = get_cache_dir()
+    deleted = 0
+    for html_file in cache_dir.glob("*.html"):
+        try:
+            html_file.unlink()
+            deleted += 1
+        except Exception:
+            pass
+    print(f"🗑️  Cleared {deleted} cached HTML files")
+
+
 OUTPUT_PATH = get_output_path()
 MAX_HOTELS = 100
 SEARCH_RESULTS_PAGE_SIZE = 25
+USE_CACHE = True  # Set to False to always fetch fresh data
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
 DEFAULT_SEARCH_QUERY = {
@@ -876,21 +988,43 @@ def collect_hotel_links_for_city(
     return entries[:max_results]
 
 
-def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str, object]:
-    """Visit a hotel detail page and extract relevant information."""
-
-    driver.get(hotel_url)
-    # Wait for page to load using key elements instead of fixed sleep
-    try:
-        # Wait for either the title or room table to be present (whichever loads first)
-        WebDriverWait(driver, 10).until(
-            lambda d: d.find_elements(By.CSS_SELECTOR, "[data-testid='title'], tbody tr[data-block-id], div.hp-description")
-        )
-    except TimeoutException:
-        # If key elements don't appear, wait a shorter time for page to stabilize
-        time.sleep(1)
-
-    page_source = driver.page_source
+def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str, use_cache: bool = USE_CACHE) -> Dict[str, object]:
+    """Visit a hotel detail page and extract relevant information.
+    
+    Args:
+        driver: Chrome WebDriver instance
+        hotel_url: URL of the hotel page
+        use_cache: If True, use cached HTML if available; if False, always fetch fresh
+    """
+    page_source: Optional[str] = None
+    used_cached_html = False
+    
+    # Try to load from cache first
+    if use_cache:
+        page_source = load_html_from_cache(hotel_url)
+        if page_source:
+            print(f"  📂 Using cached HTML")
+            used_cached_html = True
+    
+    # If no cache or cache disabled, fetch from web
+    if not page_source:
+        driver.get(hotel_url)
+        # Wait for page to load using key elements instead of fixed sleep
+        try:
+            # Wait for either the title or room table to be present (whichever loads first)
+            WebDriverWait(driver, 10).until(
+                lambda d: d.find_elements(By.CSS_SELECTOR, "[data-testid='title'], tbody tr[data-block-id], div.hp-description")
+            )
+        except TimeoutException:
+            # If key elements don't appear, wait a shorter time for page to stabilize
+            time.sleep(1)
+        
+        page_source = driver.page_source
+        
+        # Save to cache for future use
+        if use_cache:
+            save_html_to_cache(hotel_url, page_source)
+    
     soup = BeautifulSoup(page_source, "html.parser")
     structured_data = parse_structured_data(page_source)
 
@@ -1179,7 +1313,11 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     if pricing:
         hotel_details["pricing"] = pricing
 
-    rooms = extract_room_options(soup, driver=driver)
+    # Only pass driver for room image extraction if we're not using cached HTML
+    # (room image extraction requires interactive driver to click room links)
+    # If we used cached HTML, driver is not on the page, so can't extract room images interactively
+    driver_for_rooms = None if used_cached_html else driver
+    rooms = extract_room_options(soup, driver=driver_for_rooms)
     if rooms:
         hotel_details["rooms"] = rooms
 
@@ -1260,6 +1398,22 @@ def write_hotels_to_csv(hotel_data: List[Dict[str, object]], append: bool = Fals
 
 
 def main(max_hotels: int = MAX_HOTELS) -> None:
+    # Show cache statistics
+    if USE_CACHE:
+        cache_stats = get_cache_stats()
+        print(f"{'='*60}")
+        print(f"📂 HTML CACHE STATUS")
+        print(f"{'='*60}")
+        print(f"Cache enabled: {USE_CACHE}")
+        print(f"Cached files: {cache_stats['cached_files']}")
+        print(f"Cache size: {cache_stats['total_size_mb']} MB")
+        if cache_stats['cached_files'] > 0:
+            print(f"Cache directory: {cache_stats['cache_dir']}")
+            print(f"ℹ️  Will use cached HTML where available (faster, no re-download)")
+        else:
+            print(f"ℹ️  No cached files yet - HTML will be downloaded and cached")
+        print(f"{'='*60}\n")
+    
     driver = build_driver(headless=True)
     try:
         # Set currency preference to USD before scraping
@@ -1418,4 +1572,17 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
 
 
 if __name__ == "__main__":
+    # QUICK CONFIGURATION:
+    # 1. To scrape 100 hotels with caching: (default)
+    #    main(max_hotels=MAX_HOTELS)
+    #
+    # 2. To scrape with fresh data (no cache):
+    #    Set USE_CACHE = False at line ~116
+    #
+    # 3. To clear cache and start fresh:
+    #    clear_cache()
+    #
+    # 4. To view cache statistics:
+    #    print(get_cache_stats())
+    
     main(max_hotels=MAX_HOTELS)

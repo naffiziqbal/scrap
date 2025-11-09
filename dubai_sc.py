@@ -1,3 +1,36 @@
+"""
+UAE Hotels Scraper with HTML Caching and Batch Processing
+
+This script scrapes hotel data from Booking.com for UAE cities with the following features:
+
+CACHING SYSTEM:
+- HTML pages are cached to disk after first download
+- Subsequent runs reuse cached HTML (much faster, no re-download)
+- Cache directory: ./html_cache/
+- Toggle caching with USE_CACHE constant (line ~112)
+
+BENEFITS OF CACHING:
+✓ 10-100x faster re-scraping (no network delays)
+✓ Can fix extraction bugs without re-downloading
+✓ Less likely to trigger anti-bot measures
+✓ Inspect cached HTML files manually for debugging
+
+NOTE ON ROOM IMAGES:
+- Room-specific images require clicking room links (interactive)
+- When using cached HTML, room image extraction is skipped
+- To get room images: First run with USE_CACHE = False to download fresh HTML
+
+BATCH PROCESSING:
+- Saves progress every 10 hotels
+- Creates single CSV file with all results
+- JSON backup saved after each batch
+
+USAGE:
+1. First run: Downloads HTML and caches it
+2. Subsequent runs: Uses cached HTML (super fast)
+3. To refresh data: Set USE_CACHE = False or delete html_cache/ directory
+"""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -28,9 +61,88 @@ def get_output_path() -> Path:
     return Path(f"uae_hotels_{timestamp}.csv")
 
 
+def get_cache_dir() -> Path:
+    """Get or create the HTML cache directory."""
+    cache_dir = Path("html_cache")
+    cache_dir.mkdir(exist_ok=True)
+    return cache_dir
+
+
+def get_cached_html_path(url: str) -> Path:
+    """Generate a safe filename for caching HTML based on URL."""
+    # Extract hotel ID from URL (e.g., /hotel/ae/jumeirah-beach-hotel.html)
+    parsed = urlparse(url)
+    path_parts = parsed.path.strip('/').split('/')
+    
+    # Use hotel slug as filename (last part of path without .html)
+    if path_parts:
+        hotel_slug = path_parts[-1].replace('.html', '').replace('.htm', '')
+        # Sanitize filename
+        hotel_slug = re.sub(r'[^\w\-]', '_', hotel_slug)
+    else:
+        # Fallback to hash if can't parse
+        hotel_slug = str(hash(url))
+    
+    cache_dir = get_cache_dir()
+    return cache_dir / f"{hotel_slug}.html"
+
+
+def save_html_to_cache(url: str, html_content: str) -> None:
+    """Save HTML content to cache file."""
+    cache_path = get_cached_html_path(url)
+    try:
+        cache_path.write_text(html_content, encoding='utf-8')
+        print(f"  💾 Cached HTML to {cache_path.name}")
+    except Exception as e:
+        print(f"  ⚠️  Failed to cache HTML: {e}")
+
+
+def load_html_from_cache(url: str) -> Optional[str]:
+    """Load HTML content from cache if available."""
+    cache_path = get_cached_html_path(url)
+    if cache_path.exists():
+        try:
+            return cache_path.read_text(encoding='utf-8')
+        except Exception:
+            return None
+    return None
+
+
+def get_cache_stats() -> Dict[str, object]:
+    """Get statistics about the HTML cache."""
+    cache_dir = get_cache_dir()
+    html_files = list(cache_dir.glob("*.html"))
+    
+    if not html_files:
+        return {"cached_files": 0, "total_size_mb": 0}
+    
+    total_size = sum(f.stat().st_size for f in html_files if f.exists())
+    total_size_mb = total_size / (1024 * 1024)
+    
+    return {
+        "cached_files": len(html_files),
+        "total_size_mb": round(total_size_mb, 2),
+        "cache_dir": str(cache_dir)
+    }
+
+
+def clear_cache() -> None:
+    """Clear all cached HTML files."""
+    cache_dir = get_cache_dir()
+    deleted = 0
+    for html_file in cache_dir.glob("*.html"):
+        try:
+            html_file.unlink()
+            deleted += 1
+        except Exception:
+            pass
+    print(f"🗑️  Cleared {deleted} cached HTML files")
+
+
 OUTPUT_PATH = get_output_path()
 MAX_HOTELS = 100
 SEARCH_RESULTS_PAGE_SIZE = 25
+USE_CACHE = True  # Set to False to always fetch fresh data
 
 BASE_SEARCH_URL = "https://www.booking.com/searchresults.html"
 DEFAULT_SEARCH_QUERY = {
@@ -46,8 +158,8 @@ DEFAULT_SEARCH_QUERY = {
     "efdco": "1",
     "dest_id": "221",
     "dest_type": "country",
-    "checkin": "2025-11-09",
-    "checkout": "2025-11-10",
+    "checkin": "2025-11-12",
+    "checkout": "2025-11-15",
     "group_adults": "2",
     "group_children": "0",
     "no_rooms": "1",
@@ -875,21 +987,43 @@ def collect_hotel_links_for_city(
     return entries[:max_results]
 
 
-def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str, object]:
-    """Visit a hotel detail page and extract relevant information."""
-
-    driver.get(hotel_url)
-    # Wait for page to load using key elements instead of fixed sleep
-    try:
-        # Wait for either the title or room table to be present (whichever loads first)
-        WebDriverWait(driver, 10).until(
-            lambda d: d.find_elements(By.CSS_SELECTOR, "[data-testid='title'], tbody tr[data-block-id], div.hp-description")
-        )
-    except TimeoutException:
-        # If key elements don't appear, wait a shorter time for page to stabilize
-        time.sleep(1)
-
-    page_source = driver.page_source
+def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str, use_cache: bool = USE_CACHE) -> Dict[str, object]:
+    """Visit a hotel detail page and extract relevant information.
+    
+    Args:
+        driver: Chrome WebDriver instance
+        hotel_url: URL of the hotel page
+        use_cache: If True, use cached HTML if available; if False, always fetch fresh
+    """
+    page_source: Optional[str] = None
+    used_cached_html = False
+    
+    # Try to load from cache first
+    if use_cache:
+        page_source = load_html_from_cache(hotel_url)
+        if page_source:
+            print(f"  📂 Using cached HTML")
+            used_cached_html = True
+    
+    # If no cache or cache disabled, fetch from web
+    if not page_source:
+        driver.get(hotel_url)
+        # Wait for page to load using key elements instead of fixed sleep
+        try:
+            # Wait for either the title or room table to be present (whichever loads first)
+            WebDriverWait(driver, 10).until(
+                lambda d: d.find_elements(By.CSS_SELECTOR, "[data-testid='title'], tbody tr[data-block-id], div.hp-description")
+            )
+        except TimeoutException:
+            # If key elements don't appear, wait a shorter time for page to stabilize
+            time.sleep(1)
+        
+        page_source = driver.page_source
+        
+        # Save to cache for future use
+        if use_cache:
+            save_html_to_cache(hotel_url, page_source)
+    
     soup = BeautifulSoup(page_source, "html.parser")
     structured_data = parse_structured_data(page_source)
 
@@ -1186,7 +1320,11 @@ def extract_hotel_details(driver: webdriver.Chrome, hotel_url: str) -> Dict[str,
     if pricing:
         hotel_details["pricing"] = pricing
 
-    rooms = extract_room_options(soup, driver=driver)
+    # Only pass driver for room image extraction if we're not using cached HTML
+    # (room image extraction requires interactive driver to click room links)
+    # If we used cached HTML, driver is not on the page, so can't extract room images interactively
+    driver_for_rooms = None if used_cached_html else driver
+    rooms = extract_room_options(soup, driver=driver_for_rooms)
     if rooms:
         hotel_details["rooms"] = rooms
 
@@ -1248,16 +1386,18 @@ def compare_hotel_vs_room_images(hotel_data: List[Dict[str, object]]) -> None:
                 print(f"    (No gallery images for this room)")
 
 
-def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
+def write_hotels_to_csv(hotel_data: List[Dict[str, object]], append: bool = False) -> None:
     if not hotel_data:
         print("No hotel data to write.")
         return
 
     fieldnames = sorted({key for entry in hotel_data for key in entry.keys()})
 
-    with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as csv_file:
+    mode = "a" if append else "w"
+    with OUTPUT_PATH.open(mode, newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        writer.writeheader()
+        if not append:
+            writer.writeheader()
         for entry in hotel_data:
             writer.writerow({field: _serialize_for_csv(entry.get(field)) for field in fieldnames})
 
@@ -1265,6 +1405,22 @@ def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
 
 
 def main(max_hotels: int = MAX_HOTELS) -> None:
+    # Show cache statistics
+    if USE_CACHE:
+        cache_stats = get_cache_stats()
+        print(f"{'='*60}")
+        print(f"📂 HTML CACHE STATUS")
+        print(f"{'='*60}")
+        print(f"Cache enabled: {USE_CACHE}")
+        print(f"Cached files: {cache_stats['cached_files']}")
+        print(f"Cache size: {cache_stats['total_size_mb']} MB")
+        if cache_stats['cached_files'] > 0:
+            print(f"Cache directory: {cache_stats['cache_dir']}")
+            print(f"ℹ️  Will use cached HTML where available (faster, no re-download)")
+        else:
+            print(f"ℹ️  No cached files yet - HTML will be downloaded and cached")
+        print(f"{'='*60}\n")
+    
     driver = build_driver(headless=True)
     try:
         # Set currency preference to USD before scraping
@@ -1272,17 +1428,18 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
         set_currency_preference(driver, currency="USD")
         time.sleep(2)
         
-        all_hotel_entries: List[Dict[str, object]] = []
-
-        # Collect at least 10 hotels per city, aiming for max_hotels total
-        # Distribution: base is min_per_city, distribute remainder
-        min_per_city = 10
         total_target = max_hotels
         num_cities = len(CITIES)
         
+        # Collect more links than needed as buffer (since some hotels may not have rooms data)
+        # Use 2x multiplier to ensure we have enough candidates
+        buffer_multiplier = 2
+        total_links_to_collect = total_target * buffer_multiplier
+        
         # Calculate hotels per city: base is min_per_city, distribute remainder
+        min_per_city = 10
         base_per_city = min_per_city
-        remainder = total_target - (base_per_city * num_cities)
+        remainder = total_links_to_collect - (base_per_city * num_cities)
         hotels_per_city = [base_per_city] * num_cities
         
         # Distribute remainder across cities (prefer earlier cities, wrap around if needed)
@@ -1290,42 +1447,59 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
             city_idx = i % num_cities
             hotels_per_city[city_idx] += 1
         
-        print(f"Target: {total_target} hotels across {num_cities} cities")
+        print(f"Target: {total_target} hotels with complete data")
+        print(f"Collecting {total_links_to_collect} hotel links as buffer (hotels without rooms will be skipped)")
         print(f"Distribution: {dict(zip(CITIES, hotels_per_city))}")
+        
+        all_hotel_entries: List[Dict[str, object]] = []
         
         for idx, city in enumerate(CITIES):
             target_count = hotels_per_city[idx]
-            print(f"Collecting {target_count} hotels for {city}...")
+            print(f"Collecting {target_count} hotel link(s) for {city}...")
             city_entries = collect_hotel_links_for_city(driver, city=city, max_results=target_count)
             if len(city_entries) < target_count:
                 print(f"Warning: Only found {len(city_entries)} entries for {city} (requested {target_count}).")
             all_hotel_entries.extend(city_entries)
-            
-            # Stop if we've reached the total target
-            if len(all_hotel_entries) >= total_target:
-                print(f"Reached target of {total_target} hotels. Stopping collection.")
-                break
 
         if not all_hotel_entries:
             print("No hotels found for the specified cities.")
             return
 
-        # Limit to total_target hotels
-        if len(all_hotel_entries) > total_target:
-            print(f"Collected {len(all_hotel_entries)} hotels, limiting to {total_target}.")
-            all_hotel_entries = all_hotel_entries[:total_target]
-
-        print(f"Processing {len(all_hotel_entries)} hotels...")
-
+        print(f"\nCollected {len(all_hotel_entries)} hotel links. Processing until we have {total_target} hotels with complete data...")
+        
+        # Define batch sizes for incremental saving (10 hotels per batch)
+        batch_size = 10
+        batch_thresholds = list(range(batch_size, total_target + batch_size, batch_size))
+        
         hotel_data: List[Dict[str, object]] = []
+        current_batch_data: List[Dict[str, object]] = []
+        skipped_count = 0
+        current_batch_num = 0
+        next_batch_threshold = batch_thresholds[0] if batch_thresholds else total_target
+        
         for index, entry in enumerate(all_hotel_entries, start=1):
+            # Stop if we've already collected enough hotels with complete data
+            if len(hotel_data) >= total_target:
+                print(f"\n✓ Successfully collected {total_target} hotels with complete data!")
+                break
+                
             url = entry.get("url")
             if not isinstance(url, str) or not url:
                 print(f"[{index}/{len(all_hotel_entries)}] Skipping entry with invalid URL: {entry}")
+                skipped_count += 1
                 continue
 
-            print(f"[{index}/{len(all_hotel_entries)}] Scraping {url}")
+            print(f"[{index}/{len(all_hotel_entries)}] [Found: {len(hotel_data)}/{total_target}] Scraping {url}")
             details = extract_hotel_details(driver, url)
+            
+            # Check if hotel has rooms data
+            rooms = details.get("rooms", [])
+            if not rooms or len(rooms) == 0:
+                print(f"  ⚠️  Skipping hotel (no rooms data available)")
+                skipped_count += 1
+                continue
+            
+            # Add search metadata
             search_pricing = entry.get("search_pricing")
             if isinstance(search_pricing, dict) and search_pricing:
                 details["search_pricing"] = search_pricing
@@ -1334,21 +1508,76 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
                 details["search_city"] = search_city
 
             hotel_data.append(details)
+            current_batch_data.append(details)
+            print(f"  ✓ Added hotel with {len(rooms)} room(s)")
+            
+            # Check if we've reached a batch threshold
+            if len(hotel_data) >= next_batch_threshold:
+                current_batch_num += 1
+                batch_size_actual = len(current_batch_data)
+                print(f"\n{'='*60}")
+                print(f"📦 BATCH {current_batch_num} COMPLETE ({batch_size_actual} hotels)")
+                print(f"{'='*60}")
+                
+                # Save batch to CSV (append mode after first batch)
+                is_first_batch = (current_batch_num == 1)
+                write_hotels_to_csv(current_batch_data, append=not is_first_batch)
+                
+                # Save cumulative JSON backup
+                json_path = OUTPUT_PATH.with_suffix('.json')
+                with json_path.open("w", encoding="utf-8") as json_file:
+                    json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
+                print(f"💾 Saved batch to CSV and cumulative JSON ({len(hotel_data)} total hotels)")
+                print(f"{'='*60}\n")
+                
+                # Clear current batch and update threshold
+                current_batch_data = []
+                if current_batch_num < len(batch_thresholds):
+                    next_batch_threshold = batch_thresholds[current_batch_num]
+            
             # Reduced sleep between hotels - page loads are handled by WebDriverWait
             time.sleep(0.3)
-
-        write_hotels_to_csv(hotel_data)
         
-        # Also save as JSON for easier inspection
-        json_path = OUTPUT_PATH.with_suffix('.json')
-        with json_path.open("w", encoding="utf-8") as json_file:
-            json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
-        print(f"Saved {len(hotel_data)} hotels to {json_path}")
+        # Save any remaining hotels in incomplete batch
+        if current_batch_data:
+            current_batch_num += 1
+            print(f"\n{'='*60}")
+            print(f"📦 FINAL BATCH ({len(current_batch_data)} hotels)")
+            print(f"{'='*60}")
+            is_first_batch = (current_batch_num == 1)
+            write_hotels_to_csv(current_batch_data, append=not is_first_batch)
+            json_path = OUTPUT_PATH.with_suffix('.json')
+            with json_path.open("w", encoding="utf-8") as json_file:
+                json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
+            print(f"💾 Saved final batch to CSV and JSON")
+            print(f"{'='*60}\n")
+        
+        # Check if we got enough hotels
+        if len(hotel_data) < total_target:
+            print(f"\n⚠️  Warning: Only collected {len(hotel_data)} hotels with complete data (target was {total_target})")
+            print(f"   Skipped {skipped_count} hotels due to missing rooms data")
+            print(f"   Consider increasing the buffer multiplier or expanding the search")
+        else:
+            print(f"\n✅ COMPLETE: Successfully collected {len(hotel_data)} hotels with complete data in {current_batch_num} batch(es)")
+            print(f"   Skipped {skipped_count} hotels due to missing rooms data")
         
     finally:
         driver.quit()
 
 
 if __name__ == "__main__":
-    main()
+    # QUICK CONFIGURATION:
+    # 1. To scrape 100 hotels with caching: (default)
+    #    main(max_hotels=MAX_HOTELS)
+    #
+    # 2. To scrape with fresh data (no cache):
+    #    Set USE_CACHE = False at line ~112
+    #
+    # 3. To clear cache and start fresh:
+    #    clear_cache()
+    #
+    # 4. To view cache statistics:
+    #    print(get_cache_stats())
+    
+    main(max_hotels=MAX_HOTELS)
 

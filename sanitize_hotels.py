@@ -194,8 +194,8 @@ def _parse_rooms(rooms_raw: Any, hotel_gallery: List[str]) -> List[Dict[str, Any
                             max_val = max(max_val, int(m.group(1)))
             quantity = max_val
 
-        # Extract room images from the item
-        room_images_raw = item.get("images")
+        # Extract room images from the item (check both 'gallery' and 'images' fields)
+        room_images_raw = item.get("gallery") or item.get("images")
         room_images: List[str] = []
         if isinstance(room_images_raw, list):
             # Clean and filter room images
