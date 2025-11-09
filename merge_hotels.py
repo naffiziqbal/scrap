@@ -26,9 +26,16 @@ def merge_hotel_files(file1_path, file2_path, output_path=None):
     with open(file2_path, 'r', encoding='utf-8') as f:
         data2 = json.load(f)
     
-    # Combine hotels arrays
-    hotels1 = data1.get('hotels', [])
-    hotels2 = data2.get('hotels', [])
+    # Combine hotels arrays (handle both dict and list formats)
+    if isinstance(data1, dict):
+        hotels1 = data1.get('hotels', [])
+    else:
+        hotels1 = data1
+    
+    if isinstance(data2, dict):
+        hotels2 = data2.get('hotels', [])
+    else:
+        hotels2 = data2
     
     merged_hotels = hotels1 + hotels2
     
@@ -57,8 +64,8 @@ def merge_hotel_files(file1_path, file2_path, output_path=None):
 
 if __name__ == '__main__':
     # File paths
-    georgia_file = 'georgia_hotels_20251108_190259.json'
-    uae_file = 'uae_hotels_20251108_201430.json'
+    georgia_file = 'georgia_hotels_20251109_125140.json'
+    uae_file = 'uae_hotels_20251109_150018.json'
     output_file = 'merged_hotels.json'
     
     # Merge the files
