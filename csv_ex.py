@@ -46,8 +46,8 @@ DEFAULT_SEARCH_QUERY = {
     "efdco": "1",
     "dest_id": "79",
     "dest_type": "country",
-    "checkin": "2025-11-09",
-    "checkout": "2025-11-10",
+    "checkin": "2025-11-12",
+    "checkout": "2025-11-14",
     "group_adults": "2",
     "group_children": "0",
     "no_rooms": "1",
@@ -311,13 +311,12 @@ def extract_price_info(soup: BeautifulSoup) -> Dict[str, object]:
     return {key: value for key, value in price_info.items() if value is not None}
 
 
-def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, debug: bool = False) -> List[str]:
+def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element) -> List[str]:
     """Extract room-specific gallery images from a modal that opens when clicking the room name link.
     
     Args:
         driver: Chrome WebDriver instance
         room_link_element: The room name link element (a.hprt-roomtype-link)
-        debug: Whether to print debug messages
         
     Returns:
         List of image URLs for the room gallery
@@ -338,8 +337,6 @@ def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, deb
             try:
                 driver.execute_script("arguments[0].click();", room_link_element)
             except Exception:
-                if debug:
-                    print(f"    [DEBUG] Failed to click room link")
                 return room_images
         
         # Wait for the photo section to appear
@@ -349,8 +346,6 @@ def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, deb
             )
             time.sleep(0.8)  # Give modal content time to render
         except TimeoutException:
-            if debug:
-                print(f"    [DEBUG] roomPagePhotos container not found")
             # Try to close modal and return
             try:
                 driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
@@ -369,8 +364,6 @@ def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, deb
             modal_soup = BeautifulSoup(page_source, "html.parser")
             room_photos_container_soup = modal_soup.select_one("[data-testid='roomPagePhotos']")
             if not room_photos_container_soup:
-                if debug:
-                    print(f"    [DEBUG] Could not find roomPagePhotos in page source")
                 try:
                     driver.find_element(By.TAG_NAME, "body").send_keys(Keys.ESCAPE)
                     time.sleep(0.2)
@@ -447,12 +440,9 @@ def extract_room_gallery_images(driver: webdriver.Chrome, room_link_element, deb
                         room_images.append(img_url)
                         seen_urls.add(img_url)
         
-        if debug:
-            print(f"    [DEBUG] Extracted {len(room_images)} images from room gallery")
-        
     except Exception as e:
-        if debug:
-            print(f"    [DEBUG] Error extracting room gallery images: {e}")
+        # Silent failure - return empty list if extraction fails
+        pass
     
     finally:
         # Close the modal with ESC key
@@ -636,21 +626,11 @@ def extract_room_options(soup: BeautifulSoup, driver: Optional[webdriver.Chrome]
                         pass
                 
                 if room_link_element:
-                    print(f"  Extracting gallery images for room: {room_name_for_debug}")
-                    room_gallery = extract_room_gallery_images(driver, room_link_element, debug=False)
+                    room_gallery = extract_room_gallery_images(driver, room_link_element)
                     if room_gallery:
                         room_data["gallery"] = room_gallery
-                        print(f"  ✓ Found {len(room_gallery)} gallery images for {room_name_for_debug}")
-                    else:
-                        print(f"  ⚠ No gallery images found for {room_name_for_debug}")
-                else:
-                    # Room doesn't have a clickable link (likely an "Unknown" rate package)
-                    # This is expected for rate variations of the same room type
-                    pass
-            except Exception as e:
+            except Exception:
                 # If image extraction fails, continue without images
-                room_name_for_debug = room_data.get("name", f"room {block_id}")
-                print(f"  ✗ Error extracting gallery images for {room_name_for_debug}: {e}")
                 pass
 
         room_data = {key: value for key, value in room_data.items() if value not in (None, [], {})}
@@ -1261,16 +1241,18 @@ def compare_hotel_vs_room_images(hotel_data: List[Dict[str, object]]) -> None:
                 print(f"    (No gallery images for this room)")
 
 
-def write_hotels_to_csv(hotel_data: List[Dict[str, object]]) -> None:
+def write_hotels_to_csv(hotel_data: List[Dict[str, object]], append: bool = False) -> None:
     if not hotel_data:
         print("No hotel data to write.")
         return
 
     fieldnames = sorted({key for entry in hotel_data for key in entry.keys()})
 
-    with OUTPUT_PATH.open("w", newline="", encoding="utf-8") as csv_file:
+    mode = "a" if append else "w"
+    with OUTPUT_PATH.open(mode, newline="", encoding="utf-8") as csv_file:
         writer = csv.DictWriter(csv_file, fieldnames=fieldnames)
-        writer.writeheader()
+        if not append:
+            writer.writeheader()
         for entry in hotel_data:
             writer.writerow({field: _serialize_for_csv(entry.get(field)) for field in fieldnames})
 
@@ -1285,21 +1267,24 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
         set_currency_preference(driver, currency="USD")
         time.sleep(2)
         
-        all_hotel_entries: List[Dict[str, object]] = []
-
         total_target = max_hotels
         num_cities = len(CITIES)
         
+        # Collect more links than needed as buffer (since some hotels may not have rooms data)
+        # Use 2x multiplier to ensure we have enough candidates
+        buffer_multiplier = 2
+        total_links_to_collect = total_target * buffer_multiplier
+        
         # For small numbers (like 10), distribute evenly across first few cities
         # For larger numbers, use the original logic
-        if total_target < num_cities:
+        if total_links_to_collect < num_cities:
             # If target is less than number of cities, use first N cities with 1 hotel each
-            hotels_per_city = [1] * total_target
-            cities_to_use = CITIES[:total_target]
+            hotels_per_city = [1] * total_links_to_collect
+            cities_to_use = CITIES[:total_links_to_collect]
         else:
             # Original logic: distribute evenly with remainder
-            min_per_city = max(1, total_target // num_cities)
-            remainder = total_target - (min_per_city * num_cities)
+            min_per_city = max(1, total_links_to_collect // num_cities)
+            remainder = total_links_to_collect - (min_per_city * num_cities)
             hotels_per_city = [min_per_city] * num_cities
             
             # Distribute remainder across cities (prefer earlier cities)
@@ -1309,42 +1294,64 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
             
             cities_to_use = CITIES
         
-        print(f"Target: {total_target} hotels across {len(cities_to_use)} cities")
+        print(f"Target: {total_target} hotels with complete data")
+        print(f"Collecting {total_links_to_collect} hotel links as buffer (hotels without rooms will be skipped)")
         if len(cities_to_use) <= 10:
             print(f"Distribution: {dict(zip(cities_to_use, hotels_per_city))}")
         
+        all_hotel_entries: List[Dict[str, object]] = []
+        
         for idx, city in enumerate(cities_to_use):
             target_count = hotels_per_city[idx]
-            print(f"Collecting {target_count} hotel(s) for {city}...")
+            print(f"Collecting {target_count} hotel link(s) for {city}...")
             city_entries = collect_hotel_links_for_city(driver, city=city, max_results=target_count)
             if len(city_entries) < target_count:
                 print(f"Warning: Only found {len(city_entries)} entries for {city} (requested {target_count}).")
             all_hotel_entries.extend(city_entries)
-            
-            # Stop if we've reached the total target
-            if len(all_hotel_entries) >= total_target:
-                print(f"Reached target of {total_target} hotels. Stopping collection.")
-                break
 
         if not all_hotel_entries:
             print("No hotels found for the specified cities.")
             return
 
-        # Limit to total_target hotels
-        if len(all_hotel_entries) > total_target:
-            print(f"Collected {len(all_hotel_entries)} hotels, limiting to {total_target}.")
-            all_hotel_entries = all_hotel_entries[:total_target]
-
-        print(f"Processing {len(all_hotel_entries)} hotels...")
+        print(f"\nCollected {len(all_hotel_entries)} hotel links. Processing until we have {total_target} hotels with complete data...")
+        
+        # Define batch sizes for incremental saving
+        batch_sizes = [30, 30, 30, 10]  # Total = 100
+        batch_thresholds = []
+        cumulative = 0
+        for size in batch_sizes:
+            cumulative += size
+            batch_thresholds.append(cumulative)
+        
         hotel_data: List[Dict[str, object]] = []
+        current_batch_data: List[Dict[str, object]] = []
+        skipped_count = 0
+        current_batch_num = 0
+        next_batch_threshold = batch_thresholds[0] if batch_thresholds else total_target
+        
         for index, entry in enumerate(all_hotel_entries, start=1):
+            # Stop if we've already collected enough hotels with complete data
+            if len(hotel_data) >= total_target:
+                print(f"\n✓ Successfully collected {total_target} hotels with complete data!")
+                break
+                
             url = entry.get("url")
             if not isinstance(url, str) or not url:
                 print(f"[{index}/{len(all_hotel_entries)}] Skipping entry with invalid URL: {entry}")
+                skipped_count += 1
                 continue
 
-            print(f"[{index}/{len(all_hotel_entries)}] Scraping {url}")
+            print(f"[{index}/{len(all_hotel_entries)}] [Found: {len(hotel_data)}/{total_target}] Scraping {url}")
             details = extract_hotel_details(driver, url)
+            
+            # Check if hotel has rooms data
+            rooms = details.get("rooms", [])
+            if not rooms or len(rooms) == 0:
+                print(f"  ⚠️  Skipping hotel (no rooms data available)")
+                skipped_count += 1
+                continue
+            
+            # Add search metadata
             search_pricing = entry.get("search_pricing")
             if isinstance(search_pricing, dict) and search_pricing:
                 details["search_pricing"] = search_pricing
@@ -1353,27 +1360,62 @@ def main(max_hotels: int = MAX_HOTELS) -> None:
                 details["search_city"] = search_city
 
             hotel_data.append(details)
+            current_batch_data.append(details)
+            print(f"  ✓ Added hotel with {len(rooms)} room(s)")
+            
+            # Check if we've reached a batch threshold
+            if len(hotel_data) >= next_batch_threshold:
+                current_batch_num += 1
+                batch_size = len(current_batch_data)
+                print(f"\n{'='*60}")
+                print(f"📦 BATCH {current_batch_num} COMPLETE ({batch_size} hotels)")
+                print(f"{'='*60}")
+                
+                # Save batch to CSV (append mode after first batch)
+                is_first_batch = (current_batch_num == 1)
+                write_hotels_to_csv(current_batch_data, append=not is_first_batch)
+                
+                # Save cumulative JSON backup
+                json_path = OUTPUT_PATH.with_suffix('.json')
+                with json_path.open("w", encoding="utf-8") as json_file:
+                    json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
+                print(f"💾 Saved batch to CSV and cumulative JSON ({len(hotel_data)} total hotels)")
+                print(f"{'='*60}\n")
+                
+                # Clear current batch and update threshold
+                current_batch_data = []
+                if current_batch_num < len(batch_thresholds):
+                    next_batch_threshold = batch_thresholds[current_batch_num]
+            
             # Reduced sleep between hotels - page loads are handled by WebDriverWait
             time.sleep(0.3)
-
-        write_hotels_to_csv(hotel_data)
         
-        # Also save as JSON for easier inspection
-        json_path = OUTPUT_PATH.with_suffix('.json')
-        with json_path.open("w", encoding="utf-8") as json_file:
-            json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
-        print(f"Saved {len(hotel_data)} hotels to {json_path}")
+        # Save any remaining hotels in incomplete batch
+        if current_batch_data:
+            current_batch_num += 1
+            print(f"\n{'='*60}")
+            print(f"📦 FINAL BATCH ({len(current_batch_data)} hotels)")
+            print(f"{'='*60}")
+            is_first_batch = (current_batch_num == 1)
+            write_hotels_to_csv(current_batch_data, append=not is_first_batch)
+            json_path = OUTPUT_PATH.with_suffix('.json')
+            with json_path.open("w", encoding="utf-8") as json_file:
+                json.dump(hotel_data, json_file, ensure_ascii=False, indent=2)
+            print(f"💾 Saved final batch to CSV and JSON")
+            print(f"{'='*60}\n")
         
-        # Print comparison of hotel gallery vs room galleries for testing
-        print("\n" + "="*80)
-        print("IMAGE COMPARISON: Hotel Gallery vs Room Galleries")
-        print("="*80)
-        compare_hotel_vs_room_images(hotel_data)
+        # Check if we got enough hotels
+        if len(hotel_data) < total_target:
+            print(f"\n⚠️  Warning: Only collected {len(hotel_data)} hotels with complete data (target was {total_target})")
+            print(f"   Skipped {skipped_count} hotels due to missing rooms data")
+            print(f"   Consider increasing the buffer multiplier or expanding the search")
+        else:
+            print(f"\n✅ COMPLETE: Successfully collected {len(hotel_data)} hotels with complete data in {current_batch_num} batch(es)")
+            print(f"   Skipped {skipped_count} hotels due to missing rooms data")
         
     finally:
         driver.quit()
 
 
 if __name__ == "__main__":
-    # For testing: extract 1 hotel to verify hotel gallery vs room images are different
-    main(max_hotels=1)
+    main(max_hotels=MAX_HOTELS)
