@@ -1,0 +1,604 @@
+[
+  {
+    "file": "boutique-kviria-telavi.html",
+    "name": "Boutique Hotel Kviria",
+    "total_rooms": 6,
+    "rooms_with_images": 0,
+    "rooms_without_images": 6,
+    "rooms": [
+      {
+        "room_id": "710356403",
+        "name": "Deluxe Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "710356401",
+        "name": "Standard Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "710356402",
+        "name": "Standard Queen Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "710356405",
+        "name": "Double or Twin Room - Disability Access",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "710356406",
+        "name": "Standard King Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "710356404",
+        "name": "Family Junior Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "chateau-mere.html",
+    "name": "Chateau Mere",
+    "total_rooms": 2,
+    "rooms_with_images": 0,
+    "rooms_without_images": 2,
+    "rooms": [
+      {
+        "room_id": "42781809",
+        "name": "Double or Twin Room with Pool View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "42781801",
+        "name": "Standard Double or Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "chateau-mosmieri.html",
+    "name": "Château Mosmieri Hotel & Winery",
+    "total_rooms": 2,
+    "rooms_with_images": 0,
+    "rooms_without_images": 2,
+    "rooms": [
+      {
+        "room_id": "572006902",
+        "name": "Suite with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "572006901",
+        "name": "Double or Twin Room with Mountain View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "communal-telavi.html",
+    "name": "Communal Hotel Telavi",
+    "total_rooms": 7,
+    "rooms_with_images": 0,
+    "rooms_without_images": 7,
+    "rooms": [
+      {
+        "room_id": "718902807",
+        "name": "Suite with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902801",
+        "name": "Small Double Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902802",
+        "name": "Large Double Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902803",
+        "name": "King Studio",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902805",
+        "name": "Suite with Hot Tub",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902809",
+        "name": "Suite with Terrace",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "718902804",
+        "name": "Suite with Pool View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "esquisse-boutique.html",
+    "name": "Esquisse Design Hotel",
+    "total_rooms": 5,
+    "rooms_with_images": 0,
+    "rooms_without_images": 5,
+    "rooms": [
+      {
+        "room_id": "631819702",
+        "name": "Standard Double Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "631819701",
+        "name": "Deluxe Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "631819705",
+        "name": "Deluxe Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "631819703",
+        "name": "Deluxe Triple Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "631819704",
+        "name": "Deluxe Family Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "guest-house-telavi.html",
+    "name": "Guest House Top Floor",
+    "total_rooms": 4,
+    "rooms_with_images": 0,
+    "rooms_without_images": 4,
+    "rooms": [
+      {
+        "room_id": "141343705",
+        "name": "Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "141343704",
+        "name": "Triple Room with Private Bathroom",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "141343707",
+        "name": "Double Room with Private Bathroom",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "141343702",
+        "name": "Family Room with Private Bathroom",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "hestia-wine-and-view-telavi-kakheti-georgia.html",
+    "name": "Hestia - Hotel, Wine and View",
+    "total_rooms": 4,
+    "rooms_with_images": 0,
+    "rooms_without_images": 4,
+    "rooms": [
+      {
+        "room_id": "658779903",
+        "name": "Double Room with Garden View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "658779901",
+        "name": "Queen Room with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "658779904",
+        "name": "Family Room with Garden View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "658779902",
+        "name": "Superior Triple Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "holiday-inn-telavi.html",
+    "name": "Holiday Inn Telavi by IHG",
+    "total_rooms": 10,
+    "rooms_with_images": 0,
+    "rooms_without_images": 10,
+    "rooms": [
+      {
+        "room_id": "483837601",
+        "name": "Standard Queen Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837611",
+        "name": "Standard Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837602",
+        "name": "Standard Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837617",
+        "name": "Premium Queen Room with City View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837619",
+        "name": "Standard Queen Room with City View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837615",
+        "name": "Premium Queen Room with Terrace and City View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837606",
+        "name": "Premium Queen Room with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837610",
+        "name": "Queen Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837620",
+        "name": "One-Bedroom Suite with Sofa Bed and Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "483837612",
+        "name": "Queen Suite with Terrace and Mountain View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "mestvireni.html",
+    "name": "Mestvireni",
+    "total_rooms": 1,
+    "rooms_with_images": 0,
+    "rooms_without_images": 1,
+    "rooms": [
+      {
+        "room_id": "312577504",
+        "name": "Villa with Garden View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "old-telavi-resort-amp-spa-zuzumbo.html",
+    "name": "Zuzumbo Resort & Spa",
+    "total_rooms": 5,
+    "rooms_with_images": 0,
+    "rooms_without_images": 5,
+    "rooms": [
+      {
+        "room_id": "671345009",
+        "name": "Standard Double or Twin Room with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "671345008",
+        "name": "Double or Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "671345028",
+        "name": "Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "671345030",
+        "name": "Deluxe King Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "671345029",
+        "name": "Family Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "qvevrebi.html",
+    "name": "Hotel Qvevrebi",
+    "total_rooms": 4,
+    "rooms_with_images": 0,
+    "rooms_without_images": 4,
+    "rooms": [
+      {
+        "room_id": "1068475907",
+        "name": "Qvevri",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "1068475913",
+        "name": "Standard Double or Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "1068475901",
+        "name": "Double or Twin Room with Mountain View",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "1068475905",
+        "name": "Family Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "schuchmann-wines-chateau-and-spa.html",
+    "name": "Schuchmann Wines Château,Villas & SPA",
+    "total_rooms": 9,
+    "rooms_with_images": 0,
+    "rooms_without_images": 9,
+    "rooms": [
+      {
+        "room_id": "36634519",
+        "name": "Superior King Suite",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634502",
+        "name": "Junior Suite with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634507",
+        "name": "Deluxe Double Room with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634512",
+        "name": "Suite with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634501",
+        "name": "Standard Double Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634504",
+        "name": "Family Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634506",
+        "name": "King Suite with Balcony",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634516",
+        "name": "Two-Bedroom Villa",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "36634518",
+        "name": "Superior Villa",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "seventeen-rooms.html",
+    "name": "Seventeen Rooms",
+    "total_rooms": 6,
+    "rooms_with_images": 0,
+    "rooms_without_images": 6,
+    "rooms": [
+      {
+        "room_id": "462726402",
+        "name": "King Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "462726403",
+        "name": "Deluxe Apartment",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "462726401",
+        "name": "Standard Twin Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "462726405",
+        "name": "Economy Double Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "462726406",
+        "name": "Standard Queen Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "462726404",
+        "name": "Family Room",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  },
+  {
+    "file": "tita-homes.html",
+    "name": "TITA HOMES",
+    "total_rooms": 3,
+    "rooms_with_images": 0,
+    "rooms_without_images": 3,
+    "rooms": [
+      {
+        "room_id": "1002525802",
+        "name": "Superior Chalet",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "1002525801",
+        "name": "Two-Bedroom Chalet",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      },
+      {
+        "room_id": "1002525803",
+        "name": "Two-Bedroom Chalet",
+        "images": [],
+        "has_images": false,
+        "image_count": 0
+      }
+    ]
+  }
+]

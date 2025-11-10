@@ -1,0 +1,192 @@
+TELAVI HOTELS - ROOM INFORMATION
+================================================================================
+
+Boutique Hotel Kviria
+  File: boutique-kviria-telavi.html
+  Number of rooms: 6
+  Rooms:
+    1. Deluxe Suite
+    2. Standard Twin Room
+    3. Standard Queen Room
+    4. Double or Twin Room - Disability Access
+    5. Standard King Room
+    6. Family Junior Suite
+
+--------------------------------------------------------------------------------
+
+Chateau Mere
+  File: chateau-mere.html
+  Number of rooms: 2
+  Rooms:
+    1. Double or Twin Room with Pool View
+    2. Standard Double or Twin Room
+
+--------------------------------------------------------------------------------
+
+Château Mosmieri Hotel & Winery
+  File: chateau-mosmieri.html
+  Number of rooms: 2
+  Rooms:
+    1. Suite with Balcony
+    2. Double or Twin Room with Mountain View
+
+--------------------------------------------------------------------------------
+
+Communal Hotel Telavi
+  File: communal-telavi.html
+  Number of rooms: 7
+  Rooms:
+    1. Suite with Balcony
+    2. Small Double Room
+    3. Large Double Room
+    4. King Studio
+    5. Suite with Hot Tub
+    6. Suite with Terrace
+    7. Suite with Pool View
+
+--------------------------------------------------------------------------------
+
+Esquisse Design Hotel
+  File: esquisse-boutique.html
+  Number of rooms: 5
+  Rooms:
+    1. Standard Double Room
+    2. Deluxe Twin Room
+    3. Deluxe Suite
+    4. Deluxe Triple Room
+    5. Deluxe Family Room
+
+--------------------------------------------------------------------------------
+
+Guest House Top Floor
+  File: guest-house-telavi.html
+  Number of rooms: 4
+  Rooms:
+    1. Twin Room
+    2. Triple Room with Private Bathroom
+    3. Double Room with Private Bathroom
+    4. Family Room with Private Bathroom
+
+--------------------------------------------------------------------------------
+
+Hestia - Hotel, Wine and View
+  File: hestia-wine-and-view-telavi-kakheti-georgia.html
+  Number of rooms: 4
+  Rooms:
+    1. Double Room with Garden View
+    2. Queen Room with Balcony
+    3. Family Room with Garden View
+    4. Superior Triple Room
+
+--------------------------------------------------------------------------------
+
+Holiday Inn Telavi by IHG
+  File: holiday-inn-telavi.html
+  Number of rooms: 10
+  Rooms:
+    1. Standard Queen Room
+    2. Standard Room
+    3. Standard Twin Room
+    4. Premium Queen Room with City View
+    5. Standard Queen Room with City View
+    6. Premium Queen Room with Terrace and City View
+    7. Premium Queen Room with Balcony
+    8. Queen Suite
+    9. One-Bedroom Suite with Sofa Bed and Balcony
+    10. Queen Suite with Terrace and Mountain View
+
+--------------------------------------------------------------------------------
+
+Mestvireni
+  File: mestvireni.html
+  Number of rooms: 1
+  Rooms:
+    1. Villa with Garden View
+
+--------------------------------------------------------------------------------
+
+Zuzumbo Resort & Spa
+  File: old-telavi-resort-amp-spa-zuzumbo.html
+  Number of rooms: 5
+  Rooms:
+    1. Standard Double or Twin Room with Balcony
+    2. Double or Twin Room
+    3. Suite
+    4. Deluxe King Room
+    5. Family Suite
+
+--------------------------------------------------------------------------------
+
+Hotel Qvevrebi
+  File: qvevrebi.html
+  Number of rooms: 4
+  Rooms:
+    1. Qvevri
+    2. Standard Double or Twin Room
+    3. Double or Twin Room with Mountain View
+    4. Family Suite
+
+--------------------------------------------------------------------------------
+
+Schuchmann Wines Château,Villas & SPA
+  File: schuchmann-wines-chateau-and-spa.html
+  Number of rooms: 9
+  Rooms:
+    1. Superior King Suite
+    2. Junior Suite with Balcony
+    3. Deluxe Double Room with Balcony
+    4. Suite with Balcony
+    5. Standard Double Room
+    6. Family Room
+    7. King Suite with Balcony
+    8. Two-Bedroom Villa
+    9. Superior Villa
+
+--------------------------------------------------------------------------------
+
+Seventeen Rooms
+  File: seventeen-rooms.html
+  Number of rooms: 6
+  Rooms:
+    1. King Room
+    2. Deluxe Apartment
+    3. Standard Twin Room
+    4. Economy Double Room
+    5. Standard Queen Room
+    6. Family Room
+
+--------------------------------------------------------------------------------
+
+TITA HOMES
+  File: tita-homes.html
+  Number of rooms: 2
+  Rooms:
+    1. Superior Chalet
+    2. Two-Bedroom Chalet
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+SUMMARY
+================================================================================
+Total hotels: 14
+Total rooms: 67
+Average rooms per hotel: 4.8
+
+Hotels sorted by number of rooms:
+--------------------------------------------------------------------------------
+10 rooms - Holiday Inn Telavi by IHG
+ 9 rooms - Schuchmann Wines Château,Villas & SPA
+ 7 rooms - Communal Hotel Telavi
+ 6 rooms - Boutique Hotel Kviria
+ 6 rooms - Seventeen Rooms
+ 5 rooms - Esquisse Design Hotel
+ 5 rooms - Zuzumbo Resort & Spa
+ 4 rooms - Guest House Top Floor
+ 4 rooms - Hestia - Hotel, Wine and View
+ 4 rooms - Hotel Qvevrebi
+ 2 rooms - Chateau Mere
+ 2 rooms - Château Mosmieri Hotel & Winery
+ 2 rooms - TITA HOMES
+ 1 rooms - Mestvireni

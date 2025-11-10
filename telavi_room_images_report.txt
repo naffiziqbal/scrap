@@ -1,0 +1,205 @@
+TELAVI HOTELS - ROOM IMAGE CHECK REPORT
+================================================================================
+
+Boutique Hotel Kviria
+  File: boutique-kviria-telavi.html
+  Total rooms: 6
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 6
+  Rooms:
+    ✗ Deluxe Suite - 0 image(s)
+    ✗ Standard Twin Room - 0 image(s)
+    ✗ Standard Queen Room - 0 image(s)
+    ✗ Double or Twin Room - Disability Access - 0 image(s)
+    ✗ Standard King Room - 0 image(s)
+    ✗ Family Junior Suite - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Chateau Mere
+  File: chateau-mere.html
+  Total rooms: 2
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 2
+  Rooms:
+    ✗ Double or Twin Room with Pool View - 0 image(s)
+    ✗ Standard Double or Twin Room - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Château Mosmieri Hotel & Winery
+  File: chateau-mosmieri.html
+  Total rooms: 2
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 2
+  Rooms:
+    ✗ Suite with Balcony - 0 image(s)
+    ✗ Double or Twin Room with Mountain View - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Communal Hotel Telavi
+  File: communal-telavi.html
+  Total rooms: 7
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 7
+  Rooms:
+    ✗ Suite with Balcony - 0 image(s)
+    ✗ Small Double Room - 0 image(s)
+    ✗ Large Double Room - 0 image(s)
+    ✗ King Studio - 0 image(s)
+    ✗ Suite with Hot Tub - 0 image(s)
+    ✗ Suite with Terrace - 0 image(s)
+    ✗ Suite with Pool View - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Esquisse Design Hotel
+  File: esquisse-boutique.html
+  Total rooms: 5
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 5
+  Rooms:
+    ✗ Standard Double Room - 0 image(s)
+    ✗ Deluxe Twin Room - 0 image(s)
+    ✗ Deluxe Suite - 0 image(s)
+    ✗ Deluxe Triple Room - 0 image(s)
+    ✗ Deluxe Family Room - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Guest House Top Floor
+  File: guest-house-telavi.html
+  Total rooms: 4
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 4
+  Rooms:
+    ✗ Twin Room - 0 image(s)
+    ✗ Triple Room with Private Bathroom - 0 image(s)
+    ✗ Double Room with Private Bathroom - 0 image(s)
+    ✗ Family Room with Private Bathroom - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Hestia - Hotel, Wine and View
+  File: hestia-wine-and-view-telavi-kakheti-georgia.html
+  Total rooms: 4
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 4
+  Rooms:
+    ✗ Double Room with Garden View - 0 image(s)
+    ✗ Queen Room with Balcony - 0 image(s)
+    ✗ Family Room with Garden View - 0 image(s)
+    ✗ Superior Triple Room - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Holiday Inn Telavi by IHG
+  File: holiday-inn-telavi.html
+  Total rooms: 10
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 10
+  Rooms:
+    ✗ Standard Queen Room - 0 image(s)
+    ✗ Standard Room - 0 image(s)
+    ✗ Standard Twin Room - 0 image(s)
+    ✗ Premium Queen Room with City View - 0 image(s)
+    ✗ Standard Queen Room with City View - 0 image(s)
+    ✗ Premium Queen Room with Terrace and City View - 0 image(s)
+    ✗ Premium Queen Room with Balcony - 0 image(s)
+    ✗ Queen Suite - 0 image(s)
+    ✗ One-Bedroom Suite with Sofa Bed and Balcony - 0 image(s)
+    ✗ Queen Suite with Terrace and Mountain View - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Mestvireni
+  File: mestvireni.html
+  Total rooms: 1
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 1
+  Rooms:
+    ✗ Villa with Garden View - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Zuzumbo Resort & Spa
+  File: old-telavi-resort-amp-spa-zuzumbo.html
+  Total rooms: 5
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 5
+  Rooms:
+    ✗ Standard Double or Twin Room with Balcony - 0 image(s)
+    ✗ Double or Twin Room - 0 image(s)
+    ✗ Suite - 0 image(s)
+    ✗ Deluxe King Room - 0 image(s)
+    ✗ Family Suite - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Hotel Qvevrebi
+  File: qvevrebi.html
+  Total rooms: 4
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 4
+  Rooms:
+    ✗ Qvevri - 0 image(s)
+    ✗ Standard Double or Twin Room - 0 image(s)
+    ✗ Double or Twin Room with Mountain View - 0 image(s)
+    ✗ Family Suite - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Schuchmann Wines Château,Villas & SPA
+  File: schuchmann-wines-chateau-and-spa.html
+  Total rooms: 9
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 9
+  Rooms:
+    ✗ Superior King Suite - 0 image(s)
+    ✗ Junior Suite with Balcony - 0 image(s)
+    ✗ Deluxe Double Room with Balcony - 0 image(s)
+    ✗ Suite with Balcony - 0 image(s)
+    ✗ Standard Double Room - 0 image(s)
+    ✗ Family Room - 0 image(s)
+    ✗ King Suite with Balcony - 0 image(s)
+    ✗ Two-Bedroom Villa - 0 image(s)
+    ✗ Superior Villa - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+Seventeen Rooms
+  File: seventeen-rooms.html
+  Total rooms: 6
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 6
+  Rooms:
+    ✗ King Room - 0 image(s)
+    ✗ Deluxe Apartment - 0 image(s)
+    ✗ Standard Twin Room - 0 image(s)
+    ✗ Economy Double Room - 0 image(s)
+    ✗ Standard Queen Room - 0 image(s)
+    ✗ Family Room - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+TITA HOMES
+  File: tita-homes.html
+  Total rooms: 3
+  Rooms WITH images: 0
+  Rooms WITHOUT images: 3
+  Rooms:
+    ✗ Superior Chalet - 0 image(s)
+    ✗ Two-Bedroom Chalet - 0 image(s)
+    ✗ Two-Bedroom Chalet - 0 image(s)
+
+--------------------------------------------------------------------------------
+
+
+================================================================================
+SUMMARY
+================================================================================
+Total hotels: 14
+Total rooms: 68
+Rooms WITH images: 0 (0.0%)
+Rooms WITHOUT images: 68 (100.0%)
